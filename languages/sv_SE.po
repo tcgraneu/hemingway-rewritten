@@ -1,0 +1,492 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hemingway v1.10\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-02-11 09:52:34+0000\n"
+"Last-Translator: anders <anders@andersnoren.se>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: SWEDEN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:15
+#@ hemingway
+msgid "Error 404"
+msgstr "Error 404"
+
+#: 404.php:21
+#@ hemingway
+msgid "It seems like you have tried to open a page that doesn't exist. It could have been deleted, moved, or it never existed at all. You are welcome to search for what you are looking for with the form below."
+msgstr "Det verkar som att du har försökt öppna en sida som inte existerar. Den kan ha raderats, flyttats eller har aldrig existerat överhuvudtaget. Du är välkommen att söka efter det du letar efter i sökformuläret nedan."
+
+#: archive.php:12
+#, php-format
+#@ hemingway
+msgid "Date: %s"
+msgstr "Datum: %s"
+
+#: archive.php:14
+#, php-format
+#@ hemingway
+msgid "Month: %s"
+msgstr "Månad: %s"
+
+#: archive.php:14
+#@ hemingway
+msgctxt "F = Month, Y = Year"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:16
+#, php-format
+#@ hemingway
+msgid "Year: %s"
+msgstr "År: %s"
+
+#: archive.php:16
+#@ hemingway
+msgctxt "Y = Year"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:18
+#, php-format
+#@ hemingway
+msgid "Category: %s"
+msgstr "Kategori: %s"
+
+#: archive.php:20
+#, php-format
+#@ hemingway
+msgid "Tag: %s"
+msgstr "Etikett: %s"
+
+#: archive.php:23
+#, php-format
+#@ hemingway
+msgid "Author: %s"
+msgstr "Författare: %s"
+
+#: archive.php:25
+#@ hemingway
+msgid "Archive"
+msgstr "Arkiv"
+
+#: archive.php:33
+#: search.php:20
+#: search.php:71
+#, php-format
+#@ hemingway
+msgid "(page %s of %s)"
+msgstr "(sida %s av %s)"
+
+#: archive.php:69
+#@ hemingway
+msgid "Older<span> posts</span>"
+msgstr "Äldre <span> inlägg</span>"
+
+#: archive.php:71
+#@ hemingway
+msgid "Newer<span> posts</span>"
+msgstr "Nyare <span>inlägg</span>"
+
+#: comments.php:12
+#@ hemingway
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] "kommentar"
+msgstr[1] "kommentarer"
+
+#: comments.php:29
+#@ hemingway
+msgid "Pingback"
+msgid_plural "Pingbacks"
+msgstr[0] "Pingback"
+msgstr[1] "Pingbacks"
+
+#: comments.php:47
+#@ hemingway
+msgid "&laquo; Older<span> Comments</span>"
+msgstr "&laquo; Äldre<span> kommentarer</span>"
+
+#: comments.php:49
+#@ hemingway
+msgid "Newer<span> Comments</span> &raquo;"
+msgstr "Nyare<span> kommentarer</span> &raquo;"
+
+#: comments.php:63
+#@ hemingway
+msgid "Comments are closed."
+msgstr "Kommentarsfunktionen är avstängd."
+
+#: comments.php:70
+#@ hemingway
+msgid "Your email address will not be published."
+msgstr "Din e-postadress kommer inte att publiceras"
+
+#: comments.php:79
+#@ hemingway
+msgid "Name"
+msgstr "Namn"
+
+#: comments.php:82
+#@ hemingway
+msgid "Email"
+msgstr "E-post"
+
+#: comments.php:85
+#@ hemingway
+msgid "Website"
+msgstr "Hemsida"
+
+#: content-aside.php:9
+#: content-quote.php:9
+#: content-video.php:88
+#: content.php:47
+#@ hemingway
+msgid "Sticky"
+msgstr "Klistrat"
+
+#: content-aside.php:17
+#: content-quote.php:17
+#: content-video.php:96
+#: content.php:55
+#: functions.php:278
+#: page.php:25
+#: single.php:124
+#: template-archives.php:101
+#: template-nosidebar.php:31
+#@ hemingway
+msgid "Edit"
+msgstr "Redigera"
+
+#: content-video.php:60
+#: single.php:96
+#: widgets/video-widget.php:57
+#@ hemingway
+msgid "Your browser does not support the video tag."
+msgstr "Din webbläsare stödjer inte video-taggen."
+
+#: content-video.php:82
+#: content.php:41
+#: single.php:118
+#@ hemingway
+msgid "0 Comments"
+msgstr "0 kommentarer"
+
+#: content-video.php:82
+#: content.php:41
+#: single.php:118
+#@ hemingway
+msgid "1 Comment"
+msgstr "1 kommentar"
+
+#: content-video.php:82
+#: content.php:41
+#: single.php:118
+#@ hemingway
+msgid "% Comments"
+msgstr "% kommentarer"
+
+#: content.php:7
+#@ hemingway
+msgid "Sticky post"
+msgstr "Klistrat inlägg"
+
+#: footer.php:27
+#: searchform.php:2
+#@ hemingway
+msgid "Search form"
+msgstr "Sökformulär"
+
+#: footer.php:62
+#@ hemingway
+msgid "Latest posts"
+msgstr "Senaste inläggen"
+
+#: footer.php:103
+#@ hemingway
+msgid "Add some widgets, won't you?"
+msgstr "Lägg till några widgets"
+
+#: footer.php:104
+#@ hemingway
+msgid "This message is displayed because you haven't added any widgets to the footer yet. You can do so in the settings page at Appearance > Widgets."
+msgstr "Det här meddelandet visas för att du inte har lagt till några widgets i sidfoten ännu. Du kan göra det genom att gå in på Appearance > Widgets."
+
+#: footer.php:131
+#, php-format
+#@ hemingway
+msgid "Theme by <a href=\"%s\">Anders Noren</a>"
+msgstr "Tema av <a href=\"%s\">Anders Noren</a>"
+
+#: footer.php:131
+#@ hemingway
+msgid "To the top"
+msgstr "Till toppen"
+
+#: footer.php:131
+#@ hemingway
+msgid "Up"
+msgstr "Upp"
+
+#: functions.php:68
+#@ hemingway
+msgid "Footer A"
+msgstr "Footer A"
+
+#: functions.php:70
+#@ hemingway
+msgid "Widgets in this area will be shown in the left column in the footer."
+msgstr "Widgets i den här sektionen visas i den vänsta kolumnen i sidfoten."
+
+#: functions.php:77
+#@ hemingway
+msgid "Footer B"
+msgstr "Footer B"
+
+#: functions.php:79
+#@ hemingway
+msgid "Widgets in this area will be shown in the middle column in the footer."
+msgstr "Widgets i den här sektionen visas i mittenkolumnen i sidfoten."
+
+#: functions.php:86
+#@ hemingway
+msgid "Footer C"
+msgstr "Footer C"
+
+#: functions.php:88
+#@ hemingway
+msgid "Widgets in this area will be shown in the right column in the footer."
+msgstr "Widgets i den här sektionen visas i den högra kolumnen i sidfoten."
+
+#: functions.php:95
+#@ hemingway
+msgid "Sidebar"
+msgstr "Sidomeny"
+
+#: functions.php:97
+#@ hemingway
+msgid "Widgets in this area will be shown in the sidebar."
+msgstr "Widgets i den här sektionen visas i sidomenyn."
+
+#: functions.php:132
+#, php-format
+#@ hemingway
+msgid "Page %s"
+msgstr "Sida %s"
+
+#: functions.php:178
+#@ hemingway
+msgid "Continue reading"
+msgstr "Fortsätt läsa"
+
+#: functions.php:237
+#@ hemingway
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: functions.php:237
+#@ hemingway
+msgid "(Edit)"
+msgstr "(Redigera)"
+
+#: functions.php:257
+#@ hemingway
+msgid "(Post author)"
+msgstr "(Inläggsförfattare)"
+
+#: functions.php:270
+#@ hemingway
+msgid "Awaiting moderation"
+msgstr "Inväntar modererering"
+
+#: functions.php:280
+#@ hemingway
+msgid "Reply"
+msgstr "Svara"
+
+#: functions.php:298
+#@ hemingway
+msgid "Video URL (video post format)"
+msgstr "Videoadress (för video-inläggsformatet)"
+
+#: image.php:79
+#@ hemingway
+msgid "&laquo; Previous<span> attachment</span>"
+msgstr "&laquo; Föregående<span> bilaga</span>"
+
+#: image.php:80
+#@ hemingway
+msgid "Next<span> attachment</span> &raquo;"
+msgstr "Nästa<span> bilaga</span> &raquo;"
+
+#: image.php:92
+#: page.php:39
+#: single.php:188
+#: template-archives.php:113
+#: template-nosidebar.php:47
+#@ hemingway
+msgid "We couldn't find any posts that matched your query. Please try again."
+msgstr "Vi kunde inte hitta några inlägg som matchade din sökning. Vänligen försök igen."
+
+#: index.php:21
+#, php-format
+#@ hemingway
+msgid "Page %s of %s"
+msgstr "Sida %s av %s"
+
+#: index.php:47
+#: search.php:46
+#@ hemingway
+msgid "&laquo; Older<span> posts</span>"
+msgstr "&laquo; Äldre<span> inlägg</span>"
+
+#: index.php:49
+#: search.php:48
+#@ hemingway
+msgid "Newer<span> posts</span> &raquo;"
+msgstr "Nyare<span> inlägg</span> &raquo;"
+
+#: search.php:13
+#: search.php:64
+#@ hemingway
+msgid "Search results:"
+msgstr "Sökresultat:"
+
+#: search.php:87
+#@ hemingway
+msgid "No results. Try again, would you kindly?"
+msgstr "Inga resultat. Försök igen, är du snäll?"
+
+#: searchform.php:3
+#@ hemingway
+msgid "Search"
+msgstr "Sök"
+
+#: single.php:156
+#@ hemingway
+msgid "Previous post:"
+msgstr "Föregående inlägg:"
+
+#: single.php:158
+#@ hemingway
+msgid "Previous post"
+msgstr "Föregående inlägg"
+
+#: single.php:169
+#@ hemingway
+msgid "Next post:"
+msgstr "Nästa inlägg:"
+
+#: single.php:171
+#@ hemingway
+msgid "Next post"
+msgstr "Nästa inlägg"
+
+#: template-archives.php:33
+#@ hemingway
+msgid "Last 30 Posts"
+msgstr "Senaste 30 inläggen"
+
+#: template-archives.php:47
+#@ hemingway
+msgid "Archives by Categories"
+msgstr "Kategoriarkiv"
+
+#: template-archives.php:53
+#@ hemingway
+msgid "Archives by Tags"
+msgstr "Etikettarkiv"
+
+#: template-archives.php:60
+#, php-format
+#@ hemingway
+msgid "View all posts in %s"
+msgstr "Visa alla inlägg i %s"
+
+#: template-archives.php:69
+#@ hemingway
+msgid "Contributors"
+msgstr "Författare"
+
+#: template-archives.php:75
+#@ hemingway
+msgid "Archives by Year"
+msgstr "År"
+
+#: template-archives.php:81
+#@ hemingway
+msgid "Archives by Month"
+msgstr "Månader"
+
+#: template-archives.php:87
+#@ hemingway
+msgid "Archives by Day"
+msgstr "Datum"
+
+#: widgets/dribbble-widget.php:10
+#@ hemingway
+msgid "Displays your latest Dribbble photos."
+msgstr "Visar dina senaste Dribbble-bilder."
+
+#: widgets/dribbble-widget.php:52
+#, php-format
+#@ hemingway
+msgid "Follow %s on Dribbble &raquo;"
+msgstr "Följ %s på Dribbble &raquo;"
+
+#: widgets/dribbble-widget.php:79
+#: widgets/flickr-widget.php:54
+#: widgets/video-widget.php:82
+#@ hemingway
+msgid "Title"
+msgstr "Titel"
+
+#: widgets/dribbble-widget.php:85
+#@ hemingway
+msgid "Dribbble username"
+msgstr "Dribbble-användarnamn"
+
+#: widgets/dribbble-widget.php:91
+#: widgets/flickr-widget.php:66
+#@ hemingway
+msgid "Number of images to display:"
+msgstr "Antal bilder att visa:"
+
+#: widgets/flickr-widget.php:8
+#@ hemingway
+msgid "Displays your latest Flickr photos."
+msgstr "Visar dina senaste Flickr-bilder."
+
+#: widgets/flickr-widget.php:32
+#@ hemingway
+msgid "More on Flickr &raquo;"
+msgstr "Mer på Flickr &raquo;"
+
+#: widgets/flickr-widget.php:60
+#@ hemingway
+msgid "Flickr ID (use <a target=\"_blank\" href=\"http://www.idgettr.com\">idGettr</a>):"
+msgstr "Flickr-ID (använd <a target=\"_blank\" href=\"http://www.idgettr.com\">idGettr</a>):"
+
+#: widgets/video-widget.php:8
+#@ hemingway
+msgid "Displays a video of your choosing."
+msgstr "Låter dig visa ett videoklipp."
+
+#: widgets/video-widget.php:88
+#@ hemingway
+msgid "Video URL"
+msgstr "Videoklippets adress"
+
