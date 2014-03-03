@@ -1,134 +1,40 @@
-<!DOCTYPE html>
+<?php
+/**
+ * The Header for our theme.
+ *
+ * Displays all of the <head> section and everything up till <div id="content">
+ *
+ * @package Hemingway Rewritten
+ */
+?><!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><?php wp_title( '|', true, 'right' ); ?></title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<html <?php language_attributes(); ?>
+<?php wp_head(); ?>
+</head>
 
-	<head>
+<body <?php body_class(); ?>>
+<div id="page" class="hfeed site">
 
-		<meta charset="<?php bloginfo( 'charset' ); ?>">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-header-image">
+			<div class="site-branding-wrapper">
+				<div class="site-branding">
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				</div>
+			</div>
+		</div>
+	</header><!-- #masthead -->
+	<nav id="site-navigation" class="main-navigation clear" role="navigation">
+		<h1 class="menu-toggle"><?php _e( 'Menu', 'hemingway-rewritten' ); ?></h1>
+		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'hemingway-rewritten' ); ?></a>
 
-		<title><?php wp_title('|', true, 'right'); ?></title>
-
-		<?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
-
-		<?php wp_head(); ?>
-
-	</head>
-
-	<body <?php body_class(); ?>>
-
-		<div class="big-wrapper">
-
-			<div class="header-cover section bg-dark-light no-padding">
-
-				<div class="header section" style="background-image: url(<?php if (get_header_image() != '') : ?><?php header_image(); ?><?php else : ?><?php echo get_template_directory_uri() . '/images/header.jpg'; ?><?php endif; ?>);">
-
-					<div class="header-inner section-inner">
-
-						<div class="blog-info">
-
-							<h1 class="blog-title">
-								<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'title' ) ); ?></a>
-							</h1>
-
-							<?php if ( get_bloginfo( 'description' ) ) { ?>
-
-								<h3 class="blog-description"><?php echo esc_attr( get_bloginfo( 'description' ) ); ?></h3>
-
-							<?php } ?>
-
-						</div> <!-- /blog-info -->
-
-					</div> <!-- /header-inner -->
-
-				</div> <!-- /header -->
-
-			</div> <!-- /bg-dark -->
-
-			<div class="navigation section no-padding bg-dark">
-
-				<div class="navigation-inner section-inner">
-
-					<div class="toggle-container hidden">
-
-						<div class="nav-toggle toggle">
-
-							<div class="bar"></div>
-							<div class="bar"></div>
-							<div class="bar"></div>
-
-							<div class="clear"></div>
-
-						</div>
-
-						<div class="search-toggle toggle">
-
-							<div class="metal"></div>
-							<div class="glass"></div>
-							<div class="handle"></div>
-
-						</div>
-
-						<div class="clear"></div>
-
-					</div> <!-- /toggle-container -->
-
-					<div class="blog-search hidden">
-
-						<?php get_search_form(); ?>
-
-					</div>
-
-					<ul class="blog-menu">
-
-						<?php if ( has_nav_menu( 'primary' ) ) {
-
-							wp_nav_menu( array(
-
-								'container' => '',
-								'items_wrap' => '%3$s',
-								'theme_location' => 'primary',
-								'walker' => new hemingway_nav_walker
-
-							) ); } else {
-
-							wp_list_pages( array(
-
-								'container' => '',
-								'title_li' => ''
-
-							));
-
-						} ?>
-
-					 </ul>
-
-					 <div class="clear"></div>
-
-					 <ul class="mobile-menu">
-
-						<?php if ( has_nav_menu( 'primary' ) ) {
-
-							wp_nav_menu( array(
-
-								'container' => '',
-								'items_wrap' => '%3$s',
-								'theme_location' => 'primary',
-								'walker' => new hemingway_nav_walker
-
-							) ); } else {
-
-							wp_list_pages( array(
-
-								'container' => '',
-								'title_li' => ''
-
-							));
-
-						} ?>
-
-					 </ul>
-
-				</div> <!-- /navigation-inner -->
-
-			</div> <!-- /navigation -->
+		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+	</nav><!-- #site-navigation -->
+	<div id="content" class="site-content">

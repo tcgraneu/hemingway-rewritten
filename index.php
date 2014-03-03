@@ -1,65 +1,46 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The main template file.
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Hemingway Rewritten
+ */
 
-<div class="wrapper section-inner">
+get_header(); ?>
 
-	<div class="content left">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-		<?php if (have_posts()) : ?>
+		<?php if ( have_posts() ) : ?>
 
-			<div class="posts">
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-				$total_post_count = wp_count_posts();
-				$published_post_count = $total_post_count->publish;
-				$total_pages = ceil( $published_post_count / $posts_per_page );
+					/* Include the Post-Format-specific template for the content.
+					 * If you want to override this in a child theme, then include a file
+					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+					 */
+					get_template_part( 'content', get_post_format() );
+				?>
 
-				if ( "1" < $paged ) : ?>
+			<?php endwhile; ?>
 
-					<div class="page-title">
+			<?php hemingway_rewritten_paging_nav(); ?>
 
-						<h4><?php printf( __('Page %s of %s', 'hemingway'), $paged, $wp_query->max_num_pages ); ?></h4>
+		<?php else : ?>
 
-					</div>
-
-					<div class="clear"></div>
-
-				<?php endif; ?>
-
-		    	<?php while (have_posts()) : the_post(); ?>
-
-					<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-			    		<?php get_template_part( 'content', get_post_format() ); ?>
-
-		    		</div> <!-- /post -->
-
-		        <?php endwhile; ?>
-
-			<?php endif; ?>
-
-		</div> <!-- /posts -->
-
-		<?php if ( $wp_query->max_num_pages > 1 ) : ?>
-
-			<div class="post-nav archive-nav">
-
-				<?php echo get_next_posts_link( __('&laquo; Older<span> posts</span>', 'hemingway')); ?>
-
-				<?php echo get_previous_posts_link( __('Newer<span> posts</span> &raquo;', 'hemingway')); ?>
-
-				<div class="clear"></div>
-
-			</div> <!-- /post-nav archive-nav -->
+			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
 
-	</div> <!-- /content.left -->
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
-	<?php get_sidebar(); ?>
-
-	<div class="clear"></div>
-
-</div> <!-- /wrapper -->
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

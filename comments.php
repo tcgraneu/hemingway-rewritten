@@ -1,91 +1,69 @@
-<?php if ( post_password_required() )
+<?php
+/**
+ * The template for displaying Comments.
+ *
+ * The area of the page that contains both current comments
+ * and the comment form.
+ *
+ * @package Hemingway Rewritten
+ */
+
+/*
+ * If the current post is protected by a password and
+ * the visitor has not yet entered the password we will
+ * return early without loading the comments.
+ */
+if ( post_password_required() ) {
 	return;
+}
 ?>
 
+<div id="comments" class="comments-area">
+
+	<?php // You can start editing here -- including this comment! ?>
+
 	<?php if ( have_comments() ) : ?>
+		<h2 class="comments-title">
+			<?php
+				printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'hemingway-rewritten' ),
+					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
+			?>
+		</h2>
 
-		<div class="comments">
+		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
+		<nav id="comment-nav-above" class="comment-navigation" role="navigation">
+			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'hemingway-rewritten' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'hemingway-rewritten' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'hemingway-rewritten' ) ); ?></div>
+		</nav><!-- #comment-nav-above -->
+		<?php endif; // check for comment navigation ?>
 
-			<h2 class="comments-title">
+		<ol class="comment-list">
+			<?php
+				wp_list_comments( array(
+					'style'      => 'ol',
+					'short_ping' => true,
+				) );
+			?>
+		</ol><!-- .comment-list -->
 
-				<?php echo count($wp_query->comments_by_type['comment']) . ' ';
-				echo _n( 'Comment' , 'Comments' , count($wp_query->comments_by_type['comment']), 'hemingway' ); ?>
+		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
+		<nav id="comment-nav-below" class="comment-navigation" role="navigation">
+			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'hemingway-rewritten' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'hemingway-rewritten' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'hemingway-rewritten' ) ); ?></div>
+		</nav><!-- #comment-nav-below -->
+		<?php endif; // check for comment navigation ?>
 
-			</h2>
+	<?php endif; // have_comments() ?>
 
-			<ol class="commentlist">
-			    <?php wp_list_comments( array( 'type' => 'comment', 'callback' => 'hemingway_comment' ) ); ?>
-			</ol>
-
-			<?php if (!empty($comments_by_type['pings'])) : ?>
-
-				<div class="pingbacks">
-
-					<div class="pingbacks-inner">
-
-						<h3 class="pingbacks-title">
-
-							<?php echo count($wp_query->comments_by_type['pings']) . ' ';
-							echo _n( 'Pingback', 'Pingbacks', count($wp_query->comments_by_type['pings']), 'hemingway' ); ?>
-
-						</h3>
-
-						<ol class="pingbacklist">
-						    <?php wp_list_comments( array( 'type' => 'pings', 'callback' => 'hemingway_comment' ) ); ?>
-						</ol>
-
-					</div>
-
-				</div>
-
-			<?php endif; ?>
-
-			<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
-
-				<div class="comment-nav-below" role="navigation">
-
-					<div class="post-nav-older"><?php previous_comments_link( __( '&laquo; Older<span> Comments</span>', 'hemingway' ) ); ?></div>
-
-					<div class="post-nav-newer"><?php next_comments_link( __( 'Newer<span> Comments</span> &raquo;', 'hemingway' ) ); ?></div>
-
-					<div class="clear"></div>
-
-				</div> <!-- /comment-nav-below -->
-
-			<?php endif; ?>
-
-		</div><!-- /comments -->
-
-	<?php endif; ?>
-
-	<?php if ( ! comments_open() && !is_page() ) : ?>
-
-		<p class="nocomments"><?php _e( 'Comments are closed.', 'hemingway' ); ?></p>
-
-	<?php endif; ?>
-
-	<?php $comments_args = array(
-
-		'comment_notes_before' =>
-			'<p class="comment-notes">' . __( 'Your email address will not be published.', 'hemingway' ) . '</p>',
-
-		'comment_field' =>
-			'<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="6" required>' . '</textarea></p>',
-
-		'fields' => apply_filters( 'comment_form_default_fields', array(
-
-			'author' =>
-				'<p class="comment-form-author">' .
-				'<input id="author" name="author" type="text" placeholder="' . __('Name','hemingway') . '" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" />' . '<label for="author">Author</label> ' . ( $req ? '<span class="required">*</span>' : '' ) . '</p>',
-
-			'email' =>
-				'<p class="comment-form-email">' . '<input id="email" name="email" type="text" placeholder="' . __('Email','hemingway') . '" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" /><label for="email">Email</label> ' . ( $req ? '<span class="required">*</span>' : '' ) . '</p>',
-
-			'url' =>
-			'<p class="comment-form-url">' . '<input id="url" name="url" type="text" placeholder="' . __('Website','hemingway') . '" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /><label for="url">Website</label></p>')
-		),
-	);
-
-	comment_form($comments_args);
-
+	<?php
+		// If comments are closed and there are comments, let's leave a little note, shall we?
+		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
+		<p class="no-comments"><?php _e( 'Comments are closed.', 'hemingway-rewritten' ); ?></p>
+	<?php endif; ?>
+
+	<?php comment_form(); ?>
+
+</div><!-- #comments -->

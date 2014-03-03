@@ -1,91 +1,105 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying Archive pages.
+ *
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Hemingway Rewritten
+ */
 
-<div class="wrapper section-inner">
+get_header(); ?>
 
-		<div class="content left">
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-			<div class="posts">
+		<?php if ( have_posts() ) : ?>
 
-				<div class="page-title">
-
-					<h4><?php if ( is_day() ) : ?>
-						<?php printf( __( 'Date: %s', 'hemingway' ), '' . get_the_date() . '' ); ?>
-					<?php elseif ( is_month() ) : ?>
-						<?php printf( __( 'Month: %s', 'hemingway' ), '' . get_the_date( _x( 'F Y', 'F = Month, Y = Year', 'hemingway' ) ) ); ?>
-					<?php elseif ( is_year() ) : ?>
-						<?php printf( __( 'Year: %s', 'hemingway' ), '' . get_the_date( _x( 'Y', 'Y = Year', 'hemingway' ) ) ); ?>
-					<?php elseif ( is_category() ) : ?>
-						<?php printf( __( 'Category: %s', 'hemingway' ), '' . single_cat_title( '', false ) . '' ); ?>
-					<?php elseif ( is_tag() ) : ?>
-						<?php printf( __( 'Tag: %s', 'hemingway' ), '' . single_tag_title( '', false ) . '' ); ?>
-					<?php elseif ( is_author() ) : ?>
-						<?php $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author)); ?>
-						<?php printf( __( 'Author: %s', 'hemingway' ), $curauth->display_name ); ?>
-					<?php else : ?>
-						<?php _e( 'Archive', 'hemingway' ); ?>
-					<?php endif; ?>
-
+			<header class="page-header">
+				<h1 class="page-title">
 					<?php
-					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+						if ( is_category() ) :
+							single_cat_title();
 
-					if ( "1" < $wp_query->max_num_pages ) : ?>
+						elseif ( is_tag() ) :
+							single_tag_title();
 
-						<span><?php printf( __('(page %s of %s)', 'hemingway'), $paged, $wp_query->max_num_pages ); ?></span>
+						elseif ( is_author() ) :
+							printf( __( 'Author: %s', 'hemingway-rewritten' ), '<span class="vcard">' . get_the_author() . '</span>' );
 
-					<?php endif; ?></h4>
+						elseif ( is_day() ) :
+							printf( __( 'Day: %s', 'hemingway-rewritten' ), '<span>' . get_the_date() . '</span>' );
 
-					<?php
-						$tag_description = tag_description();
-						if ( ! empty( $tag_description ) )
-							echo apply_filters( 'tag_archive_meta', '<div class="tag-archive-meta">' . $tag_description . '</div>' );
+						elseif ( is_month() ) :
+							printf( __( 'Month: %s', 'hemingway-rewritten' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'hemingway-rewritten' ) ) . '</span>' );
+
+						elseif ( is_year() ) :
+							printf( __( 'Year: %s', 'hemingway-rewritten' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'hemingway-rewritten' ) ) . '</span>' );
+
+						elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
+							_e( 'Asides', 'hemingway-rewritten' );
+
+						elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
+							_e( 'Galleries', 'hemingway-rewritten');
+
+						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
+							_e( 'Images', 'hemingway-rewritten');
+
+						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
+							_e( 'Videos', 'hemingway-rewritten' );
+
+						elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
+							_e( 'Quotes', 'hemingway-rewritten' );
+
+						elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
+							_e( 'Links', 'hemingway-rewritten' );
+
+						elseif ( is_tax( 'post_format', 'post-format-status' ) ) :
+							_e( 'Statuses', 'hemingway-rewritten' );
+
+						elseif ( is_tax( 'post_format', 'post-format-audio' ) ) :
+							_e( 'Audios', 'hemingway-rewritten' );
+
+						elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
+							_e( 'Chats', 'hemingway-rewritten' );
+
+						else :
+							_e( 'Archives', 'hemingway-rewritten' );
+
+						endif;
 					?>
+				</h1>
+				<?php
+					// Show an optional term description.
+					$term_description = term_description();
+					if ( ! empty( $term_description ) ) :
+						printf( '<div class="taxonomy-description">%s</div>', $term_description );
+					endif;
+				?>
+			</header><!-- .page-header -->
 
-				</div> <!-- /page-title -->
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-				<div class="clear"></div>
+				<?php
+					/* Include the Post-Format-specific template for the content.
+					 * If you want to override this in a child theme, then include a file
+					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+					 */
+					get_template_part( 'content', get_post_format() );
+				?>
 
-				<?php if ( have_posts() ) : ?>
+			<?php endwhile; ?>
 
-					<?php rewind_posts(); ?>
+			<?php hemingway_rewritten_paging_nav(); ?>
 
-					<?php while ( have_posts() ) : the_post(); ?>
+		<?php else : ?>
 
-						<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-							<?php get_template_part( 'content', get_post_format() ); ?>
-
-							<div class="clear"></div>
-
-						</div> <!-- /post -->
-
-					<?php endwhile; ?>
-
-			</div> <!-- /posts -->
-
-			<?php if ( $wp_query->max_num_pages > 1 ) : ?>
-
-				<div class="post-nav archive-nav">
-
-					<?php echo get_next_posts_link( __('Older<span> posts</span>', 'hemingway')); ?>
-
-					<?php echo get_previous_posts_link( __('Newer<span> posts</span>', 'hemingway')); ?>
-
-					<div class="clear"></div>
-
-				</div> <!-- /post-nav archive-nav -->
-
-				<div class="clear"></div>
-
-			<?php endif; ?>
+			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
 
-	</div> <!-- /content -->
+		</main><!-- #main -->
+	</section><!-- #primary -->
 
-	<?php get_sidebar(); ?>
-
-	<div class="clear"></div>
-
-</div> <!-- /wrapper -->
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

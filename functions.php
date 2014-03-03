@@ -1,342 +1,207 @@
 <?php
+/**
+ * Hemingway Rewritten functions and definitions
+ *
+ * @package Hemingway Rewritten
+ */
 
-// Theme setup
-add_action( 'after_setup_theme', 'hemingway_setup' );
+/**
+ * Set the content width based on the theme's design and stylesheet.
+ */
+if ( ! isset( $content_width ) ) {
+	$content_width = 676; /* pixels */
+}
 
-function hemingway_setup() {
+if ( ! function_exists( 'hemingway_rewritten_setup' ) ) :
+/**
+ * Sets up theme defaults and registers support for various WordPress features.
+ *
+ * Note that this function is hooked into the after_setup_theme hook, which
+ * runs before the init hook. The init hook is too late for some features, such
+ * as indicating support for post thumbnails.
+ */
+function hemingway_rewritten_setup() {
 
-	// Automatic feed
+	/*
+	 * Make theme available for translation.
+	 * Translations can be filed in the /languages/ directory.
+	 * If you're building a theme based on Hemingway Rewritten, use a find and replace
+	 * to change 'hemingway-rewritten' to the name of your theme in all the template files
+	 */
+	load_theme_textdomain( 'hemingway-rewritten', get_template_directory() . '/languages' );
+
+	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
-	// Custom background
-	add_theme_support( 'custom-background' );
+	/*
+	 * Enable support for Post Thumbnails on posts and pages.
+	 *
+	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+	 */
+	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'hemingway-rewritten-header', '1280', '416', true );
 
-	// Post thumbnails
-	add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
-	add_image_size( 'post-image', 676, 9999 );
+	// This theme uses wp_nav_menu() in one location.
+	register_nav_menus( array(
+		'primary' => __( 'Primary Menu', 'hemingway-rewritten' ),
+	) );
 
-	// Post formats
-	add_theme_support( 'post-formats', array( 'video', 'aside', 'quote' ) );
+	// Enable support for Post Formats.
+	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
 
-	// Custom header
-	$args = array(
-		'width'         => 1280,
-		'height'        => 416,
-		'default-image' => get_template_directory_uri() . '/images/header.jpg',
-		'uploads'       => true
-	);
-	add_theme_support( 'custom-header', $args );
+	// Setup the WordPress core custom background feature.
+	add_theme_support( 'custom-background', apply_filters( 'hemingway_rewritten_custom_background_args', array(
+		'default-color' => 'ffffff',
+	) ) );
 
-	// Add nav menu
-	register_nav_menu( 'primary', 'Primary Menu' );
-
-	// Make the theme translation ready
-	load_theme_textdomain('hemingway', get_template_directory() . '/languages');
-
-	$locale = get_locale();
-	$locale_file = get_template_directory() . "/languages/$locale.php";
-	if ( is_readable($locale_file) )
-	  require_once($locale_file);
-
+	// Enable support for HTML5 markup.
+	add_theme_support( 'html5', array( 'comment-list', 'search-form', 'comment-form', ) );
 }
+endif; // hemingway_rewritten_setup
+add_action( 'after_setup_theme', 'hemingway_rewritten_setup' );
 
-// Enqueue Javascript files
-function hemingway_load_javascript_files() {
-
-	if ( !is_admin() )
-		wp_register_script( 'hemingway_global', get_template_directory_uri().'/js/global.js', array('jquery'), '', true );
-
-		wp_enqueue_script( 'jquery' );
-		wp_enqueue_script( 'hemingway_global' );
+/**
+ * Register widgetized area and update sidebar with default widgets.
+ */
+function hemingway_rewritten_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Sidebar', 'hemingway-rewritten' ),
+		'id'            => 'sidebar-1',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer 1', 'hemingway-rewritten' ),
+		'id'            => 'sidebar-2',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer 2', 'hemingway-rewritten' ),
+		'id'            => 'sidebar-3',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer 3', 'hemingway-rewritten' ),
+		'id'            => 'sidebar-4',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
 }
+add_action( 'widgets_init', 'hemingway_rewritten_widgets_init' );
 
-add_action( 'wp_enqueue_scripts', 'hemingway_load_javascript_files' );
+/**
+ * Enqueue scripts and styles.
+ */
+function hemingway_rewritten_scripts() {
+	wp_enqueue_style( 'hemingway-rewritten-raleway' );
+	wp_enqueue_style( 'hemingway-rewritten-latos' );
+	wp_enqueue_style( 'hemingway-rewritten-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css' );
 
+	wp_enqueue_script( 'hemingway-rewritten-script', get_template_directory_uri() . '/js/global.js', array( 'jquery' ), '20140228', true );
 
-// Enqueue styles
-function hemingway_load_style() {
-	if ( !is_admin() )
-	    wp_register_style('hemingway_googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Raleway:700,400' );
-		wp_register_style('hemingway_style', get_stylesheet_uri() );
+	wp_enqueue_script( 'hemingway-rewritten-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
-	    wp_enqueue_style( 'hemingway_googleFonts' );
-	    wp_enqueue_style( 'hemingway_style' );
-}
+	wp_enqueue_script( 'hemingway-rewritten-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
-add_action('wp_print_styles', 'hemingway_load_style');
-
-
-// Add footer widget areas
-add_action( 'widgets_init', 'hemingway_sidebar_reg' );
-
-function hemingway_sidebar_reg() {
-	register_sidebar(array(
-	  'name' => __( 'Footer A', 'hemingway' ),
-	  'id' => 'footer-a',
-	  'description' => __( 'Widgets in this area will be shown in the left column in the footer.', 'hemingway' ),
-	  'before_title' => '<h3 class="widget-title">',
-	  'after_title' => '</h3>',
-	  'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
-	  'after_widget' => '</div><div class="clear"></div></div>'
-	));
-	register_sidebar(array(
-	  'name' => __( 'Footer B', 'hemingway' ),
-	  'id' => 'footer-b',
-	  'description' => __( 'Widgets in this area will be shown in the middle column in the footer.', 'hemingway' ),
-	  'before_title' => '<h3 class="widget-title">',
-	  'after_title' => '</h3>',
-	  'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
-	  'after_widget' => '</div><div class="clear"></div></div>'
-	));
-	register_sidebar(array(
-	  'name' => __( 'Footer C', 'hemingway' ),
-	  'id' => 'footer-c',
-	  'description' => __( 'Widgets in this area will be shown in the right column in the footer.', 'hemingway' ),
-	  'before_title' => '<h3 class="widget-title">',
-	  'after_title' => '</h3>',
-	  'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
-	  'after_widget' => '</div><div class="clear"></div></div>'
-	));
-	register_sidebar(array(
-	  'name' => __( 'Sidebar', 'hemingway' ),
-	  'id' => 'sidebar',
-	  'description' => __( 'Widgets in this area will be shown in the sidebar.', 'hemingway' ),
-	  'before_title' => '<h3 class="widget-title">',
-	  'after_title' => '</h3>',
-	  'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
-	  'after_widget' => '</div><div class="clear"></div></div>'
-	));
-}
-
-// Add theme widgets
-require_once (get_template_directory() . "/widgets/dribbble-widget.php");
-require_once (get_template_directory() . "/widgets/flickr-widget.php");
-require_once (get_template_directory() . "/widgets/video-widget.php");
-
-
-// Set content-width
-if ( ! isset( $content_width ) ) $content_width = 676;
-
-
-// Custom title function
-function hemingway_wp_title( $title, $sep ) {
-	global $paged, $page;
-
-	if ( is_feed() )
-		return $title;
-
-	// Add the site name.
-	$title .= get_bloginfo( 'name' );
-
-	// Add the site description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		$title = "$title $sep $site_description";
-
-	// Add a page number if necessary.
-	if ( $paged >= 2 || $page >= 2 )
-		$title = "$title $sep " . sprintf( __( 'Page %s', 'hemingway' ), max( $paged, $page ) );
-
-	return $title;
-}
-add_filter( 'wp_title', 'hemingway_wp_title', 10, 2 );
-
-
-// Add classes to next_posts_link and previous_posts_link
-add_filter('next_posts_link_attributes', 'hemingway_posts_link_attributes_1');
-add_filter('previous_posts_link_attributes', 'hemingway_posts_link_attributes_2');
-
-function hemingway_posts_link_attributes_1() {
-    return 'class="post-nav-older"';
-}
-function hemingway_posts_link_attributes_2() {
-    return 'class="post-nav-newer"';
-}
-
-
-// Menu walker adding "has-children" class to menu li's with children menu items
-class hemingway_nav_walker extends Walker_Nav_Menu {
-    function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output ) {
-        $id_field = $this->db_fields['id'];
-        if ( !empty( $children_elements[ $element->$id_field ] ) ) {
-            $element->classes[] = 'has-children';
-        }
-        Walker_Nav_Menu::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
-    }
-}
-
-
-// Add class to body if the post/page has a featured image
-add_action('body_class', 'hemingway_if_featured_image_class' );
-
-function hemingway_if_featured_image_class($classes) {
-	if ( has_post_thumbnail() ) {
-		array_push($classes, 'has-featured-image');
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
 	}
-	return $classes;
 }
+add_action( 'wp_enqueue_scripts', 'hemingway_rewritten_scripts' );
 
+/**
+ * Register Google Fonts
+ */
+function hemingway_rewritten_google_fonts() {
 
-// Custom more-link text
-add_filter( 'the_content_more_link', 'hemingway_custom_more_link', 10, 2 );
+	$protocol = is_ssl() ? 'https' : 'http';
 
-function hemingway_custom_more_link( $more_link, $more_link_text ) {
-	return str_replace( $more_link_text, __('Continue reading', 'hemingway'), $more_link );
+	/*	translators: If there are characters in your language that are not supported
+		by Raleway, translate this to 'off'. Do not translate into your own language. */
+
+	if ( 'off' !== _x( 'on', 'Raleway font: on or off', 'hemingway-rewritten' ) ) {
+
+		wp_register_style( 'hemingway-rewritten-raleway', "$protocol://fonts.googleapis.com/css?family=Raleway:400,300,700" );
+
+	}
+
+	/*	translators: If there are characters in your language that are not supported
+		by Latos, translate this to 'off'. Do not translate into your own language. */
+
+	if ( 'off' !== _x( 'on', 'Latos font: on or off', 'hemingway-rewritten' ) ) {
+
+		wp_register_style( 'hemingway-rewritten-latos', "$protocol://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" );
+
+	}
+
 }
+add_action( 'init', 'hemingway_rewritten_google_fonts' );
 
+/**
+ * Enqueue Google Fonts for custom headers
+ */
+function hemingway_rewritten_admin_scripts( $hook_suffix ) {
 
-// Remove inline styling of attachment
-add_shortcode('wp_caption', 'hemingway_fixed_img_caption_shortcode');
-add_shortcode('caption', 'hemingway_fixed_img_caption_shortcode');
+	if ( 'appearance_page_custom-header' != $hook_suffix )
+		return;
 
-function hemingway_fixed_img_caption_shortcode($attr, $content = null) {
-	if ( ! isset( $attr['caption'] ) ) {
-		if ( preg_match( '#((?:<a [^>]+>\s*)?<img [^>]+>(?:\s*</a>)?)(.*)#is', $content, $matches ) ) {
-			$content = $matches[1];
-			$attr['caption'] = trim( $matches[2] );
+	wp_enqueue_style( 'hemingway-rewritten-raleway' );
+	wp_enqueue_style( 'hemingway-rewritten-latos' );
+
+}
+add_action( 'admin_enqueue_scripts', 'hemingway_rewritten_admin_scripts' );
+
+/**
+ * If a page or post has a featured image set, use that instead of the custom header
+ */
+function hemingway_rewritten_featured_image_headers() {
+	if ( '' == get_the_post_thumbnail() || is_archive() || is_search() )
+		return;
+
+	$image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'hemingway-rewritten-header' );
+	?>
+	<style type="text/css" id="featured-header-image">
+		.site-header-image {
+			background-image: url( <?php echo $image[0]; ?> );
 		}
-	}
-
-	$output = apply_filters('img_caption_shortcode', '', $attr, $content);
-
-	if ( $output != '' ) return $output;
-	extract(shortcode_atts(array(
-		'id' => '',
-		'align' => 'alignnone',
-		'width' => '',
-		'caption' => ''
-	), $attr));
-
-	if ( 1 > (int) $width || empty($caption) )
-	return $content;
-	if ( $id ) $id = 'id="' . esc_attr($id) . '" ';
-	return '<div ' . $id . 'class="wp-caption ' . esc_attr($align) . '" >'
-	. do_shortcode( $content ) . '<p class="wp-caption-text">' . $caption . '</p></div>';
-}
-
-// Style the admin area
-function hemingway_custom_colors() {
-   echo '<style type="text/css">
-
-#postimagediv #set-post-thumbnail img {
-	max-width: 100%;
-	height: auto;
-}
-
-         </style>';
-}
-
-add_action('admin_head', 'hemingway_custom_colors');
-
-
-// hemingway comment function
-if ( ! function_exists( 'hemingway_comment' ) ) :
-function hemingway_comment( $comment, $args, $depth ) {
-	$GLOBALS['comment'] = $comment;
-	switch ( $comment->comment_type ) :
-		case 'pingback' :
-		case 'trackback' :
-	?>
-
-	<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
-
-		<?php __( 'Pingback:', 'hemingway' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'hemingway' ), '<span class="edit-link">', '</span>' ); ?>
-
-	</li>
-	<?php
-			break;
-		default :
-		global $post;
-	?>
-	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-
-		<div id="comment-<?php comment_ID(); ?>" class="comment">
-
-			<div class="comment-meta comment-author vcard">
-
-				<?php echo get_avatar( $comment, 120 ); ?>
-
-				<div class="comment-meta-content">
-
-					<?php printf( '<cite class="fn">%1$s %2$s</cite>',
-						get_comment_author_link(),
-						( $comment->user_id === $post->post_author ) ? '<span class="post-author"> ' . __( '(Post author)', 'hemingway' ) . '</span>' : ''
-					); ?>
-
-					<p><a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ) ?>"><?php echo get_comment_date() . ' at ' . get_comment_time() ?></a></p>
-
-				</div> <!-- /comment-meta-content -->
-
-			</div> <!-- /comment-meta -->
-
-			<div class="comment-content post-content">
-
-				<?php if ( '0' == $comment->comment_approved ) : ?>
-
-					<p class="comment-awaiting-moderation"><?php _e( 'Awaiting moderation', 'hemingway' ); ?></p>
-
-				<?php endif; ?>
-
-				<?php comment_text(); ?>
-
-				<div class="comment-actions">
-
-					<?php edit_comment_link( __( 'Edit', 'hemingway' ), '', '' ); ?>
-
-					<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'hemingway' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-
-					<div class="clear"></div>
-
-				</div> <!-- /comment-actions -->
-
-			</div><!-- /comment-content -->
-
-		</div><!-- /comment-## -->
-	<?php
-		break;
-	endswitch;
-}
-endif;
-
-// Add and save meta boxes for post links
-add_action( 'add_meta_boxes', 'cd_meta_box_add' );
-function cd_meta_box_add() {
-	add_meta_box( 'postvideo-box', __('Video URL (video post format)', 'hemingway'), 'cd_meta_box_cc', 'post', 'side', 'high' );
-}
-
-function cd_meta_box_cc( $post ) {
-	$values = get_post_custom( $post->ID );
-	$text_videourl = isset( $values['videourl'] ) ? esc_attr( $values['videourl'][0] ) : '';
-	wp_nonce_field( 'my_meta_box_nonce', 'meta_box_nonce' );
-	?>
-		<p>
-			<input type="text" name="videourl" id="videourl" value="<?php echo $text_videourl; ?>" />
-		</p>
+	</style>
 	<?php
 }
+//Late priority to override custom headers if set
+add_action( 'wp_head', 'hemingway_rewritten_featured_image_headers', 999 );
 
-add_action( 'save_post', 'cd_meta_box_save' );
-function cd_meta_box_save( $post_id ) {
-	// Bail if we're doing an auto save
-	if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+/**
+ * Implement the Custom Header feature.
+ */
+require get_template_directory() . '/inc/custom-header.php';
 
-	// if our nonce isn't there, or we can't verify it, bail
-	if( !isset( $_POST['meta_box_nonce'] ) || !wp_verify_nonce( $_POST['meta_box_nonce'], 'my_meta_box_nonce' ) ) return;
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/template-tags.php';
 
-	// if our current user can't edit this post, bail
-	if( !current_user_can( 'edit_post' ) ) return;
+/**
+ * Custom functions that act independently of the theme templates.
+ */
+require get_template_directory() . '/inc/extras.php';
 
-	// now we can actually save the data
-	$allowed = array(
-		'a' => array( // on allow a tags
-			'href' => array() // and those anchords can only have href attribute
-		)
-	);
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
 
-	// Probably a good idea to make sure the data is set
-	if( isset( $_POST['videourl'] ) )
-		update_post_meta( $post_id, 'videourl', wp_kses( $_POST['videourl'], $allowed ) );
-
-}
-
-?>
+/**
+ * Load Jetpack compatibility file.
+ */
+require get_template_directory() . '/inc/jetpack.php';

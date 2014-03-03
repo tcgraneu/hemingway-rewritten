@@ -1,111 +1,38 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying Search Results pages.
+ *
+ * @package Hemingway Rewritten
+ */
 
-	<div class="wrapper section-inner">
+get_header(); ?>
 
-		<div class="content left">
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
-			<div class="page-title">
+			<header class="page-header">
+				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'hemingway-rewritten' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+			</header><!-- .page-header -->
 
-				<h4>
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php _e( 'Search results:', 'hemingway'); echo ' "' . get_search_query() . '"'; ?>
+				<?php get_template_part( 'content', 'search' ); ?>
 
-					<?php
-					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+			<?php endwhile; ?>
 
-					if ( "1" < $wp_query->max_num_pages ) : ?>
-
-						<span><?php printf( __('(page %s of %s)', 'hemingway'), $paged, $wp_query->max_num_pages ); ?></span>
-
-					<?php endif; ?>
-
-				</h4>
-
-			</div>
-
-			<div class="posts">
-
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-						<?php get_template_part( 'content', get_post_format() ); ?>
-
-					</div> <!-- /post -->
-
-				<?php endwhile; ?>
-
-			</div> <!-- /posts -->
-
-			<?php if ( $wp_query->max_num_pages > 1 ) : ?>
-
-				<div class="post-nav archive-nav">
-
-					<?php echo get_next_posts_link( __('&laquo; Older<span> posts</span>', 'hemingway')); ?>
-
-					<?php echo get_previous_posts_link( __('Newer<span> posts</span> &raquo;', 'hemingway')); ?>
-
-					<div class="clear"></div>
-
-				</div>
-
-			<?php endif; ?>
+			<?php hemingway_rewritten_paging_nav(); ?>
 
 		<?php else : ?>
 
-			<div class="posts">
-
-				<div class="page-title">
-
-					<h4>
-
-						<?php echo _e( 'Search results:', 'hemingway') . ' "' . get_search_query() . '"'; ?>
-
-						<?php
-						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-
-						if ( "1" < $wp_query->max_num_pages ) : ?>
-
-							<span><?php printf( __('(page %s of %s)', 'hemingway'), $paged, $wp_query->max_num_pages ); ?></span>
-
-						<?php endif; ?>
-
-					</h4>
-
-				</div>
-
-				<div class="clear"></div>
-
-				<div class="post">
-
-					<div class="content-inner">
-
-						<div class="post-content">
-
-							<p><?php _e('No results. Try again, would you kindly?', 'hemingway'); ?></p>
-
-							<?php get_search_form(); ?>
-
-						</div> <!-- /post-content -->
-
-					</div> <!-- /content-inner -->
-
-					<div class="clear"></div>
-
-				</div> <!-- /post -->
-
-			</div> <!-- /posts -->
+			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
 
-		</div> <!-- /content -->
+		</main><!-- #main -->
+	</section><!-- #primary -->
 
-		<?php get_sidebar(); ?>
-
-		<div class="clear"></div>
-
-	</div> <!-- /wrapper -->
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

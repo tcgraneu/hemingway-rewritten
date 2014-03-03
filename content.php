@@ -1,71 +1,38 @@
-<div class="post-header">
+<?php
+/**
+ * @package Hemingway Rewritten
+ */
+?>
 
-	<?php if ( has_post_thumbnail() ) : ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
-		<div class="featured-media">
+		<?php if ( 'post' == get_post_type() ) : ?>
+		<div class="entry-meta">
+			<?php hemingway_rewritten_posted_on(); ?>
+			<span class="sep"> / </span>
+			<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+			<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'hemingway-rewritten' ), __( '1 Comment', 'hemingway-rewritten' ), __( '% Comments', 'hemingway-rewritten' ) ); ?></span>
+			<?php endif; ?>
+			<?php edit_post_link( __( 'Edit', 'hemingway-rewritten' ), '<span class="edit-link"><span class="sep"> / </span>', '</span>' ); ?>
+		</div><!-- .entry-meta -->
+		<?php endif; ?>
+	</header><!-- .entry-header -->
 
-			<?php if( is_sticky() ) { ?> <span class="sticky-post"><?php _e('Sticky post', 'hemingway'); ?></span> <?php } ?>
-
-			<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
-
-				<?php the_post_thumbnail('post-image'); ?>
-
-				<?php if ( !empty(get_post(get_post_thumbnail_id())->post_excerpt) ) : ?>
-
-					<div class="media-caption-container">
-
-						<p class="media-caption"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>
-
-					</div>
-
-				<?php endif; ?>
-
-			</a>
-
-		</div> <!-- /featured-media -->
-
+	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
+	<div class="entry-summary">
+		<?php the_excerpt(); ?>
+	</div><!-- .entry-summary -->
+	<?php else : ?>
+	<div class="entry-content">
+		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'hemingway-rewritten' ) ); ?>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'hemingway-rewritten' ),
+				'after'  => '</div>',
+			) );
+		?>
+	</div><!-- .entry-content -->
 	<?php endif; ?>
-
-    <h2 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
-
-    <div class="post-meta">
-
-		<span class="post-date"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_time(get_option('date_format')); ?></a></span>
-
-		<span class="date-sep"> / </span>
-
-		<span class="post-author"><?php the_author_posts_link(); ?></span>
-
-		<span class="date-sep"> / </span>
-
-		<?php comments_popup_link( '<span class="comment">' . __( '0 Comments', 'hemingway' ) . '</span>', __( '1 Comment', 'hemingway' ), __( '% Comments', 'hemingway' ) ); ?>
-
-		<?php if( is_sticky() && !has_post_thumbnail() ) { ?>
-
-			<span class="date-sep"> / </span>
-
-			<?php _e('Sticky', 'hemingway'); ?>
-
-		<?php } ?>
-
-		<?php if ( current_user_can( 'manage_options' ) ) { ?>
-
-			<span class="date-sep"> / </span>
-
-			<?php edit_post_link(__('Edit', 'hemingway')); ?>
-
-		<?php } ?>
-
-	</div>
-
-</div> <!-- /post-header -->
-
-<div class="post-content">
-
-	<?php the_content(); ?>
-
-	<?php wp_link_pages(); ?>
-
-</div> <!-- /post-content -->
-
-<div class="clear"></div>
+</article><!-- #post-## -->

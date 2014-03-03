@@ -1,41 +1,26 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying 404 pages (Not Found).
+ *
+ * @package Hemingway Rewritten
+ */
 
-<div class="wrapper section-inner">
+get_header(); ?>
 
-	<div class="content left">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-		<div class="posts">
+			<section class="error-404 not-found">
+				<header class="page-header">
+					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'hemingway-rewritten' ); ?></h1>
+				</header><!-- .page-header -->
 
-			<div class="post">
+				<div class="page-content">
+					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'hemingway-rewritten' ); ?></p>
+				</div><!-- .page-content -->
+			</section><!-- .error-404 -->
 
-				<div class="content-inner">
-
-					<div class="post-header">
-
-			        	<h2 class="post-title"><?php _e('Error 404', 'hemingway'); ?></h2>
-
-			        </div>
-
-			        <div class="post-content">
-
-			            <p><?php _e("It seems like you have tried to open a page that doesn't exist. It could have been deleted, moved, or it never existed at all. You are welcome to search for what you are looking for with the form below.", 'hemingway') ?></p>
-
-			            <?php get_search_form(); ?>
-
-			        </div> <!-- /post-content -->
-
-		        </div> <!-- /content-inner -->
-
-			</div> <!-- /post -->
-
-		</div> <!-- /posts -->
-
-	</div> <!-- /content -->
-
-	<?php get_sidebar(); ?>
-
-	<div class="clear"></div>
-
-</div> <!-- /wrapper -->
-
+		</main><!-- #main -->
+	</div><!-- #primary -->
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
