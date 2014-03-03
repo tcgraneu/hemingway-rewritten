@@ -44,3 +44,8 @@
 .widget_authors li:after {
 	clear: both;
 }
+#wpstats {
+	display: block;
+	margin: -20px auto 0;
+	position: relative;
+}
