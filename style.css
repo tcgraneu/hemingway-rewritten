@@ -182,7 +182,7 @@ b, strong {
 dfn, cite, em, i {
 	font-style: italic;
 }
-cite {
+blockquote cite {
 	font-style: none;
 	font-weight: 700;
 	letter-spacing: 1px;
@@ -190,7 +190,7 @@ cite {
 	line-height: 140%;
 	color: #666;
 }
-cite:before {
+blockquote cite:before {
 	content: "— ";
 }
 blockquote {
@@ -1170,14 +1170,22 @@ object {
 	display: block;
 	font-weight: 700;
 }
+.comment-author img {
+	border-radius: 50%;
+	float: left;
+	margin-right: 20px;
+}
 .comment-author a {
 	color: #444;
 }
-.reply a {
+.comment-actions a {
 	font-size: 0.7em;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
+}
+.comment-actions a:first-of-type {
+	margin-right: 10px;
 }
 li.comment,
 li > div.comment {
