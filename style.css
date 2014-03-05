@@ -1,7 +1,7 @@
 /*
 Theme Name: Hemingway Rewritten
 Theme URI: http://theme.wordpress.com/themes/hemingway-rewritten
-Author: Anders Norén
+Author: Anders Noren
 Author URI: http://www.andersnoren.se
 Description: Description
 Version: 1.0-wpcom
@@ -141,25 +141,37 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
-h1 { font-size: 2em; font-weight: 700; }
+h1 {
+	font-size: 36px;
+	font-size: 3.6rem;
+	font-weight: 700;
+}
 
-h2 { font-size: 1.75em; font-weight: 700; }
+h2 {
+	font-size: 30px;
+	font-size: 3.0rem;
+	font-weight: 700;
+}
 
 h3 {
-	font-size: 1.5em;
+	font-size: 27px;
+	font-size: 2.7rem;
 	font-weight: 700;
 }
 
 h4 {
-	font-size: 1.25em;
+	font-size: 22px;
+	font-size: 2.2rem;
 }
 
 h5 {
-	font-size: 1.1em;
+	font-size: 20px;
+	font-size: 2.0rem;
 }
 
 h6 {
-	font-size: 0.9em;
+	font-size: 16px;
+	font-size: 1.6rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -285,7 +297,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 	empty-cells: show;
-	font-size: 0.9em;
+	font-size: 16px;
+	font-size: 1.6rem;
 	margin: 0 0 1.5em;
 	width: 100%;
 }
@@ -479,12 +492,17 @@ a:active {
 	content: "";
 	display: block;
 	border: 5px solid transparent;
-	border-top-color: rgba(255,255,255,0.4);
+	border-top-color: rgba(255,255,255,0.6);
 	margin-top: -2px;
 	position: absolute;
 	right: 17px;
 	top: 50%;
 	z-index: 1001;
+}
+.main-navigation ul ul > li.has-children:after,
+.main-navigation ul ul > li.page_item_has_children:after {
+	border: 5px solid transparent;
+	border-left-color: rgba(255,255,255,0.6);
 }
 .main-navigation ul > li.has-children a,
 .main-navigation ul > li.page_item_has_children a {
@@ -497,9 +515,10 @@ a:active {
 	display: none;
 }
 .main-navigation a {
-	color: rgba(255,255,255,0.4);
+	color: rgba(255,255,255,0.6);
 	display: block;
 	font-size: 13px;
+	font-size: 1.3rem;
 	letter-spacing: 1px;
 	padding: 20px;
 	text-transform: uppercase;
@@ -556,10 +575,11 @@ a:active {
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
-	font-size: 0.95em;
-	margin-top: 20px;
-	border-top: 4px solid #EEE;
-	border-bottom: 4px solid #EEE;
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-top: 1.25em;
+	border-top: 4px solid #eee;
+	border-bottom: 4px solid #eee;
 	overflow: hidden;
 }
 .comment-navigation .nav-previous,
@@ -605,6 +625,7 @@ a:active {
 	color: #21759b;
 	display: block;
 	font-size: 14px;
+	font-size: 1.4rem;
 	font-weight: bold;
 	height: auto;
 	left: 5px;
@@ -701,12 +722,14 @@ a:active {
 	margin-right: 0;
 }
 .widget {
-	margin: 0 0 1.5em;
-	color: #555;
-	line-height: 140%;
-	padding-bottom: 15%;
 	border-bottom: 4px solid #eee;
-	margin-bottom: 15%;
+	color: #555;
+	margin: 0 0 3em;
+	padding-bottom: 3em;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 140%;
+	position: relative;
 }
 .widget:last-child {
 	border-bottom: 0;
@@ -738,12 +761,36 @@ a:active {
 
 /* Make sure select elements fit in widgets */
 .widget select {
+	margin-left: 1px;
 	max-width: 100%;
 }
 
 /* Search widget */
+.widget_search input#s {
+	width: 99%;
+	padding: 18px 95px 18px 18px;
+	background: #FFF;
+	border: 1px solid #ddd;
+	border-right: none;
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	border-radius: 3px 0 0 3px;
+}
 .widget_search .search-submit {
-	display: none;
+	position: absolute;
+		right: 0;
+		top: 0;
+	width: 85px;
+	line-height: 1;
+	border: none;
+	background: #1abc9c;
+	border: 1px solid #1abc9c;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.8rem;
+	font-family: 'Lato', sans-serif;
+	border-radius: 0 3px 3px 0;
 }
 
 .widget-title {
@@ -773,11 +820,12 @@ a:active {
 	margin-bottom: 6%;
 }
 .entry-title {
-	font-size: 2.5em;
+	font-family: 'Lato', sans-serif;
+	font-size: 45px;
+	font-size: 4.5rem;
 	font-weight: 700;
 	line-height: 120%;
 	margin-bottom: 15px;
-	font-family: 'Lato', sans-serif;
 }
 .entry-title,
 .entry-title a {
@@ -787,7 +835,8 @@ a:active {
 	color: #1abc9c;
 }
 .entry-meta {
-	font-size: 0.8em;
+	font-size: 14px;
+	font-size: 1.4rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
@@ -803,7 +852,8 @@ a:active {
 	position: relative;
 	display: inline-block;
 	text-transform: uppercase;
-	font-size: 0.9em;
+	font-size: 16px;
+	font-size: 1.6rem;
 	letter-spacing: 1px;
 	font-weight: 700;
 	color: #999;
@@ -860,6 +910,7 @@ a:active {
 .entry-tags a {
 	position: relative;
 	font-size: 12px;
+	font-size: 1.2rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #fff;
@@ -941,7 +992,8 @@ a:active {
 }
 .format-aside .entry-title,
 .format-quote .entry-title {
-	font-size: 1em;
+	font-size: 18px;
+	font-size: 1.8rem;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -971,6 +1023,22 @@ a:active {
 .infinity-end.neverending .site-footer {
 	display: block;
 }
+#infinite-handle span {
+	background-color: #1d1d1d;
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0 auto 20px;
+	text-align: center;
+}
+.infinite-loader {
+	margin: 0 auto 31px;
+	width: 28px;
+	height: 28px;
+}
 
 /*--------------------------------------------------------------
 12.0 Media
@@ -994,7 +1062,8 @@ a:active {
 }
 .wp-caption-text {
 	color: #888;
-	font-size: 0.85em;
+	font-size: 14px;
+	font-size: 1.4rem;
 	padding-top: 0.5em;
 	text-align: center;
 }
@@ -1087,7 +1156,8 @@ object {
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	font-weight: 700;
-	font-size: 1.75em;
+	font-size: 30px;
+	font-size: 3.0rem;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	width: 100%;
@@ -1098,9 +1168,10 @@ object {
 .site-description {
 	color: #fff;
 	font-family: 'Raleway', sans-serif;
-	font-size: 1em;
+	font-size: 18px;
+	font-size: 1.8rem;
 	font-weight: 300;
-	opacity: 0.4;
+	opacity: 0.6;
 	text-align: center;
 }
 .site-description:before {
@@ -1120,7 +1191,8 @@ object {
 	color: #666;
 }
 .site-info {
-	font-size: 0.8em;
+	font-size: 14px;
+	font-size: 1.4rem;
 	max-width: 86%;
 	margin: 0 auto;
 	width: 1040px;
@@ -1139,7 +1211,8 @@ object {
 --------------------------------------------------------------*/
 
 .comments-title {
-	font-size: 1.75em;
+	font-size: 30px;
+	font-size: 3.0rem;
 	font-weight: 400;
 	color: #2d2d2d;
 	margin-bottom: 10%;
@@ -1150,7 +1223,8 @@ object {
 	margin: 0;
 }
 .comment-metadata {
-	font-size: 0.8em;
+	font-size: 14px;
+	font-size: 1.4rem;
 	margin-bottom: 1em;
 	text-transform: uppercase;
 }
@@ -1158,13 +1232,15 @@ object {
 	color: #bbb;
 }
 .comment-metadata .edit-link a {
-	font-size: 0.7em;
+	font-size: 12px;
+	font-size: 1.2rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
 }
 .comment-author {
-	font-size: 1.075em;
+	font-size: 20px;
+	font-size: 2.0rem;
 	color: #444;
 	margin-bottom: 5px;
 	display: block;
@@ -1179,7 +1255,8 @@ object {
 	color: #444;
 }
 .comment-actions a {
-	font-size: 0.7em;
+	font-size: 12px;
+	font-size: 1.2rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
@@ -1188,16 +1265,15 @@ object {
 	margin-right: 10px;
 }
 li.comment,
-li > div.comment {
+li > article.comment {
 	margin-bottom: 25px;
 	position: relative;
 }
 .comment-list > li.comment:last-child,
-.comment-list > li.comment div.comment:last-child {
+.comment-list > li.comment article.comment:last-child {
 	margin-bottom: 0;
 }
-.comment-list > li:first-child > div.comment:first-child {
+.comment-list > li:first-child > article.comment:first-child {
 	border-top: 1px solid #eee;
 	padding-top: 25px;
 }
-

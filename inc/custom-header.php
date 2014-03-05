@@ -111,7 +111,7 @@ function hemingway_rewritten_admin_header_style() {
 			font-family: 'Raleway', sans-serif;
 			font-size: 18px;
 			font-weight: 300;
-			opacity: 0.4;
+			opacity: 0.6;
 			text-align: center;
 		}
 		#desc:before {
