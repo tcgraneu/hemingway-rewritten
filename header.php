@@ -32,7 +32,7 @@
 		</div>
 	</header><!-- #masthead -->
 	<nav id="site-navigation" class="main-navigation clear" role="navigation">
-		<h1 class="menu-toggle"><?php _e( 'Menu', 'hemingway-rewritten' ); ?></h1>
+		<h1 class="menu-toggle" title="<?php _e( 'Menu', 'hemingway-rewritten' ); ?>"><span class="screen-reader-text"><?php _e( 'Menu', 'hemingway-rewritten' ); ?></span></h1>
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'hemingway-rewritten' ); ?></a>
 
 		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
