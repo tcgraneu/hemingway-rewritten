@@ -19,9 +19,8 @@
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php hemingway_rewritten_posted_on(); ?>
-			<span class="sep"> / </span>
 			<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-			<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'hemingway-rewritten' ), __( '1 Comment', 'hemingway-rewritten' ), __( '% Comments', 'hemingway-rewritten' ) ); ?></span>
+			<span class="comments-link"><span class="sep"> / </span><?php comments_popup_link( __( 'Leave a comment', 'hemingway-rewritten' ), __( '1 Comment', 'hemingway-rewritten' ), __( '% Comments', 'hemingway-rewritten' ) ); ?></span>
 			<?php endif; ?>
 			<?php edit_post_link( __( 'Edit', 'hemingway-rewritten' ), '<span class="edit-link"><span class="sep"> / </span>', '</span>' ); ?>
 		</div><!-- .entry-meta -->

@@ -9,7 +9,7 @@ License: GNU General Public License
 License URI: license.txt
 Text Domain: hemingway-rewritten
 Domain Path: /languages/
-Tags:
+Tags: black, white, two-columns, fixed-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, featured-image-header, full-width-template, infinite-scroll, post-formats, rtl-language-support, sticky-post, translation-ready, art, blog, design, journal, lifestream, tumblelog, clean, conservative, elegant, minimal, modern, professional
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -511,7 +511,8 @@ a:active {
 .main-navigation ul ul li {
 	background: #1d1d1d;
 }
-.main-navigation ul ul li:before {
+.main-navigation ul ul li:before,
+.main-navigation li:last-child:before {
 	display: none;
 }
 .main-navigation a {
@@ -756,7 +757,7 @@ a:active {
 9.0 Widgets
 --------------------------------------------------------------*/
 .widget-areas {
-	margin: 0 auto;
+	margin: 0 auto 80px;
 	max-width: 86%;
 	width: 1040px;
 }
@@ -952,7 +953,8 @@ a:active {
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
-.sticky {
+.sticky div.entry-meta .comments-link .sep {
+	display: none;
 }
 .hentry {
 	border-bottom: 4px solid #eee;
@@ -1071,6 +1073,7 @@ a:active {
 }
 .format-quote blockquote {
 	background: transparent;
+	color: rgba(255,255,255,0.6);
 }
 .format-aside div.entry-meta,
 .format-quote div.entry-meta {
@@ -1211,7 +1214,7 @@ object {
 }
 .site-footer {
 	clear: both;
-	padding: 7.5% 0 0;
+	padding: 80px 0 0;
 	width: 100%;
 }
 
@@ -1428,6 +1431,12 @@ li > article.comment {
 	.entry-meta {
 		font-size: 12px;
 		font-size: 1.2rem;
+	}
+	.site-footer {
+		padding: 40px 0 0;
+	}
+	.widget-areas {
+		margin: 0 auto 40px;
 	}
 	.widget-areas .widget-area:nth-child(1):nth-last-child(3),
 	.widget-areas .widget-area:nth-child(2):nth-last-child(2),

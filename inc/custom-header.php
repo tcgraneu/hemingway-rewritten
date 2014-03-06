@@ -83,7 +83,9 @@ function hemingway_rewritten_admin_header_style() {
 ?>
 	<style type="text/css">
 		.appearance_page_custom-header #headimg {
-			background: no-repeat center;
+			background-color: #262626;
+			background-position: center;
+			background-repeat: no-repeat;
 			background-size: cover;
 			-moz-background-size: cover;
 			-webkit-background-size: cover;

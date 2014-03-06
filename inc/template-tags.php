@@ -82,15 +82,15 @@ function hemingway_rewritten_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
-	if ( is_sticky() ) :
-		printf( '<span class="byline">%1$s</span>',
+	if ( is_sticky() && is_home() ) :
+		printf( '<span class="byline"><span class="sep"> / </span>%1$s</span>',
 			sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s">%2$s</a></span>',
 				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 				esc_html( get_the_author() )
 			)
 		);
 	else :
-		printf( '<span class="posted-on">%1$s</span><span class="byline"><span class="sep"> / </span> %2$s</span>',
+		printf( '<span class="posted-on">%1$s</span><span class="byline"><span class="sep"> / </span>%2$s</span>',
 			sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
 				esc_url( get_permalink() ),
 				$time_string
