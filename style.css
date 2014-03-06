@@ -1309,7 +1309,7 @@ object {
 	font-size: 3.0rem;
 	font-weight: 400;
 	color: #2d2d2d;
-	margin-bottom: 10%;
+	margin: 20px 0;
 }
 .comment-list,
 .comment-list .children {
