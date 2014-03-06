@@ -584,6 +584,9 @@ a:active {
 	.main-navigation ul {
 		display: none;
 	}
+	.main-navigation .menu {
+		background: #282828;
+	}
 	.main-navigation li {
 		clear: both;
 		float: none;
@@ -592,6 +595,7 @@ a:active {
 		display: none;
 	}
 	.main-navigation a {
+		background: #282828;
 		border-bottom: 1px solid rgba(255,255,255,0.1);
 		font-size: 13px;
 		font-size: 1.3rem;
@@ -599,6 +603,7 @@ a:active {
 		padding-right: 0;
 	}
 	.main-navigation ul ul {
+		background: transparent;
 		box-shadow: none;
 		clear: both;
 		display: block;
@@ -791,6 +796,9 @@ a:active {
 	line-height: 140%;
 	position: relative;
 }
+.widget-areas .widget {
+	color: rgba( 255,255,255,0.6 );
+}
 .widget:last-child {
 	border-bottom: 0;
 	margin-bottom: 0;
@@ -900,6 +908,30 @@ a:active {
 .entry-meta a {
 	color: #999;
 }
+.featured-image {
+	margin-bottom: 20px;
+	position: relative;
+}
+.featured-image .flag {
+	background: #1abc9c;
+	border-radius: 3px 0 0 3px;
+	color: #fff;
+	display: block;
+	position: absolute;
+		top: 5%;
+		right: 0;
+	padding: 8px 10px;
+	font-size: 12px;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	z-index: 10;
+}
+.featured-image img {
+	border-radius: 4px;
+	max-width: 100%;
+	height: auto;
+}
 .page-header {
 	margin-bottom: 7.5%;
 	text-align: center;
@@ -916,15 +948,17 @@ a:active {
 	padding-bottom: 5px;
 	border-bottom: 2px solid #eee;
 }
+
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
 .sticky {
 }
 .hentry {
-	padding-bottom: 10%;
 	border-bottom: 4px solid #eee;
-	margin-bottom: 10%;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	position: relative;
 }
 .byline,
 .updated {
@@ -1354,6 +1388,10 @@ li > article.comment {
 	body {
 		font-size: 16px;
 		font-size: 1.6rem;
+	}
+	.hentry {
+		margin-bottom: 25px;
+		padding-bottom: 25px;
 	}
 	.main-navigation ul,
 	.widget-areas,

@@ -6,6 +6,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+		<?php if ( '' != get_the_post_thumbnail() && is_sticky() ) : ?>
+		<div class="featured-image">
+			<span class="flag"><?php _e( 'Featured', 'hemingway-rewritten' ); ?></span>
+			<a href="<?php the_permalink(); ?>">
+				<?php the_post_thumbnail( 'hemingway-rewritten-featured' ); ?>
+			</a>
+		</div>
+		<?php endif; ?>
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 		<?php if ( 'post' == get_post_type() ) : ?>

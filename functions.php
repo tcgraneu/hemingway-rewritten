@@ -39,6 +39,7 @@ function hemingway_rewritten_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'hemingway-rewritten-featured', '676', '999' );
 	add_image_size( 'hemingway-rewritten-header', '1280', '416', true );
 
 	// This theme uses wp_nav_menu() in one location.
@@ -166,7 +167,7 @@ add_action( 'admin_enqueue_scripts', 'hemingway_rewritten_admin_scripts' );
  * If a page or post has a featured image set, use that instead of the custom header
  */
 function hemingway_rewritten_featured_image_headers() {
-	if ( '' == get_the_post_thumbnail() || is_archive() || is_search() )
+	if ( '' == get_the_post_thumbnail() || is_archive() || is_search() || is_home() )
 		return;
 
 	$image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'hemingway-rewritten-header' );
