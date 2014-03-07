@@ -972,8 +972,7 @@ a:active {
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
-.sticky div.entry-meta .comments-link .sep {
-	display: none;
+.sticky {
 }
 .hentry {
 	border-bottom: 4px solid #eee;
