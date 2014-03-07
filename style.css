@@ -1393,8 +1393,8 @@ li > article.comment {
 	padding-left: 80px;
 	border-bottom: 1px solid #eee;
 }
-.children li article.comment {
-	padding-left: 80px;
+.children {
+	padding-left: 10%;
 }
 
 /*--------------------------------------------------------------
