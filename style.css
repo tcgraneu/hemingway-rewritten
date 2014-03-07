@@ -1383,6 +1383,7 @@ object {
 	float: right;
 	font-size: 12px;
 	font-size: 1.2rem;
+	line-height: 30.600000381469727px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
@@ -1403,12 +1404,17 @@ li > article.comment {
 	padding-top: 25px;
 }
 li > article.comment {
+	border-bottom: 1px solid #eee;
 	padding-bottom: 25px;
 	padding-left: 80px;
-	border-bottom: 1px solid #eee;
 }
 .children {
 	padding-left: 10%;
+}
+.no-comments {
+	color: #666;
+	margin-top: 20px;
+	text-align: center;
 }
 
 /*--------------------------------------------------------------
