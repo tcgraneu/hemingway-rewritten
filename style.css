@@ -195,7 +195,7 @@ dfn, cite, em, i {
 	font-style: italic;
 }
 blockquote cite {
-	font-style: none;
+	font-style: normal;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -515,7 +515,8 @@ a:active {
 .main-navigation li:last-child:before {
 	display: none;
 }
-.main-navigation a {
+.main-navigation a,
+.main-navigation a:visited {
 	color: rgba(255,255,255,0.6);
 	display: block;
 	font-size: 13px;
@@ -537,7 +538,8 @@ a:active {
 	left: 100%;
 	top: 0;
 }
-.main-navigation ul ul a {
+.main-navigation ul ul a,
+.main-navigation ul ul a:visited {
 	padding: 20px 0;
 	margin: 0 20px;
 	line-height: 130%;
@@ -835,6 +837,9 @@ a:active {
 }
 
 /* Search widget */
+.widget_search .search-form {
+	position: relative;
+}
 .widget_search .search-field {
 	background: #fff;
 	border: 1px solid #ddd;
@@ -926,7 +931,7 @@ a:active {
 	font-size: 1.2rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	z-index: 10;
+	z-index: 1;
 }
 .featured-image img {
 	border-radius: 4px;
@@ -1191,7 +1196,6 @@ object {
 13.0 Layout: Content-Sidebar
 --------------------------------------------------------------*/
 .site-content {
-	background-color: #fff;
 	margin: 100px auto 0;
 	width: 1040px;
 }
@@ -1232,6 +1236,7 @@ object {
 	background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
+	min-height: 426px;
 	padding: 10% 0;
 	position: relative;
 }
@@ -1332,17 +1337,19 @@ object {
 	font-weight: 700;
 }
 .comment-author {
+	color: #444;
+	display: block;
 	font-size: 20px;
 	font-size: 2.0rem;
-	color: #444;
-	margin-bottom: 5px;
-	display: block;
 	font-weight: 700;
+	margin-bottom: 5px;
+	position: relative;
 }
 .comment-author img {
 	border-radius: 50%;
-	float: left;
 	margin-right: 20px;
+	position: absolute;
+		left: -80px;
 }
 .comment-author a {
 	color: #444;
@@ -1357,7 +1364,18 @@ object {
 .comment-actions a:first-of-type {
 	margin-right: 10px;
 }
+.pingback .comment-edit-link,
+.trackback .comment-edit-link {
+	float: right;
+	font-size: 12px;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
 li.comment,
+li.pingback,
+li.trackback,
 li > article.comment {
 	margin-bottom: 25px;
 	position: relative;
@@ -1369,6 +1387,14 @@ li > article.comment {
 .comment-list > li:first-child > article.comment:first-child {
 	border-top: 1px solid #eee;
 	padding-top: 25px;
+}
+li > article.comment {
+	padding-bottom: 25px;
+	padding-left: 80px;
+	border-bottom: 1px solid #eee;
+}
+.children li article.comment {
+	padding-left: 80px;
 }
 
 /*--------------------------------------------------------------

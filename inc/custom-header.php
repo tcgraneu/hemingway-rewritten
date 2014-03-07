@@ -17,7 +17,7 @@ function hemingway_rewritten_custom_header_setup() {
 		'default-image'          => get_template_directory_uri() . '/images/header.jpg',
 		'default-text-color'     => 'ffffff',
 		'width'                  => 1280,
-		'height'                 => 416,
+		'height'                 => 426,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'hemingway_rewritten_header_style',
 		'admin-head-callback'    => 'hemingway_rewritten_admin_header_style',

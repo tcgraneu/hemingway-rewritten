@@ -26,8 +26,10 @@
 				} );
 			} else {
 				$( '.site-title a,.site-description' ).css( {
+					'color': to
+				} );
+				$( '.site-branding-wrapper' ).css( {
 					'clip': 'auto',
-					'color': to,
 					'position': 'relative'
 				} );
 			}
