@@ -140,6 +140,7 @@ textarea {
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	margin: 15px 0;
 }
 h1 {
 	font-size: 36px;
@@ -206,7 +207,7 @@ blockquote cite:before {
 	content: "- ";
 }
 blockquote {
-	margin: 0;
+	margin: 15px 0;
 	padding: 1.1em;
 	line-height: 150%;
 	color: rgba(0,0,0,0.4);
