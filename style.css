@@ -860,8 +860,11 @@ a:active {
 	border: 1px solid #ddd;
 	border-radius: 3px 0 0 3px;
 	border-right: none;
+	display: block;
 	font-family: "Lato", sans-serif;
-	padding: 10px 95px 11px 18px;
+	height: 48px;
+	line-height: 1;
+	padding: 0 95px 0 18px;
 	width: 99%;
 }
 .widget_search .search-submit {
@@ -869,10 +872,12 @@ a:active {
 	border: 1px solid #1abc9c;
 	border-radius: 0 3px 3px 0;
 	color: #fff;
+	display: block;
 	font-family: "Lato", sans-serif;
 	line-height: 1;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	height: 50px;
 	position: absolute;
 		right: 0;
 		top: 0;
