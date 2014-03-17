@@ -90,8 +90,12 @@ function hemingway_rewritten_admin_header_style() {
 			background-size: cover;
 			-moz-background-size: cover;
 			-webkit-background-size: cover;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
 			border: none;
 			display: block;
+			min-height: 426px;
 			padding: 10% 0;
 			position: relative;
 		}
@@ -160,7 +164,7 @@ function hemingway_rewritten_admin_header_image() {
 		$image = sprintf( ' style="background-image:url(%s);"', get_header_image() );
 ?>
 	<div id="headimg" <?php echo $image; ?>>
-		<div class="site-header-wrapper" class="displaying-header-text">
+		<div class="site-header-wrapper displaying-header-text">
 			<div class="site-header-inner-wrapper">
 				<h1 class="displaying-header-text"><a id="name"<?php echo $style; ?> onclick="return false;" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 				<div class="displaying-header-text" id="desc"<?php echo $style; ?>><?php bloginfo( 'description' ); ?></div>
