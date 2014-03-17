@@ -203,7 +203,7 @@ blockquote cite {
 	color: #666;
 }
 blockquote cite:before {
-	content: "— ";
+	content: "- ";
 }
 blockquote {
 	margin: 0;
@@ -1098,11 +1098,15 @@ a:active {
 	text-align: center;
 }
 .format-aside .entry-title,
-.format-quote .entry-title {
+.format-quote .entry-title,
+.format-image .entry-title {
 	font-size: 18px;
 	font-size: 1.8rem;
 	text-align: center;
 	text-transform: uppercase;
+}
+.format-image .entry-title {
+	text-align: left;
 }
 .format-aside .entry-header,
 .format-quote .entry-header {
