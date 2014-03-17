@@ -50,7 +50,8 @@ function hemingway_rewritten_header_style() {
 		if ( 'blank' == $header_text_color ) :
 	?>
 		.site-title,
-		.site-description {
+		.site-description,
+		.site-branding {
 			position: absolute;
 			clip: rect(1px, 1px, 1px, 1px);
 		}
@@ -159,7 +160,7 @@ function hemingway_rewritten_admin_header_image() {
 		$image = sprintf( ' style="background-image:url(%s);"', get_header_image() );
 ?>
 	<div id="headimg" <?php echo $image; ?>>
-		<div class="site-header-wrapper">
+		<div class="site-header-wrapper" class="displaying-header-text">
 			<div class="site-header-inner-wrapper">
 				<h1 class="displaying-header-text"><a id="name"<?php echo $style; ?> onclick="return false;" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 				<div class="displaying-header-text" id="desc"<?php echo $style; ?>><?php bloginfo( 'description' ); ?></div>
