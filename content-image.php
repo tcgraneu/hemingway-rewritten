@@ -41,7 +41,7 @@
 				<?php endif; ?>
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$tag_list = get_the_tag_list( '', __( ', ', 'hemingway-rewritten' ) );
+				$tag_list = get_the_tag_list();
 
 				if ( '' != $tag_list ) : ?>
 					<div class="entry-tags">
