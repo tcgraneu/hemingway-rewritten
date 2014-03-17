@@ -1135,6 +1135,9 @@ a:active {
 .infinity-end.neverending .site-footer {
 	display: block;
 }
+#infinite-footer {
+	z-index: 999;
+}
 #infinite-handle span {
 	background-color: #1d1d1d;
 	display: block;
