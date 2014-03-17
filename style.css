@@ -1230,6 +1230,7 @@ object {
 }
 .site-content .widget-area {
 	float: right;
+	margin-bottom: 15px;
 	overflow: hidden;
 	width: 27.5%;
 }
