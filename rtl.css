@@ -147,11 +147,13 @@ textarea {
 
 .widget_search .search-field {
 	border-left: none;
+	border-radius: 0 4px 4px 0;
 	padding: 0 18px 0 95px;
 	border-right: none;
 }
 
 .widget_search .search-submit {
+	border-radius: 4px 0 0 4px;
 	left: 0;
 	right: auto;
 }
@@ -237,10 +239,12 @@ li > article.comment {
 	}
 
 	#header-search .search-field {
+		border-radius: 0 4px 4px 0;
 		padding: 18px 20px 18px 0;
 	}
 
 	#header-search .search-submit {
+		border-radius: 4px 0 0 4px;
 		left: 0;
 		right: auto;
 	}
