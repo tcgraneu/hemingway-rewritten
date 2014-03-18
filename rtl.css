@@ -1,17 +1,283 @@
 /*
 Theme Name: Hemingway Rewritten
-
-Adding support for language written in a Right To Left (RTL) direction is easy -
-it's just a matter of overwriting all the horizontal positioning attributes
-of your CSS stylesheet in a separate stylesheet file named rtl.css.
-
-http://codex.wordpress.org/Right_to_Left_Language_Support
-
 */
 
-/*
 body {
 	direction: rtl;
 	unicode-bidi: embed;
 }
-*/
+
+caption, th, td {
+	text-align: right;
+}
+
+ul, ol {
+	margin: 0 3em 1.5em 0;
+}
+
+li > ul,
+li > ol {
+	margin-right: 1.5em;
+	margin-left: auto;
+}
+
+textarea {
+	padding-right: 3px;
+	padding-left: 0;
+}
+
+.main-navigation ul {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.main-navigation li {
+	float: right;
+}
+
+.main-navigation li:before {
+	left: 0;
+	margin-left: -3px;
+	right: auto;
+	margin-right: auto;
+}
+
+.main-navigation ul > li.has-children:after,
+.main-navigation ul > li.page_item_has_children:after {
+	left: 17px;
+	right: auto;
+}
+
+.main-navigation ul ul > li.has-children:after,
+.main-navigation ul ul > li.page_item_has_children:after {
+	border-right-color: rgba(255,255,255,0.6);
+}
+
+.main-navigation ul > li.has-children a,
+.main-navigation ul > li.page_item_has_children a {
+	padding-left: 35px;
+	padding-right: 0;
+}
+
+.main-navigation ul ul {
+	float: right;
+	right: 0;
+	left: auto;
+}
+
+.main-navigation ul ul ul {
+	right: 100%;
+	left: auto;
+}
+
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: right;
+}
+
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+	float: left;
+	text-align: left;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	right: 5px;
+	left: auto;
+}
+
+.alignright {
+	float: right;
+	margin-left: 1.5em;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 1.5em;
+	margin-left: auto;
+}
+
+.widget-areas .widget-area {
+	float: right;
+}
+
+.widget-areas .widget-area:nth-child(1):nth-last-child(2),
+.widget-areas .widget-area:nth-child(2):nth-last-child(1) {
+	margin-left: 6%;
+	margin-right: auto;
+}
+
+.widget-areas .widget-area:nth-child(1):nth-last-child(2):last-of-type,
+.widget-areas .widget-area:nth-child(2):nth-last-child(1):last-of-type {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.widget-areas .widget-area:nth-child(1):nth-last-child(3),
+.widget-areas .widget-area:nth-child(2):nth-last-child(2),
+.widget-areas .widget-area:nth-child(3):nth-last-child(1) {
+	margin-left: 5%;
+	margin-right: auto;
+}
+
+.widget-areas .widget-area:nth-child(1):nth-last-child(3):last-of-type,
+.widget-areas .widget-area:nth-child(2):nth-last-child(2):last-of-type,
+.widget-areas .widget-area:nth-child(3):nth-last-child(1):last-of-type {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.widget ul ul li {
+	padding-right: 15px;
+	padding-left: 0;
+}
+
+/* Make sure select elements fit in widgets */
+.widget select {
+	margin-right: 1px;
+	margin-left: auto;
+}
+
+/* Search widget */
+
+.widget_search .search-field {
+	border-left: none;
+	padding: 0 18px 0 95px;
+	border-right: none;
+}
+
+.widget_search .search-submit {
+	left: 0;
+	right: auto;
+}
+.featured-image .flag {
+	left: 0;
+	right: auto;
+}
+
+.entry-categories:before {
+	margin-left: 5px;
+	margin-right: auto;
+}
+
+.entry-tags {
+	margin-right: 12px;
+	margin-left: auto;
+}
+
+.entry-tags a {
+	margin-left: 20px;
+	margin-right: auto;
+}
+
+.entry-tags a:hover:after {
+	border-left-color: #1abc9c;
+}
+
+.entry-tags a:before {
+	right: -4px;
+	left: auto;
+}
+
+.entry-tags a:after {
+	border-left: 12px solid #767676;
+	right: -12px;
+	left: auto;
+	border-right: none;
+}
+
+.format-image .entry-title {
+	text-align: right;
+}
+
+.content-area {
+	float: right;
+	margin: 0 0 0 -35%;
+}
+
+.site-main {
+	margin: 0 0 0 35%;
+}
+
+.site-content .widget-area {
+	float: left;
+}
+
+.comment-author img {
+	margin-left: 20px;
+	right: -80px;
+	left: auto;
+	margin-right: auto;
+}
+
+.comment-actions a:first-of-type {
+	margin-left: 10px;
+	margin-right: auto;
+}
+
+.pingback .comment-edit-link,
+.trackback .comment-edit-link {
+	float: left;
+}
+
+li > article.comment {
+	padding-right: 80px;
+	padding-left: 0;
+}
+
+@media only screen and ( max-width: 800px ) {
+	.children {
+		padding-right: 10%;
+		padding-left: 0;
+	}
+
+	#header-search .search-field {
+		padding: 18px 20px 18px 0;
+	}
+
+	#header-search .search-submit {
+		left: 0;
+		right: auto;
+	}
+
+	#header-search-toggle {
+		left: 7%;
+		right: auto;
+	}
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		margin: 0 7% 0 auto;
+	}
+
+	.main-navigation a {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.main-navigation ul ul {
+		right: auto;
+		left: auto;
+	}
+
+	.main-navigation ul ul a,
+		.main-navigation ul ul ul a {
+		padding-right: 20px;
+		padding-left: 0;
+	}
+
+	.main-navigation ul ul ul {
+		right: auto;
+		left: auto;
+	}
+
+	.main-navigation ul > li.has-children a,
+	.main-navigation ul > li.page_item_has_children a {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
