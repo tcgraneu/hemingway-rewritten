@@ -1514,11 +1514,54 @@ li > article.comment {
 		width: 100%;
 	}
 	#header-search.toggled {
-		background-color: #1abc9c;
+		background-color: #282828;
 		clear: both;
 		display: block;
-		padding: 0 7%;
+		padding: 7%;
 		position: relative;
+	}
+	#header-search form {
+		position: relative;
+	}
+	#header-search .search-field {
+		background: #fff;
+		border: none;
+		border-radius: 4px 0 0 4px;
+		-webkit-box-sizing: border-box; /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+		-moz-box-sizing:    border-box; /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+		box-sizing:         border-box;
+		color: #444;
+		display: block;
+		font-family: 'Lato', sans-serif;
+		height: 50px;
+		line-height: 1;
+		margin: 0;
+		padding: 18px 0 18px 20px;
+		position: relative;
+		width: 95%;
+	}
+	#header-search .search-submit {
+		background: #1abc9c;
+		border: 1px solid #1abc9c;
+		border-radius: 0 4px 4px 0;
+		color: #fff;
+		font-family: 'Lato', sans-serif;
+		font-size: 13px;
+		font-size: 1.3rem;
+		height: 50px;
+		letter-spacing: 1px;
+		line-height: 1;
+		margin: 0;
+		padding: 17px 0;
+		position: absolute;
+			right: 0;
+			top: 0;
+		text-transform: uppercase;
+		width: 100px;
+	}
+	#header-search .search-submit:hover {
+		background-color: #089d80;
+		border-color: #089d80;
 	}
 	#header-search-toggle {
 		cursor: pointer;
