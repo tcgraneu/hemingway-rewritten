@@ -36,5 +36,11 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'hemingway-rewritten' ); ?></a>
 
 		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		<div class="header-search-toggle">
+			<span class="screen-reader-text"><?php _e( 'Search', 'hemingway-rewritten' ); ?></span>
+		</div>
+		<div class="header-search">
+			<?php get_search_form(); ?>
+		</div>
 	</nav><!-- #site-navigation -->
 	<div id="content" class="site-content">

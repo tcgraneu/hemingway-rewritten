@@ -586,8 +586,10 @@ a:active {
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;
-		margin: 0 auto;
-		max-width: 86%;
+		margin: 0 auto 0 7%;
+	}
+	.menu-toggle {
+		position: relative;
 	}
 	.menu-toggle:before {
 		color: rgba(255,255,255,0.6);
@@ -595,7 +597,6 @@ a:active {
 		display: inline-block;
 		font-family: "Genericons";
 		font-size: 24px;
-		font-size: 2.4rem;
 		text-decoration: none;
 		vertical-align: baseline;
 	}
@@ -1307,6 +1308,10 @@ object {
 	background: rgba(255,255,255,0.1);
 	margin: 20px auto;
 }
+.header-search,
+.header-search-toggle {
+	display: none;
+}
 
 /*--------------------------------------------------------------
 15.0 Footer
@@ -1507,5 +1512,23 @@ li > article.comment {
 		float: none;
 		margin: 0 auto 40px;
 		width: 100%;
+	}
+	.header-search-toggle {
+		cursor: pointer;
+		display: block;
+		line-height: 61.20000076293945px;
+		position: absolute;
+			top: 0;
+			right: 7%;
+	}
+	.header-search-toggle:before {
+		color: rgba(255,255,255,0.6);
+		content: "\f400";
+		display: inline-block;
+		font-family: "Genericons";
+		font-size: 36px;
+		line-height: 61.20000076293945px;
+		text-decoration: none;
+		vertical-align: baseline;
 	}
 }
