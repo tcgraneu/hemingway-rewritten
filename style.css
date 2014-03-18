@@ -1308,8 +1308,8 @@ object {
 	background: rgba(255,255,255,0.1);
 	margin: 20px auto;
 }
-.header-search,
-.header-search-toggle {
+#header-search,
+#header-search-toggle {
 	display: none;
 }
 
@@ -1513,7 +1513,14 @@ li > article.comment {
 		margin: 0 auto 40px;
 		width: 100%;
 	}
-	.header-search-toggle {
+	#header-search.toggled {
+		background-color: #1abc9c;
+		clear: both;
+		display: block;
+		padding: 0 7%;
+		position: relative;
+	}
+	#header-search-toggle {
 		cursor: pointer;
 		display: block;
 		line-height: 61.20000076293945px;
@@ -1521,7 +1528,7 @@ li > article.comment {
 			top: 0;
 			right: 7%;
 	}
-	.header-search-toggle:before {
+	#header-search-toggle:before {
 		color: rgba(255,255,255,0.6);
 		content: "\f400";
 		display: inline-block;

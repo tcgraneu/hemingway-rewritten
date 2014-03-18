@@ -1,7 +1,7 @@
 /**
  * navigation.js
  *
- * Handles toggling the navigation menu for small screens.
+ * Handles toggling the navigation menu and search menu for small screens.
  */
 ( function() {
 	var container, button, menu;
@@ -30,5 +30,23 @@
 			container.className = container.className.replace( ' toggled', '' );
 		else
 			container.className += ' toggled';
+	};
+	
+	//Search form
+	var searchcontainer, searchbutton, searchmenu;
+
+	searchcontainer = document.getElementById( 'header-search' );
+	if ( ! searchcontainer )
+		return;
+
+	searchbutton = document.getElementById( 'header-search-toggle' );
+	if ( 'undefined' === typeof searchbutton )
+		return;
+
+	searchbutton.onclick = function() {
+		if ( -1 !== searchcontainer.className.indexOf( 'toggled' ) )
+			searchcontainer.className = searchcontainer.className.replace( 'toggled', '' );
+		else
+			searchcontainer.className += 'toggled';
 	};
 } )();
