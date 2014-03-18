@@ -26,10 +26,13 @@
 		menu.className += ' nav-menu';
 
 	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'toggled' ) )
+		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			container.className = container.className.replace( ' toggled', '' );
-		else
+		}
+		else {
 			container.className += ' toggled';
+			searchcontainer.className = searchcontainer.className.replace( 'toggled', '' );
+		}
 	};
 	
 	//Search form
@@ -44,9 +47,12 @@
 		return;
 
 	searchbutton.onclick = function() {
-		if ( -1 !== searchcontainer.className.indexOf( 'toggled' ) )
+		if ( -1 !== searchcontainer.className.indexOf( 'toggled' ) ) {
 			searchcontainer.className = searchcontainer.className.replace( 'toggled', '' );
-		else
+		}
+		else {
 			searchcontainer.className += 'toggled';
+			container.className = container.className.replace( ' toggled', '' );
+		}
 	};
 } )();
