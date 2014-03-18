@@ -109,7 +109,7 @@ function hemingway_rewritten_scripts() {
 	wp_enqueue_style( 'hemingway-rewritten-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css' );
 
-	wp_enqueue_script( 'hemingway-rewritten-script', get_template_directory_uri() . '/js/global.js', array( 'jquery' ), '20140228', true );
+	wp_enqueue_script( 'hemingway-rewritten-script', get_template_directory_uri() . '/js/hemingway-rewritten.js', array( 'jquery' ), '20140228', true );
 
 	wp_enqueue_script( 'hemingway-rewritten-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

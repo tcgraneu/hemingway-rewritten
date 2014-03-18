@@ -1468,6 +1468,9 @@ li > article.comment {
 		margin: 0 auto 40px;
 		width: 100%;
 	}
+	.site-header-image {
+		min-height: 0px;
+	}
 	.site-branding {
 		padding: 20px;
 	}
