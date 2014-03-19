@@ -7,7 +7,7 @@
 
 $contentpart = 'single';
 if ( 'image' == get_post_format() || 'video' == get_post_format() )
-	$contentpart = 'image';
+	$contentpart = 'media';
 
 get_header(); ?>
 
