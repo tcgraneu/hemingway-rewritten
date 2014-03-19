@@ -533,7 +533,7 @@ a:active {
 	font-size: 13px;
 	font-size: 1.3rem;
 	letter-spacing: 1px;
-	padding: 1.7em;
+	padding: 1.25em 1.7em;
 	text-transform: uppercase;
 }
 .main-navigation ul ul {
@@ -909,6 +909,7 @@ a:active {
 	font-size: 45px;
 	font-size: 4.5rem;
 	font-weight: 700;
+	line-height: 1.2;
 	margin: 0;
 }
 .entry-title,
@@ -921,6 +922,7 @@ a:active {
 .entry-meta {
 	font-size: 14px;
 	font-size: 1.4rem;
+	margin: .85em 0;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
