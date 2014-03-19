@@ -140,7 +140,7 @@ textarea {
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-	margin: 15px 0;
+	margin: .85em 0;
 }
 h1 {
 	font-size: 36px;
@@ -187,7 +187,7 @@ h6 {
 	margin-top: 30px;
 }
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.7em;
 }
 b, strong {
 	font-weight: bold;
@@ -205,14 +205,14 @@ blockquote cite {
 }
 blockquote {
 	margin: 15px 0;
-	padding: 1.1em;
+	padding: 1.7em;
 	line-height: 150%;
 	color: rgba(0,0,0,0.4);
 	background: #eee;
 	font-family: "Raleway", "Helvetica Neue", sans-serif;
 }
 address {
-	margin: 0 0 1.5em;
+	margin: 0 0 1.7em;
 	padding: 3% 3.5%;
 	background: #f1f1f1;
 }
@@ -221,8 +221,7 @@ pre {
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	font-size: 15px;
 	font-size: 1.5rem;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
+	margin-bottom: 1.7em;
 	max-width: 100%;
 	overflow: auto;
 	padding: 1.6em;
@@ -266,10 +265,10 @@ hr {
 	background-color: #ccc;
 	border: 0;
 	height: 1px;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.7em;
 }
 ul, ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 1.7em 3em;
 }
 ul {
 	list-style: disc;
@@ -280,7 +279,7 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-left: 1.7em;
 }
 dt {
 	font-weight: bold;
@@ -297,7 +296,7 @@ table {
 	empty-cells: show;
 	font-size: 16px;
 	font-size: 1.6rem;
-	margin: 0 0 1.5em;
+	margin: 0 0 1.7em;
 	width: 100%;
 }
 th {
@@ -534,7 +533,7 @@ a:active {
 	font-size: 13px;
 	font-size: 1.3rem;
 	letter-spacing: 1px;
-	padding: 20px;
+	padding: 1.7em;
 	text-transform: uppercase;
 }
 .main-navigation ul ul {
@@ -552,8 +551,8 @@ a:active {
 }
 .main-navigation ul ul a,
 .main-navigation ul ul a:visited {
-	padding: 20px 0;
-	margin: 0 20px;
+	padding: 1.7em 0;
+	margin: 0 1.7em;
 	line-height: 130%;
 	border-bottom: 1px solid rgba(255,255,255,0.1);
 	width: 240px;
@@ -583,7 +582,7 @@ a:active {
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;
-		margin: 0 auto 0 7%;
+		margin: 0 auto 0 1.7em;
 	}
 	.menu-toggle {
 		position: relative;
@@ -634,7 +633,7 @@ a:active {
 	}
 	.main-navigation ul ul a,
 	.main-navigation ul ul ul a {
-		padding-left: 20px;
+		padding-left: 1.7em;
 		width: 100%;
 	}
 	.main-navigation ul ul ul {
@@ -658,7 +657,7 @@ a:active {
 .site-main .post-navigation {
 	font-size: 16px;
 	font-size: 1.6rem;
-	margin: 1.25em 0;
+	margin: 1.7em 0;
 	border-top: 4px solid #eee;
 	border-bottom: 4px solid #eee;
 	overflow: hidden;
@@ -670,7 +669,7 @@ a:active {
 	width: 50%;
 	display: block;
 	position: relative;
-	padding: 25px 0;
+	padding: 1.7em 0;
 	max-width: 49%;
 	color: #666;
 }
@@ -682,7 +681,7 @@ a:active {
 	width: 50%;
 	display: block;
 	position: relative;
-	padding: 25px 0;
+	padding: 1.7em 0;
 	max-width: 49%;
 	color: #666;
 }
@@ -711,7 +710,7 @@ a:active {
 	height: auto;
 	left: 5px;
 	line-height: normal;
-	padding: 15px 23px 14px;
+	padding: 1.7em;
 	text-decoration: none;
 	top: 5px;
 	width: auto;
@@ -724,12 +723,12 @@ a:active {
 .alignleft {
 	display: inline;
 	float: left;
-	margin-right: 1.5em;
+	margin-right: 1.7em;
 }
 .alignright {
 	display: inline;
 	float: right;
-	margin-left: 1.5em;
+	margin-left: 1.7em;
 }
 .aligncenter {
 	clear: both;
@@ -805,11 +804,10 @@ a:active {
 .widget {
 	border-bottom: 4px solid #eee;
 	color: #555;
-	margin: 0 0 3em;
-	padding-bottom: 3em;
+	margin: 0 0 1.7em;
+	padding-bottom: 1.7em;
 	font-size: 16px;
 	font-size: 1.6rem;
-	line-height: 140%;
 	position: relative;
 }
 .widget-areas .widget {
@@ -829,8 +827,8 @@ a:active {
 	padding: 0;
 }
 .widget ul li {
-	margin: 10px 0 0;
-	padding: 10px 0 0;
+	margin: .85em 0 0;
+	padding: .85em 0 0;
 	border-top: 1px solid #eee;
 }
 .widget-areas .widget ul li {
@@ -840,7 +838,7 @@ a:active {
 	border-top: 0;
 }
 .widget ul ul li {
-	padding-left: 15px;
+	padding-left: .85em;
 }
 
 /* Make sure select elements fit in widgets */
@@ -887,7 +885,6 @@ a:active {
 	font-size: 14px;
 	font-size: 1.4rem;
 	font-weight: 700;
-	margin-bottom: 20px;
 	text-transform: uppercase;
 }
 .widget-areas .widget {
@@ -905,15 +902,14 @@ a:active {
 	margin: 0 5px;
 }
 .entry-header {
-	margin-bottom: 6%;
+	margin-bottom: 1.7em;
 }
 .entry-title {
 	font-family: "Lato", sans-serif;
 	font-size: 45px;
 	font-size: 4.5rem;
 	font-weight: 700;
-	line-height: 120%;
-	margin-bottom: 15px;
+	margin: 0;
 }
 .entry-title,
 .entry-title a {
@@ -933,7 +929,7 @@ a:active {
 	color: #999;
 }
 .featured-image {
-	margin-bottom: 20px;
+	margin-bottom: 1.7em;
 	position: relative;
 }
 .featured-image .flag {
@@ -944,7 +940,7 @@ a:active {
 	position: absolute;
 		top: 5%;
 		right: 0;
-	padding: 8px 10px;
+	padding: .85em 10px;
 	font-size: 12px;
 	font-size: 1.2rem;
 	text-transform: uppercase;
@@ -957,7 +953,7 @@ a:active {
 	height: auto;
 }
 .page-header {
-	margin-bottom: 7.5%;
+	margin-bottom: 30px;
 	text-align: center;
 }
 .page-title {
@@ -969,7 +965,7 @@ a:active {
 	letter-spacing: 1px;
 	font-weight: 700;
 	color: #999;
-	padding-bottom: 5px;
+	padding-bottom: 1.7em;
 	border-bottom: 2px solid #eee;
 }
 
@@ -980,8 +976,8 @@ a:active {
 }
 .hentry {
 	border-bottom: 4px solid #eee;
-	margin-bottom: 40px;
-	padding-bottom: 40px;
+	margin-bottom: 3.4em;
+	padding-bottom: 3.4em;
 	position: relative;
 }
 .byline,
@@ -995,14 +991,14 @@ a:active {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 0 0 1.5em;
+	margin: 0 0 1.7em;
 }
 .page-links {
 	clear: both;
-	margin: 0 0 1.5em;
+	margin: 0 0 1.7em;
 }
 .entry-categories {
-	margin-bottom: 10px;
+	margin-bottom: 1.7em;
 }
 .entry-categories a {
 	color: inherit;
@@ -1031,8 +1027,7 @@ a:active {
 	display: inline-block;
 	padding: 6px;
 	line-height: 1;
-	margin-bottom: 5px;
-	margin-right: 20px;
+	margin: .85em 1.7em .85em 0;
 	background: #767676;
 	border-radius: 0 2px 2px 0;
 }
@@ -1083,8 +1078,8 @@ a:active {
 .format-aside .entry-content {
 	background: #eee;
 	border-radius: 3px;
-	margin: 20px 0;
-	padding: 20px;
+	margin: 1.7em 0;
+	padding: 1.7em;
 }
 .format-link .entry-title a:after {
 	content: "\f442";
@@ -1100,8 +1095,8 @@ a:active {
 	background: #262626;
 	border-radius: 3px;
 	color: #fff;
-	margin: 20px 0;
-	padding: 40px;
+	margin: 1.7em 0;
+	padding: 1.7em;
 }
 .format-quote blockquote {
 	background: transparent;
@@ -1182,7 +1177,7 @@ a:active {
 	padding: 0;
 }
 .wp-caption {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.7em;
 	max-width: 100%;
 }
 .wp-caption img[class*="wp-image-"] {
@@ -1194,14 +1189,14 @@ a:active {
 	color: #888;
 	font-size: 14px;
 	font-size: 1.4rem;
-	padding-top: 0.5em;
+	padding-top: 0.85em;
 	text-align: center;
 }
 .wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
+	margin: 0.85em 0;
 }
 .site-main .gallery {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.7em;
 }
 .gallery-caption {
 }
@@ -1249,13 +1244,13 @@ object {
 }
 .site-content .widget-area {
 	float: right;
-	margin-bottom: 15px;
+	margin-bottom: 1.7em;
 	overflow: hidden;
 	width: 27.5%;
 }
 .site-footer {
 	clear: both;
-	padding: 80px 0 0;
+	padding: 6.8em 0 0;
 	width: 100%;
 }
 
@@ -1285,7 +1280,7 @@ object {
 .site-branding {
 	background: #1d1d1d;
 	display: inline-block;
-	padding: 30px;
+	padding: 1.7em;
 }
 .site-title {
 	text-transform: uppercase;
@@ -1294,6 +1289,7 @@ object {
 	font-size: 30px;
 	font-size: 3.0rem;
 	font-family: "Raleway", sans-serif;
+	margin: 0;
 	text-align: center;
 	width: 100%;
 }
@@ -1315,7 +1311,7 @@ object {
 	width: 100px;
 	height: 2px;
 	background: rgba(255,255,255,0.1);
-	margin: 20px auto;
+	margin: .85em auto;
 }
 #header-search,
 #header-search-toggle {
@@ -1335,7 +1331,7 @@ object {
 	max-width: 86%;
 	margin: 0 auto;
 	width: 1040px;
-	padding: 25px 0 4%;
+	padding: 1.7em 0;
 	border-top: 2px solid rgba(255,255,255,0.1);
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -1354,7 +1350,7 @@ object {
 	font-size: 3.0rem;
 	font-weight: 400;
 	color: #2d2d2d;
-	margin: 20px 0;
+	margin: 1.7em 0;
 }
 .comment-list,
 .comment-list .children {
@@ -1383,12 +1379,12 @@ object {
 	font-size: 20px;
 	font-size: 2.0rem;
 	font-weight: 700;
-	margin-bottom: 5px;
+	margin-bottom: 1.5em;
 	position: relative;
 }
 .comment-author img {
 	border-radius: 50%;
-	margin-right: 20px;
+	margin-right: 1.7em;
 	position: absolute;
 		left: -80px;
 }
@@ -1403,7 +1399,7 @@ object {
 	font-weight: 700;
 }
 .comment-actions a:first-of-type {
-	margin-right: 10px;
+	margin-right: 1.7em;
 }
 .pingback .comment-edit-link,
 .trackback .comment-edit-link {
@@ -1419,7 +1415,7 @@ li.comment,
 li.pingback,
 li.trackback,
 li > article.comment {
-	margin-bottom: 25px;
+	margin-bottom: 1.7em;
 	position: relative;
 }
 .comment-list > li.comment:last-child,
@@ -1428,19 +1424,19 @@ li > article.comment {
 }
 .comment-list > li:first-child > article.comment:first-child {
 	border-top: 1px solid #eee;
-	padding-top: 25px;
+	padding-top: 1.7em;
 }
 li > article.comment {
 	border-bottom: 1px solid #eee;
-	padding-bottom: 25px;
-	padding-left: 80px;
+	padding-bottom: 1.7em;
+	padding-left: 3.4em;
 }
 .children {
 	padding-left: 10%;
 }
 .no-comments {
 	color: #666;
-	margin-top: 20px;
+	margin-top: 1.7em;
 	text-align: center;
 }
 
@@ -1462,8 +1458,8 @@ li > article.comment {
 		font-size: 1.6rem;
 	}
 	.hentry {
-		margin-bottom: 25px;
-		padding-bottom: 25px;
+		margin-bottom: 1.7em;
+		padding-bottom: 1.7em;
 	}
 	.main-navigation ul,
 	.widget-areas,
@@ -1473,13 +1469,13 @@ li > article.comment {
 		max-width: 86%;
 	}
 	.site-content {
-		margin-top: 40px;
+		margin-top: 3.4em;
 	}
 	.site-main,
 	.site-content .widget-area {
 		clear: both;
 		float: none;
-		margin: 0 auto 40px;
+		margin: 0 auto 3.4em;
 		width: 100%;
 	}
 	.site-header-image {
@@ -1498,7 +1494,7 @@ li > article.comment {
 		font-size: 1.6rem;
 	}
 	.site-description:before {
-		margin: 15px auto;
+		margin: 1.7em auto;
 	}
 	.entry-title {
 		font-size: 26px;
@@ -1512,14 +1508,14 @@ li > article.comment {
 		padding: 40px 0 0;
 	}
 	.widget-areas {
-		margin: 0 auto 40px;
+		margin: 0 auto 3.4em;
 	}
 	.widget-areas .widget-area:nth-child(1):nth-last-child(3),
 	.widget-areas .widget-area:nth-child(2):nth-last-child(2),
 	.widget-areas .widget-area:nth-child(3):nth-last-child(1) {
 		clear: both;
 		float: none;
-		margin: 0 auto 40px;
+		margin: 0 auto 3.4em;
 		width: 100%;
 	}
 	#header-search.toggled {

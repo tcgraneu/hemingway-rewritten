@@ -5,16 +5,16 @@
  * @package Hemingway Rewritten
  */
 
-$contentpart = 'single';
-if ( 'image' == get_post_format() || 'video' == get_post_format() )
-	$contentpart = 'media';
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
+			<?php 
+				$contentpart = 'single';
+				if ( 'image' == get_post_format() || 'video' == get_post_format() )
+					$contentpart = 'media'; ?>
 
 			<?php get_template_part( 'content', $contentpart ); ?>
 
