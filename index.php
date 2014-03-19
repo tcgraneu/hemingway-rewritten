@@ -11,10 +11,6 @@
  * @package Hemingway Rewritten
  */
 
-$contentpart = get_post_format();
-if ( 'image' == $contentpart || 'video' == $contentpart )
-	$contentpart = 'media';
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -24,6 +20,11 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
+			
+				<?php 
+					$contentpart = get_post_format();
+					if ( 'image' == $contentpart || 'video' == $contentpart )
+						$contentpart = 'media'; ?>
 
 				<?php
 					/* Include the Post-Format-specific template for the content.
