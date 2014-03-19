@@ -6,8 +6,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
+		<?php if ( 'link' == get_post_format() ) : ?>
+			<?php the_title( '<h1 class="entry-title"><a href="' . esc_url( hemingway_rewritten_get_link_url() ) . '" rel="bookmark">', '</a></h1>' ); ?>
+		<?php else : ?>
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php endif; ?>
 		<div class="entry-meta">
 			<?php hemingway_rewritten_posted_on(); ?>
 			<?php edit_post_link( __( 'Edit', 'hemingway-rewritten' ), '<span class="edit-link"><span class="sep"> / </span>', '</span>' ); ?>

@@ -5,6 +5,10 @@
  * @package Hemingway Rewritten
  */
 
+$contentpart = 'single';
+if ( 'image' == get_post_format() )
+	$contentpart = 'image';
+
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -12,7 +16,7 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'content', 'single' ); ?>
+			<?php get_template_part( 'content', $contentpart ); ?>
 
 			<?php hemingway_rewritten_post_nav(); ?>
 

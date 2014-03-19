@@ -157,3 +157,20 @@ function hemingway_rewritten_comment( $comment, $args, $depth ) {
 	endswitch;
 }
 endif; // ends check for hemingway_rewritten_comment()
+
+/**
+ * Returns the URL from the post.
+ *
+ * @uses get_the_link() to get the URL in the post meta (if it exists) or
+ * the first link found in the post content.
+ *
+ * Falls back to the post permalink if no URL is found in the post.
+ *
+ * @return string URL
+ */
+function hemingway_rewritten_get_link_url() {
+	$content = get_the_content();
+	$has_url = get_url_in_content( $content );
+
+	return ( $has_url ) ? $has_url : apply_filters( 'the_permalink', get_permalink() );
+}

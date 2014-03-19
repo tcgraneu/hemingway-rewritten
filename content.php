@@ -14,8 +14,11 @@
 			</a>
 		</div>
 		<?php endif; ?>
-		<?php the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' ); ?>
-
+		<?php if ( 'link' == get_post_format() ) : ?>
+			<?php the_title( '<h1 class="entry-title"><a href="' . esc_url( hemingway_rewritten_get_link_url() ) . '" rel="bookmark">', '</a></h1>' ); ?>
+		<?php else : ?>
+			<?php the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' ); ?>
+		<?php endif; ?>
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php hemingway_rewritten_posted_on(); ?>
