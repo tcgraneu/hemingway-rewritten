@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
-			<?php 
+			<?php
 				$contentpart = 'single';
 				if ( 'image' == get_post_format() || 'video' == get_post_format() )
 					$contentpart = 'media'; ?>

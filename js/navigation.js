@@ -34,7 +34,7 @@
 			searchcontainer.className = searchcontainer.className.replace( 'toggled', '' );
 		}
 	};
-	
+
 	//Search form
 	var searchcontainer, searchbutton, searchmenu;
 
