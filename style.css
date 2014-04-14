@@ -1224,6 +1224,9 @@ object {
 	max-width: 100%;
 	height: auto;
 }
+.jetpack-video-wrapper {
+	margin-bottom: 1.7em;
+}
 
 /*--------------------------------------------------------------
 13.0 Layout: Content-Sidebar

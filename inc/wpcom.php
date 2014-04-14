@@ -51,10 +51,9 @@ function hemingway_rewritten_dequeue_fonts() {
 add_action( 'wp_enqueue_scripts', 'hemingway_rewritten_dequeue_fonts' );
 
 /**
- * Adds support for WP.com print styles and responsive videos
+ * Adds support for WP.com print styles
  */
 function hemingway_rewritten_theme_support() {
 	add_theme_support( 'print-style' );
-       add_theme_support( 'wpcom-responsive-videos' );
 }
 add_action( 'after_setup_theme', 'hemingway_rewritten_theme_support' );
