@@ -347,6 +347,12 @@ input[type="submit"] {
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
+.site-footer button,
+.site-footer input[type="button"],
+.site-footer input[type="reset"],
+.site-footer input[type="submit"] {
+	background: #1abc9c;
+}
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -858,10 +864,13 @@ a:active {
 	border-right: none;
 	display: block;
 	font-family: "Lato", sans-serif;
-	height: 48px;
+	height: 50px;
 	line-height: 1;
 	padding: 0 95px 0 18px;
 	width: 99%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .widget_search .search-submit {
 	background: #1abc9c;
