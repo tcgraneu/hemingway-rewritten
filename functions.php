@@ -183,6 +183,17 @@ function hemingway_rewritten_featured_image_headers() {
 add_action( 'wp_head', 'hemingway_rewritten_featured_image_headers', 999 );
 
 /**
+ * Adjust content_width value for no sidebar page template, and one-column
+ * layout (no widgets in main sidebar).
+ */
+function hemingway_rewritten_content_width() {
+	if ( is_page_template( 'nosidebar-page.php' ) || ! is_active_sidebar( 'sidebar-1' ) ) {
+		$GLOBALS['content_width'] = 780;
+	}
+}
+add_action( 'template_redirect', 'hemingway_rewritten_content_width' );
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
