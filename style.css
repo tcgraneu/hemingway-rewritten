@@ -1253,7 +1253,8 @@ object {
 	margin: 0 35% 0 0;
 }
 .page-template-nosidebar-page-php .content-area,
-.page-template-nosidebar-page-php .site-main {
+.page-template-nosidebar-page-php .site-main,
+body.one-column .site-main {
 	margin: 0 auto;
 }
 .site-content .widget-area {

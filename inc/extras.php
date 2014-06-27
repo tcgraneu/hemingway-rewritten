@@ -31,6 +31,11 @@ function hemingway_rewritten_body_classes( $classes ) {
 		$classes[] = 'group-blog';
 	}
 
+	// If we have no sidebar active, set layout to one-column.
+	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+		$classes[] = 'one-column';
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'hemingway_rewritten_body_classes' );
