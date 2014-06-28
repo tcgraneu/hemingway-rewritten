@@ -58,7 +58,7 @@ msgstr "<span class=\"meta-nav\">&larr;</span> نوشته‌های پیشین"
 msgid "Posts navigation"
 msgstr "ناوبری نوشته‌ها"
 
-#: inc/extras.php:63
+#: inc/extras.php:68
 msgid "Page %s"
 msgstr "صفحهٔ %s"
 

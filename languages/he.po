@@ -58,7 +58,7 @@ msgstr "<span class=\"meta-nav\">&rarr;</span> רשומות ישנות יותר"
 msgid "Posts navigation"
 msgstr "ניווט בין הרשומות"
 
-#: inc/extras.php:63
+#: inc/extras.php:68
 msgid "Page %s"
 msgstr "עמוד %s"
 

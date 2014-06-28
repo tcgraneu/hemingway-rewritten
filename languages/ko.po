@@ -58,7 +58,7 @@ msgstr "<span class=\"meta-nav\">&larr;</span> 예전 글"
 msgid "Posts navigation"
 msgstr "글 탐색"
 
-#: inc/extras.php:63
+#: inc/extras.php:68
 msgid "Page %s"
 msgstr "페이지 %s"
 

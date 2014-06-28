@@ -58,7 +58,7 @@ msgstr "<span class=\"meta-nav\">&larr;</span> Articoli più vecchi"
 msgid "Posts navigation"
 msgstr "Navigazione articoli"
 
-#: inc/extras.php:63
+#: inc/extras.php:68
 msgid "Page %s"
 msgstr "Pagina %s"
 

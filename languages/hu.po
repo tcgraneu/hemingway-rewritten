@@ -58,7 +58,7 @@ msgstr "<span class=\"meta-nav\">&larr;</span> Korábbi bejegyzés"
 msgid "Posts navigation"
 msgstr "Bejegyzések navigációja"
 
-#: inc/extras.php:63
+#: inc/extras.php:68
 msgid "Page %s"
 msgstr "%s oldal"
 
