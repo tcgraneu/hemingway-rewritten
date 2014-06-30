@@ -123,6 +123,10 @@ a:active {
 a img {
 	border: 0;
 }
+img {
+	max-width: 100%;
+	height: auto;
+}
 
 /*--------------------------------------------------------------
 2.0 Typography
