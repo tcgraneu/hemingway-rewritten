@@ -1,32 +1,32 @@
-# Translation of Hemingway Rewritten in Spanish (Spain)
+# Translation of Hemingway Rewritten in Indonesian
 # This file is distributed under the same license as the Hemingway Rewritten package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-06-30 17:26:11+0000\n"
+"PO-Revision-Date: 2014-06-30 17:29:29+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: Hemingway Rewritten\n"
 
 msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling header effect and a minimal, elegant design. The large featured header images make this theme great for photographers, or any users who want to share their visuals in a bold way."
-msgstr "Hemingway Rewritten es un tema para blogs clásicos, con un efecto de desplazamiento de paralaje en el encabezado y un diseño minimalista y elegante. Las grandes imágenes incrustadas en el encabezado hacen que este tema sea fantástico para fotógrafos, o para cualquier usuario que quiera compartir sus productos audiovisuales de forma atrevida."
+msgstr "Hemingway Rewritten adalah tema blog klasik dengan efek header parallax-scrolling serta desain yang minimal dan elegan. Dengan gambar header sorotan besar membuat tema ini sangat cocok untuk para fotografer, atau pengguna yang ingin berbagi visual mereka dengan cara yang tegas."
 
 msgid "Full Width, No Sidebar"
-msgstr "Plantilla de ancho completo, sin laterales"
+msgstr ""
 
 #: search.php:16
 msgid "Search Results for: %s"
-msgstr "Resultados de la búsqueda para: %s"
+msgstr "Hasil Pencarian untuk: %s"
 
 #: inc/template-tags.php:142
 msgid "%1$s at %2$s"
-msgstr "%1$s en %2$s"
+msgstr "%1$s pukul %2$s"
 
 #: inc/template-tags.php:135
 msgid "Your comment is awaiting moderation."
-msgstr "Tu comentario está pendiente de moderación."
+msgstr "Komentar Anda sedang menunggu moderasi."
 
 #: inc/template-tags.php:59
 msgctxt "Previous post link"
@@ -40,101 +40,101 @@ msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
 
 #: inc/template-tags.php:122
 msgid "Pingback:"
-msgstr "Pingback:"
+msgstr "Ping balik:"
 
 #: inc/template-tags.php:56
 msgid "Post navigation"
-msgstr "Navegador de artículos"
+msgstr "Navigasi tulisan"
 
 #: inc/template-tags.php:31
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Entradas más nuevas <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Tulisan selanjutnya <span class=\"meta-nav\">&rarr;</span>"
 
 #: inc/template-tags.php:27
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "<span class=\"meta-nav\">&larr;</span> Entradas más antiguas"
+msgstr "<span class=\"meta-nav\">&larr;</span> Tulisan sebelumnya"
 
 #: inc/template-tags.php:23
 msgid "Posts navigation"
-msgstr "Ir a las entradas"
+msgstr "Navigasi tulisan"
 
 #: inc/extras.php:68
 msgid "Page %s"
-msgstr "Página %s"
+msgstr "Halaman %s"
 
 #: header.php:40
 msgid "Search"
-msgstr "Buscar"
+msgstr "Cari"
 
 #: header.php:36
 msgid "Skip to content"
-msgstr "Saltar al contenido."
+msgstr "Lanjut ke konten"
 
 #: functions.php:93
 msgid "Footer 3"
-msgstr "Pie de página 3"
+msgstr ""
 
 #: functions.php:134
 msgctxt "Raleway font: on or off"
 msgid "on"
-msgstr "activado"
+msgstr "nyala"
 
 #: functions.php:143
 msgctxt "Latos font: on or off"
 msgid "on"
-msgstr "activado"
+msgstr "on"
 
 #: header.php:35
 msgid "Menu"
-msgstr "Menú"
+msgstr "Menu"
 
 #: functions.php:77
 msgid "Footer 1"
-msgstr "Pie de página 1"
+msgstr ""
 
 #: functions.php:85
 msgid "Footer 2"
-msgstr "Pie de página 2"
+msgstr ""
 
 #: functions.php:69
 msgid "Sidebar"
-msgstr "Barra lateral"
+msgstr "Bilah Sisi"
 
 #: functions.php:47
 msgid "Primary Menu"
-msgstr "Menú Principal"
+msgstr "Menu Utama"
 
 #: footer.php:17
 msgid "Theme: %1$s by %2$s."
-msgstr "Tema: %1$s por %2$s."
+msgstr "Tema: %1$s oleh %2$s."
 
 #: footer.php:15
 msgid "Proudly powered by %s"
-msgstr "Funciona con %s"
+msgstr "Dengan bangga ditenagai oleh %s"
 
 #: footer.php:15
 msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
+msgstr "http://id.wordpress.org/"
 
 #: content.php:11 inc/template-tags.php:87
 msgid "Featured"
-msgstr "Destacado"
+msgstr "Istimewa"
 
 #: content-none.php:28
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Parece que no podemos encontrar lo que estás buscando. Tal vez la búsqueda le pueda ayudar."
+msgstr "Rupanya kami tidak dapat menemukan apa yang Anda cari. Mungkin pencarian dapat membantu."
 
 #: content-none.php:23
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Lo sentimos, pero nada coincidió con su búsqueda. Por favor inténtelo de nuevo con otras palabras clave."
+msgstr "Maaf, tidak ada yang cocok dengan kata yang anda cari. Silahkan coba lagi dengan kata kunci yang lain"
 
 #: content-none.php:19
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "¿Preparado para publicar tu primera entrada? <a href=\"%1$s\">Empieza aquí</a>."
+msgstr "Sudah siap menerbitkan tulisan pertamamu? <a href=\"%1$s\">Mulai di sini</a>."
 
 #: content-none.php:13
 msgid "Nothing Found"
-msgstr "No se ha encontrado nada"
+msgstr "Tidak Menemukan Apa-apa"
 
 #: content-media.php:35 content-single.php:33
 msgid ", "
@@ -143,87 +143,87 @@ msgstr ", "
 #: content-media.php:28 content-page.php:23 content-single.php:16
 #: content.php:28 inc/template-tags.php:122 inc/template-tags.php:151
 msgid "Edit"
-msgstr "Editar"
+msgstr "Edit"
 
 #: content-media.php:26 content.php:26
 msgid "1 Comment"
-msgstr "1 comentario"
+msgstr ""
 
 #: content-media.php:26 content.php:26
 msgid "% Comments"
-msgstr "% comentarios"
+msgstr "% Komentar"
 
 #: content-media.php:26 content.php:26
 msgid "Leave a comment"
-msgstr "Deja un comentario"
+msgstr "Tinggalkan komentar"
 
 #: content-media.php:12 content-page.php:18 content-single.php:24
 #: content.php:42
 msgid "Pages:"
-msgstr "Páginas:"
+msgstr "Halaman:"
 
 #: content-media.php:9 content.php:39
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Sigue leyendo <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Baca lebih lanjut <span class=\"meta-nav\">&rarr;</span>"
 
 #: comments.php:63
 msgid "Comments are closed."
-msgstr "Los comentarios están cerrados."
+msgstr "Komentar ditutup."
 
 #: comments.php:37 comments.php:53
 msgid "Newer Comments &rarr;"
-msgstr "Comentarios recientes &rarr;"
+msgstr "Komentar Selanjutnya &rarr;"
 
 #: comments.php:36 comments.php:52
 msgid "&larr; Older Comments"
-msgstr "&larr; Comentarios antiguos"
+msgstr "&larr; Komentar Sebelumnya"
 
 #: comments.php:35 comments.php:51
 msgid "Comment navigation"
-msgstr "Navegación de comentarios"
+msgstr "Navigasi komentar"
 
 #: comments.php:28
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Un comentario en &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s comentarios en &ldquo;%2$s&rdquo;"
+msgstr[0] "Satu pemikiran pada &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s pemikiran pada &ldquo;%2$s&rdquo;"
 
 #: archive.php:66
 msgid "Archives"
-msgstr "Archivos"
+msgstr "Arsip"
 
 #: archive.php:60
 msgid "Audios"
-msgstr "Audios"
+msgstr "Audio"
 
 #: archive.php:63
 msgid "Chats"
-msgstr "Chat"
+msgstr "Obrolan"
 
 #: archive.php:57
 msgid "Statuses"
-msgstr "Estados"
+msgstr "Status"
 
 #: archive.php:54
 msgid "Links"
-msgstr "Enlaces"
+msgstr "Tautan"
 
 #: archive.php:51
 msgid "Quotes"
-msgstr "Citas"
+msgstr "Kutipan"
 
 #: archive.php:48
 msgid "Videos"
-msgstr "Vídeos"
+msgstr "Film"
 
 #: archive.php:45
 msgid "Images"
-msgstr "Imágenes"
+msgstr "Gambar"
 
 #: archive.php:42
 msgid "Galleries"
-msgstr "Galerías"
+msgstr "Galeri"
 
 #: archive.php:36
 msgctxt "yearly archives date format"
@@ -232,15 +232,15 @@ msgstr "Y"
 
 #: archive.php:39
 msgid "Asides"
-msgstr "Apartados"
+msgstr "Sampingan"
 
 #: archive.php:36
 msgid "Year: %s"
-msgstr "Año: %s"
+msgstr "Tahun: %s"
 
 #: archive.php:33
 msgid "Month: %s"
-msgstr "Mes: %s"
+msgstr "Bulan: %s"
 
 #: archive.php:33
 msgctxt "monthly archives date format"
@@ -249,16 +249,16 @@ msgstr "F Y"
 
 #: archive.php:27
 msgid "Author: %s"
-msgstr "Autor: %s"
+msgstr "Penulis: %s"
 
 #: archive.php:30
 msgid "Day: %s"
-msgstr "Día: %s"
+msgstr "Hari: %s"
 
 #: 404.php:19
 msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "Parece que no hay nada en este lugar. ¿Y si pruebas una búsqueda?"
+msgstr "Sepertinya tidak ada apa pun di sini. Mungkin mau coba pencarian?"
 
 #: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "¡Vaya! Esa página no se puede encontrar."
+msgstr ""
