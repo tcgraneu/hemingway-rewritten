@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Hemingway Rewritten package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-06-23 10:23:30+0000\n"
+"PO-Revision-Date: 2014-07-03 11:32:55+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Hemingway Rewritten\n"
 
 msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling header effect and a minimal, elegant design. The large featured header images make this theme great for photographers, or any users who want to share their visuals in a bold way."
-msgstr ""
+msgstr "Hemingway Rewritten은 시차 스크롤링 헤더 효과와 미니멀하고 우아한 디자인을 자랑하는 클래식 블로그 테마입니다. 대형 추천 헤더 이미지는 포토그래퍼 또는 대담하게 시각 자료를 공유하고자 하는 모든 사용자에게 이상적인 테마입니다."
 
 msgid "Full Width, No Sidebar"
 msgstr ""
