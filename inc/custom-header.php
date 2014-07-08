@@ -14,7 +14,7 @@
  */
 function hemingway_rewritten_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'hemingway_rewritten_custom_header_args', array(
-		'default-image'          => get_template_directory_uri() . '/images/header.jpg',
+		'default-image'          => '%s/images/header.jpg',
 		'default-text-color'     => 'ffffff',
 		'width'                  => 1280,
 		'height'                 => 426,
@@ -23,6 +23,13 @@ function hemingway_rewritten_custom_header_setup() {
 		'admin-head-callback'    => 'hemingway_rewritten_admin_header_style',
 		'admin-preview-callback' => 'hemingway_rewritten_admin_header_image',
 	) ) );
+
+	register_default_headers( array(
+		'default' => array(
+			'url'           => '%s/images/header.jpg',
+			'thumbnail_url' => '%s/images/header-thumbnail.jpg',
+		),
+	) );
 }
 add_action( 'after_setup_theme', 'hemingway_rewritten_custom_header_setup' );
 
