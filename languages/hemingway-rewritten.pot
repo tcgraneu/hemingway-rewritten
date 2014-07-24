@@ -278,7 +278,7 @@ msgid "Hemingway Rewritten"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://theme.wordpress.com/themes/hemingway-rewritten"
+msgid "https://wordpress.com/themes/hemingway-rewritten"
 msgstr ""
 
 #. Description of the plugin/theme
