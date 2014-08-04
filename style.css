@@ -1161,7 +1161,7 @@ a:active {
 	display: block;
 }
 #infinite-footer {
-	z-index: 999;
+	z-index: 99;
 }
 #infinite-handle span {
 	background-color: #1d1d1d;
