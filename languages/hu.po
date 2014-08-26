@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Hemingway Rewritten package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-06-11 14:53:11+0000\n"
+"PO-Revision-Date: 2014-08-25 14:48:38+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,7 +14,7 @@ msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling hea
 msgstr ""
 
 msgid "Full Width, No Sidebar"
-msgstr ""
+msgstr "Teljes méret, Oldalsáv nélkül"
 
 #: search.php:16
 msgid "Search Results for: %s"
@@ -199,7 +199,7 @@ msgstr "Audiók"
 
 #: archive.php:63
 msgid "Chats"
-msgstr ""
+msgstr "Beszélgetések"
 
 #: archive.php:57
 msgid "Statuses"
