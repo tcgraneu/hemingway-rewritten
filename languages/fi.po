@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Hemingway Rewritten package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-06-05 08:14:47+0000\n"
+"PO-Revision-Date: 2014-09-07 10:35:32+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -195,11 +195,11 @@ msgstr "Arkistot"
 
 #: archive.php:60
 msgid "Audios"
-msgstr ""
+msgstr "Äänet"
 
 #: archive.php:63
 msgid "Chats"
-msgstr ""
+msgstr "Keskustelut"
 
 #: archive.php:57
 msgid "Statuses"
@@ -236,11 +236,11 @@ msgstr "Sivuhuomautukset"
 
 #: archive.php:36
 msgid "Year: %s"
-msgstr ""
+msgstr "Vuosi: %s"
 
 #: archive.php:33
 msgid "Month: %s"
-msgstr ""
+msgstr "Kuukausi: %s"
 
 #: archive.php:33
 msgctxt "monthly archives date format"
@@ -253,7 +253,7 @@ msgstr "Kirjoittaja: %s"
 
 #: archive.php:30
 msgid "Day: %s"
-msgstr ""
+msgstr "Päivä: %s"
 
 #: 404.php:19
 msgid "It looks like nothing was found at this location. Maybe try a search?"
