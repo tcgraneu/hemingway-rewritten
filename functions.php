@@ -142,7 +142,7 @@ function hemingway_rewritten_google_fonts() {
 
 	if ( 'off' !== _x( 'on', 'Latos font: on or off', 'hemingway-rewritten' ) ) {
 
-		wp_register_style( 'hemingway-rewritten-latos', "$protocol://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" );
+		wp_register_style( 'hemingway-rewritten-latos', "$protocol://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin,latin-ext" );
 
 	}
 
