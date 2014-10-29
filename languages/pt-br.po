@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Hemingway Rewritten package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-06-24 04:23:10+0000\n"
+"PO-Revision-Date: 2014-10-28 11:08:45+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,7 +14,7 @@ msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling hea
 msgstr "Hemingway Rewritten é um clássico tema de blog com um efeito de paralaxe no cabeçalho e um design minimalista e elegante. As grandes imagens de destaque no cabeçalho tornam este tema ótimo para fotógrafos, ou quaisquer usuários que querem compartilhar seus recursos visuais de uma forma ousada."
 
 msgid "Full Width, No Sidebar"
-msgstr ""
+msgstr "Largura total, sem barra lateral"
 
 #: search.php:16
 msgid "Search Results for: %s"
