@@ -10,9 +10,11 @@ msgstr ""
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: Hemingway Rewritten\n"
 
+#. Description of the plugin/theme
 msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling header effect and a minimal, elegant design. The large featured header images make this theme great for photographers, or any users who want to share their visuals in a bold way."
 msgstr ""
 
+#. Template Name of the plugin/theme
 msgid "Full Width, No Sidebar"
 msgstr ""
 
@@ -20,6 +22,7 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr "Sökresultat för: %s"
 
+#. translators: 1: date, 2: time
 #: inc/template-tags.php:142
 msgid "%1$s at %2$s"
 msgstr "%1$s kl. %2$s"
@@ -74,11 +77,17 @@ msgstr "Hoppa till innehåll"
 msgid "Footer 3"
 msgstr "Sidfot 3"
 
+#. translators: If there are characters in your language that are not supported
+#. by Raleway, translate this to 'off'. Do not translate into your own
+#. language.
 #: functions.php:134
 msgctxt "Raleway font: on or off"
 msgid "on"
 msgstr ""
 
+#. translators: If there are characters in your language that are not supported
+#. by Latos, translate this to 'off'. Do not translate into your own
+#. language.
 #: functions.php:143
 msgctxt "Latos font: on or off"
 msgid "on"
@@ -136,6 +145,7 @@ msgstr "Är du redo att posta ditt första inlägg? <a href=\"%1$s\">Starta här
 msgid "Nothing Found"
 msgstr "Inget funnet"
 
+#. translators: used between list items, there is a space after the comma
 #: content-media.php:35 content-single.php:33
 msgid ", "
 msgstr ", "
