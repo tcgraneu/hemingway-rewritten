@@ -576,7 +576,8 @@ a:active {
 }
 .main-navigation ul ul a:hover {
 }
-.main-navigation ul li:hover > ul {
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
 	display: block;
 }
 .main-navigation .current_page_item a,
