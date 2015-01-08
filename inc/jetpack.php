@@ -26,12 +26,12 @@ function hemingway_rewritten_jetpack_setup() {
 add_action( 'after_setup_theme', 'hemingway_rewritten_jetpack_setup' );
 
 function hemingway_rewritten_render() {
-	$contentpart = get_post_format();
-	if ( 'image' == $contentpart || 'video' == $contentpart )
-		$contentpart = 'media';
-
 	while( have_posts() ) {
 		the_post();
+		$contentpart = get_post_format();
+		if ( 'image' == $contentpart || 'video' == $contentpart )
+			$contentpart = 'media';
+
 		get_template_part( 'content', $contentpart );
 	}
 }
