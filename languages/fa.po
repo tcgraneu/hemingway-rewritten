@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Hemingway Rewritten package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-01-07 06:21:17+0000\n"
+"PO-Revision-Date: 2015-02-17 06:52:09+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,7 +12,7 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling header effect and a minimal, elegant design. The large featured header images make this theme great for photographers, or any users who want to share their visuals in a bold way."
-msgstr ""
+msgstr "Hemingway Rewritten (بازنویسی همینگوی) یک پوستهٔ کلاسیک برای وب‌نویسی است که سرایند آن جلوهٔ نوردش موازی دارد. طراحی آن مینیمال و خوش‌دست است. تصاویر ویژهٔ سرایند بزرگ این پوسته را برای عکاسان، یا هر کاربری که می‌خواهد تصاویرش را به نمایش بگذارد مناسب می‌کند."
 
 #. Template Name of the plugin/theme
 msgid "Full Width, No Sidebar"
@@ -91,7 +91,7 @@ msgstr "روشن"
 #: functions.php:143
 msgctxt "Latos font: on or off"
 msgid "on"
-msgstr ""
+msgstr "روشن"
 
 #: header.php:35
 msgid "Menu"
