@@ -11,10 +11,12 @@ msgstr ""
 "Project-Id-Version: Hemingway Rewritten\n"
 
 #. Description of the plugin/theme
+#: wp-content/themes/pub/hemingway-rewritten/style.css
 msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling header effect and a minimal, elegant design. The large featured header images make this theme great for photographers, or any users who want to share their visuals in a bold way."
 msgstr "Hemingway Rewritten adalah tema blog klasik dengan efek header parallax-scrolling serta desain yang minimal dan elegan. Dengan gambar header sorotan besar membuat tema ini sangat cocok untuk para fotografer, atau pengguna yang ingin berbagi visual mereka dengan cara yang tegas."
 
 #. Template Name of the plugin/theme
+#: wp-content/themes/pub/hemingway-rewritten/nosidebar-page.php
 msgid "Full Width, No Sidebar"
 msgstr ""
 
