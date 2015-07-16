@@ -126,14 +126,12 @@ add_action( 'wp_enqueue_scripts', 'hemingway_rewritten_scripts' );
  */
 function hemingway_rewritten_google_fonts() {
 
-	$protocol = is_ssl() ? 'https' : 'http';
-
 	/*	translators: If there are characters in your language that are not supported
 		by Raleway, translate this to 'off'. Do not translate into your own language. */
 
 	if ( 'off' !== _x( 'on', 'Raleway font: on or off', 'hemingway-rewritten' ) ) {
 
-		wp_register_style( 'hemingway-rewritten-raleway', "$protocol://fonts.googleapis.com/css?family=Raleway:400,300,700" );
+		wp_register_style( 'hemingway-rewritten-raleway', "https://fonts.googleapis.com/css?family=Raleway:400,300,700" );
 
 	}
 
@@ -142,7 +140,7 @@ function hemingway_rewritten_google_fonts() {
 
 	if ( 'off' !== _x( 'on', 'Latos font: on or off', 'hemingway-rewritten' ) ) {
 
-		wp_register_style( 'hemingway-rewritten-latos', "$protocol://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin,latin-ext" );
+		wp_register_style( 'hemingway-rewritten-latos', "https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin,latin-ext" );
 
 	}
 
