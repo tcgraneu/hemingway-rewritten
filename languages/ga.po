@@ -82,7 +82,7 @@ msgstr "Buntásc 3"
 #. translators: If there are characters in your language that are not supported
 #. by Raleway, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:134
+#: functions.php:132
 msgctxt "Raleway font: on or off"
 msgid "on"
 msgstr "on"
@@ -90,7 +90,7 @@ msgstr "on"
 #. translators: If there are characters in your language that are not supported
 #. by Latos, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:143
+#: functions.php:141
 msgctxt "Latos font: on or off"
 msgid "on"
 msgstr "on"
