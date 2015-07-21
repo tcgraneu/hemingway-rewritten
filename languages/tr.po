@@ -15,11 +15,6 @@ msgstr ""
 msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling header effect and a minimal, elegant design. The large featured header images make this theme great for photographers, or any users who want to share their visuals in a bold way."
 msgstr "Hemingway Rewritten minimal, zarif tasarımı ve paralaks kayan başlık etkisi olan klasik bir blog temasıdır. Büyük sunulan başlık görüntüleri bu temayı fotoğrafçılar veya görsellerini cesurca paylaşmak isteyen diğerleri için harika bir tema yapıyor."
 
-#. Template Name of the plugin/theme
-#: wp-content/themes/pub/hemingway-rewritten/nosidebar-page.php
-msgid "Full Width, No Sidebar"
-msgstr ""
-
 #: search.php:16
 msgid "Search Results for: %s"
 msgstr "Arama sonuçları: %s"
@@ -75,37 +70,9 @@ msgstr "Ara"
 msgid "Skip to content"
 msgstr "İçeriğe geç"
 
-#: functions.php:93
-msgid "Footer 3"
-msgstr ""
-
-#. translators: If there are characters in your language that are not supported
-#. by Raleway, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:132
-msgctxt "Raleway font: on or off"
-msgid "on"
-msgstr ""
-
-#. translators: If there are characters in your language that are not supported
-#. by Latos, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:141
-msgctxt "Latos font: on or off"
-msgid "on"
-msgstr ""
-
 #: header.php:35
 msgid "Menu"
 msgstr "Menü"
-
-#: functions.php:77
-msgid "Footer 1"
-msgstr ""
-
-#: functions.php:85
-msgid "Footer 2"
-msgstr ""
 
 #: functions.php:69
 msgid "Sidebar"

@@ -10,16 +10,6 @@ msgstr ""
 "X-Generator: GlotPress/1.0-alpha-1000\n"
 "Project-Id-Version: Hemingway Rewritten\n"
 
-#. Description of the plugin/theme
-#: wp-content/themes/pub/hemingway-rewritten/style.css
-msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling header effect and a minimal, elegant design. The large featured header images make this theme great for photographers, or any users who want to share their visuals in a bold way."
-msgstr ""
-
-#. Template Name of the plugin/theme
-#: wp-content/themes/pub/hemingway-rewritten/nosidebar-page.php
-msgid "Full Width, No Sidebar"
-msgstr ""
-
 #: search.php:16
 msgid "Search Results for: %s"
 msgstr "Ἀναζήτηση ἀποτελεσμάτων γιά: %s"
@@ -78,22 +68,6 @@ msgstr "Πηγαίνετε στὸ περιεχόμενο τοῦ ἱστολο�
 #: functions.php:93
 msgid "Footer 3"
 msgstr "Ὑποσέλιδο 3"
-
-#. translators: If there are characters in your language that are not supported
-#. by Raleway, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:132
-msgctxt "Raleway font: on or off"
-msgid "on"
-msgstr ""
-
-#. translators: If there are characters in your language that are not supported
-#. by Latos, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:141
-msgctxt "Latos font: on or off"
-msgid "on"
-msgstr ""
 
 #: header.php:35
 msgid "Menu"
@@ -158,10 +132,6 @@ msgid "Edit"
 msgstr "Ἐπεξεργασία"
 
 #: content-media.php:26 content.php:26
-msgid "1 Comment"
-msgstr ""
-
-#: content-media.php:26 content.php:26
 msgid "% Comments"
 msgstr "% Σχόλια"
 
@@ -205,10 +175,6 @@ msgstr[1] "%1$s σκέψεις πάνω στὸ &ldquo;%2$s&rdquo;"
 msgid "Archives"
 msgstr "Ἀρχεῖα"
 
-#: archive.php:60
-msgid "Audios"
-msgstr ""
-
 #: archive.php:63
 msgid "Chats"
 msgstr "Συζητήσεις"
@@ -220,10 +186,6 @@ msgstr "Κατάσταση ὰναρτήσεων"
 #: archive.php:54
 msgid "Links"
 msgstr "Σύνδεσμοι"
-
-#: archive.php:51
-msgid "Quotes"
-msgstr ""
 
 #: archive.php:48
 msgid "Videos"
@@ -241,10 +203,6 @@ msgstr "Συλλογὲς εἰκόνων"
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
-
-#: archive.php:39
-msgid "Asides"
-msgstr ""
 
 #: archive.php:36
 msgid "Year: %s"

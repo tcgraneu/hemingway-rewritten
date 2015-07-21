@@ -15,11 +15,6 @@ msgstr ""
 msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling header effect and a minimal, elegant design. The large featured header images make this theme great for photographers, or any users who want to share their visuals in a bold way."
 msgstr "Hemingway Rewritten is a classic blog theme with a parallax-scrolling header effect and a minimal, elegant design. The large featured header images make this theme great for photographers, or any users who want to share their visuals in a bold way."
 
-#. Template Name of the plugin/theme
-#: wp-content/themes/pub/hemingway-rewritten/nosidebar-page.php
-msgid "Full Width, No Sidebar"
-msgstr ""
-
 #: search.php:16
 msgid "Search Results for: %s"
 msgstr " %s üçün Axtarışın Nəticələri:"

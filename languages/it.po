@@ -15,11 +15,6 @@ msgstr ""
 msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling header effect and a minimal, elegant design. The large featured header images make this theme great for photographers, or any users who want to share their visuals in a bold way."
 msgstr "Hemingway Rewritten è un tema classico per blog con un'intestazione a effetto parallasse e un design essenziale ed elegante. Le grandi immagini di cui è caratterizzata l'intestazione rendono questo tema ideale per fotografi o altri utenti che desiderano condividere le proprie immagini in modo interessante."
 
-#. Template Name of the plugin/theme
-#: wp-content/themes/pub/hemingway-rewritten/nosidebar-page.php
-msgid "Full Width, No Sidebar"
-msgstr ""
-
 #: search.php:16
 msgid "Search Results for: %s"
 msgstr "Risultati della ricerca per: %s"
@@ -87,14 +82,6 @@ msgctxt "Raleway font: on or off"
 msgid "on"
 msgstr "on"
 
-#. translators: If there are characters in your language that are not supported
-#. by Latos, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:141
-msgctxt "Latos font: on or off"
-msgid "on"
-msgstr ""
-
 #: header.php:35
 msgid "Menu"
 msgstr "Menu"
@@ -156,10 +143,6 @@ msgstr ", "
 #: content.php:28 inc/template-tags.php:122 inc/template-tags.php:151
 msgid "Edit"
 msgstr "Modifica"
-
-#: content-media.php:26 content.php:26
-msgid "1 Comment"
-msgstr ""
 
 #: content-media.php:26 content.php:26
 msgid "% Comments"

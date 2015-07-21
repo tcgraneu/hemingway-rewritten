@@ -158,10 +158,6 @@ msgid "Edit"
 msgstr "Modifier"
 
 #: content-media.php:26 content.php:26
-msgid "1 Comment"
-msgstr ""
-
-#: content-media.php:26 content.php:26
 msgid "% Comments"
 msgstr "% Commentaires"
 

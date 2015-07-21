@@ -15,11 +15,6 @@ msgstr ""
 msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling header effect and a minimal, elegant design. The large featured header images make this theme great for photographers, or any users who want to share their visuals in a bold way."
 msgstr "Hemingway Rewritten은 시차 스크롤링 헤더 효과와 미니멀하고 우아한 디자인을 자랑하는 클래식 블로그 테마입니다. 대형 추천 헤더 이미지는 포토그래퍼 또는 대담하게 시각 자료를 공유하고자 하는 모든 사용자에게 이상적인 테마입니다."
 
-#. Template Name of the plugin/theme
-#: wp-content/themes/pub/hemingway-rewritten/nosidebar-page.php
-msgid "Full Width, No Sidebar"
-msgstr ""
-
 #: search.php:16
 msgid "Search Results for: %s"
 msgstr "검색 결과: %s"
@@ -78,22 +73,6 @@ msgstr "컨텐츠로 건너뛰기"
 #: functions.php:93
 msgid "Footer 3"
 msgstr "푸터 3"
-
-#. translators: If there are characters in your language that are not supported
-#. by Raleway, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:132
-msgctxt "Raleway font: on or off"
-msgid "on"
-msgstr ""
-
-#. translators: If there are characters in your language that are not supported
-#. by Latos, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:141
-msgctxt "Latos font: on or off"
-msgid "on"
-msgstr ""
 
 #: header.php:35
 msgid "Menu"
@@ -156,10 +135,6 @@ msgstr ", "
 #: content.php:28 inc/template-tags.php:122 inc/template-tags.php:151
 msgid "Edit"
 msgstr "편집"
-
-#: content-media.php:26 content.php:26
-msgid "1 Comment"
-msgstr ""
 
 #: content-media.php:26 content.php:26
 msgid "% Comments"

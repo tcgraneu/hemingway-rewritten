@@ -10,11 +10,6 @@ msgstr ""
 "X-Generator: GlotPress/1.0-alpha-1000\n"
 "Project-Id-Version: Hemingway Rewritten\n"
 
-#. Description of the plugin/theme
-#: wp-content/themes/pub/hemingway-rewritten/style.css
-msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling header effect and a minimal, elegant design. The large featured header images make this theme great for photographers, or any users who want to share their visuals in a bold way."
-msgstr ""
-
 #. Template Name of the plugin/theme
 #: wp-content/themes/pub/hemingway-rewritten/nosidebar-page.php
 msgid "Full Width, No Sidebar"
@@ -78,22 +73,6 @@ msgstr "Siirry sisältöön"
 #: functions.php:93
 msgid "Footer 3"
 msgstr "Alapalkki 3"
-
-#. translators: If there are characters in your language that are not supported
-#. by Raleway, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:132
-msgctxt "Raleway font: on or off"
-msgid "on"
-msgstr ""
-
-#. translators: If there are characters in your language that are not supported
-#. by Latos, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:141
-msgctxt "Latos font: on or off"
-msgid "on"
-msgstr ""
 
 #: header.php:35
 msgid "Menu"
@@ -270,7 +249,3 @@ msgstr "Päivä: %s"
 #: 404.php:19
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "Näyttää siltä että täällä ei ole mitään. Kokeilepa hakua?"
-
-#: 404.php:15
-msgid "Oops! That page can&rsquo;t be found."
-msgstr ""

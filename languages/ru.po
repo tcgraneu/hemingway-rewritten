@@ -15,11 +15,6 @@ msgstr ""
 msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling header effect and a minimal, elegant design. The large featured header images make this theme great for photographers, or any users who want to share their visuals in a bold way."
 msgstr "Hemingway Rewritten — это классическая тема для блогов с эффектом прокручиваемых со смещением заголовков и минималистским, элегантным дизайном. Изображения с крупными функциональными заголовками делают эту тему востребованной у фотографов и пользователей, которые хотят привлечь внимание к своим работам."
 
-#. Template Name of the plugin/theme
-#: wp-content/themes/pub/hemingway-rewritten/nosidebar-page.php
-msgid "Full Width, No Sidebar"
-msgstr ""
-
 #: search.php:16
 msgid "Search Results for: %s"
 msgstr "Результаты поиска: %s"
@@ -75,37 +70,9 @@ msgstr "Поиск"
 msgid "Skip to content"
 msgstr "Перейти к содержимому"
 
-#: functions.php:93
-msgid "Footer 3"
-msgstr ""
-
-#. translators: If there are characters in your language that are not supported
-#. by Raleway, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:132
-msgctxt "Raleway font: on or off"
-msgid "on"
-msgstr ""
-
-#. translators: If there are characters in your language that are not supported
-#. by Latos, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:141
-msgctxt "Latos font: on or off"
-msgid "on"
-msgstr ""
-
 #: header.php:35
 msgid "Menu"
 msgstr "Меню"
-
-#: functions.php:77
-msgid "Footer 1"
-msgstr ""
-
-#: functions.php:85
-msgid "Footer 2"
-msgstr ""
 
 #: functions.php:69
 msgid "Sidebar"
@@ -156,10 +123,6 @@ msgstr ", "
 #: content.php:28 inc/template-tags.php:122 inc/template-tags.php:151
 msgid "Edit"
 msgstr "Изменить"
-
-#: content-media.php:26 content.php:26
-msgid "1 Comment"
-msgstr ""
 
 #: content-media.php:26 content.php:26
 msgid "% Comments"
@@ -271,7 +234,3 @@ msgstr "День: %s"
 #: 404.php:19
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "По данному адресу ничего не найдено. Попробуйте воспользоваться поиском."
-
-#: 404.php:15
-msgid "Oops! That page can&rsquo;t be found."
-msgstr ""

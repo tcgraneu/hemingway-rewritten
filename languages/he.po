@@ -87,14 +87,6 @@ msgctxt "Raleway font: on or off"
 msgid "on"
 msgstr "off"
 
-#. translators: If there are characters in your language that are not supported
-#. by Latos, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:141
-msgctxt "Latos font: on or off"
-msgid "on"
-msgstr ""
-
 #: header.php:35
 msgid "Menu"
 msgstr "תפריט"
