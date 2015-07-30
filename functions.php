@@ -57,6 +57,9 @@ function hemingway_rewritten_setup() {
 
 	// Enable support for HTML5 markup.
 	add_theme_support( 'html5', array( 'comment-list', 'search-form', 'comment-form', ) );
+
+	// Enable support for Editor Styles.
+	add_editor_style( array( 'editor-style.css', hemingway_rewritten_google_fonts() ) );
 }
 endif; // hemingway_rewritten_setup
 add_action( 'after_setup_theme', 'hemingway_rewritten_setup' );
@@ -104,8 +107,8 @@ add_action( 'widgets_init', 'hemingway_rewritten_widgets_init' );
  * Enqueue scripts and styles.
  */
 function hemingway_rewritten_scripts() {
-	wp_enqueue_style( 'hemingway-rewritten-raleway' );
-	wp_enqueue_style( 'hemingway-rewritten-latos' );
+	wp_enqueue_style( 'hemingway-rewritten-fonts', hemingway_rewritten_google_fonts(), array(), null );
+
 	wp_enqueue_style( 'hemingway-rewritten-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css' );
 
@@ -122,42 +125,52 @@ function hemingway_rewritten_scripts() {
 add_action( 'wp_enqueue_scripts', 'hemingway_rewritten_scripts' );
 
 /**
- * Register Google Fonts
+ * Return Google Fonts URL
  */
 function hemingway_rewritten_google_fonts() {
+	$fonts_url = '';
 
-	/*	translators: If there are characters in your language that are not supported
-		by Raleway, translate this to 'off'. Do not translate into your own language. */
+	/* Translators: If there are characters in your language that are not supported by Raleway,
+	 * translate this to 'off'. Do not translate into your own language.
+	 */
+	$raleway = _x( 'on', 'Raleway font: on or off', 'hemingway-rewritten' );
 
-	if ( 'off' !== _x( 'on', 'Raleway font: on or off', 'hemingway-rewritten' ) ) {
+	/* Translators: If there are characters in your language that are not supported by Lato,
+	 * translate this to 'off'. Do not translate into your own language.
+	 */
+	$lato = _x( 'on', 'Lato font: on or off', 'hemingway-rewritten' );
 
-		wp_register_style( 'hemingway-rewritten-raleway', "https://fonts.googleapis.com/css?family=Raleway:400,300,700" );
+	if ( 'off' !== $raleway || 'off' !== $lato ) {
+		$font_families = array();
 
+		if ( 'off' !== $raleway ) {
+			$font_families[] = 'Raleway:400,300,700';
+		}
+
+		if ( 'off' !== $lato ) {
+			$font_families[] = 'Lato:400,700,400italic,700italic';
+		}
+
+		$query_args = array(
+			'family' => urlencode( implode( '|', $font_families ) ),
+			'subset' => urlencode( 'latin,latin-ext' ),
+		);
+
+		$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
 	}
 
-	/*	translators: If there are characters in your language that are not supported
-		by Latos, translate this to 'off'. Do not translate into your own language. */
-
-	if ( 'off' !== _x( 'on', 'Latos font: on or off', 'hemingway-rewritten' ) ) {
-
-		wp_register_style( 'hemingway-rewritten-latos', "https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin,latin-ext" );
-
-	}
-
+	return esc_url_raw( $fonts_url );
 }
-add_action( 'init', 'hemingway_rewritten_google_fonts' );
 
 /**
  * Enqueue Google Fonts for custom headers
  */
 function hemingway_rewritten_admin_scripts( $hook_suffix ) {
-
-	if ( 'appearance_page_custom-header' != $hook_suffix )
+	if ( 'appearance_page_custom-header' != $hook_suffix ) {
 		return;
+	}
 
-	wp_enqueue_style( 'hemingway-rewritten-raleway' );
-	wp_enqueue_style( 'hemingway-rewritten-latos' );
-
+	wp_enqueue_style( 'hemingway-rewritten-fonts', hemingway_rewritten_google_fonts(), array(), null );
 }
 add_action( 'admin_enqueue_scripts', 'hemingway_rewritten_admin_scripts' );
 

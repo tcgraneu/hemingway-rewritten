@@ -1,0 +1,334 @@
+/*
+Theme Name: Hemingway Rewritten
+Description: Used to style the TinyMCE editor.
+*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Typography
+2.0 - Elements
+3.0 - Links
+4.0 - Alignments
+5.0 - Post Formats
+6.0 - Media
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+1.0 Typography
+--------------------------------------------------------------*/
+
+body {
+	color: #444;
+	font-family: Lato, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.7;
+	max-width: 676px;
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+	-webkit-font-smoothing: auto !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	margin: 25px 0;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 27px;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+p {
+	margin-bottom: 30px;
+	margin-top: 0;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote cite {
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 140%;
+	color: #666;
+}
+
+blockquote {
+	margin: 15px 0;
+	padding: 30px;
+	line-height: 150%;
+	color: rgba(0,0,0,0.4);
+	background: #eee;
+	font-family: "Raleway", "Helvetica Neue", sans-serif;
+}
+
+address {
+	margin: 0 0 1.7em;
+	padding: 3% 3.5%;
+	background: #f1f1f1;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	margin-bottom: 30px;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+2.0 Elements
+--------------------------------------------------------------*/
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 30px;
+}
+
+ul, ol {
+	margin: 0 0 30px 54px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 30px;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 27px 27px;
+}
+
+figure {
+	margin: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 16px;
+	margin: 0 0 30px;
+	width: 100%;
+}
+
+th {
+	border-bottom: 1px solid #ddd;
+	color: #444;
+	font-weight: bold;
+	padding: 2%;
+}
+
+td {
+	border-bottom: 1px solid #ddd;
+	line-height: 120%;
+	margin: 0;
+	overflow: visible;
+	padding: 2%;
+}
+
+.mce-item-table tbody > tr:nth-child(odd) > td {
+	background: #f9f9f9;
+}
+
+/*--------------------------------------------------------------
+3.0 Links
+--------------------------------------------------------------*/
+
+a {
+	color: #1abc9c;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #1abc9c;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #1abc9c;
+}
+
+/*--------------------------------------------------------------
+4.0 Alignments
+--------------------------------------------------------------*/
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 30px;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 30px;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+5.0 Post Formats
+--------------------------------------------------------------*/
+
+body.post-format-aside {
+	background: #eee;
+	margin: 0;
+	padding: 30px !important;
+}
+
+body.post-format-quote {
+	background: #262626;
+	color: #fff;
+	padding: 30px !important;
+}
+
+.post-format-quote blockquote {
+	background: transparent;
+	color: rgba(255,255,255,0.6);
+}
+
+/*--------------------------------------------------------------
+6.0 Media
+--------------------------------------------------------------*/
+
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.wp-caption {
+	background: none;
+	border: 0;
+	margin-bottom: 30px;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.wp-caption-dd,
+.wp-caption-text {
+	color: #888;
+	font-size: 14px;
+	line-height: 1.8;
+	padding-top: 12px;
+	text-align: center;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 12px 0;
+}
+
+.site-main .gallery {
+	margin-bottom: 30px;
+}
+
+.site-main .gallery a img {
+	border: none;
+	height: auto;
+	max-width: 90%;
+}
+
+.site-main .gallery dd {
+	margin: 0;
+}
+
+.jetpack-video-wrapper {
+	margin-bottom: 30px;
+}
