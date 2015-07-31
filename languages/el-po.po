@@ -65,7 +65,7 @@ msgstr "Ἀναζήτηση"
 msgid "Skip to content"
 msgstr "Πηγαίνετε στὸ περιεχόμενο τοῦ ἱστολογίου"
 
-#: functions.php:93
+#: functions.php:96
 msgid "Footer 3"
 msgstr "Ὑποσέλιδο 3"
 
@@ -73,15 +73,15 @@ msgstr "Ὑποσέλιδο 3"
 msgid "Menu"
 msgstr "Μενού"
 
-#: functions.php:77
+#: functions.php:80
 msgid "Footer 1"
 msgstr "Ὑποσέλιδο 1"
 
-#: functions.php:85
+#: functions.php:88
 msgid "Footer 2"
 msgstr "Ὑποσέλιδο 2"
 
-#: functions.php:69
+#: functions.php:72
 msgid "Sidebar"
 msgstr "Πλαϊνὴ στήλη"
 

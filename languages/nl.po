@@ -65,14 +65,14 @@ msgstr "Zoeken"
 msgid "Skip to content"
 msgstr "Spring naar inhoud"
 
-#: functions.php:93
+#: functions.php:96
 msgid "Footer 3"
 msgstr "Voettekst 3"
 
-#. translators: If there are characters in your language that are not supported
-#. by Raleway, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:132
+#. Translators: If there are characters in your language that are not supported
+#. by Raleway,
+#. * translate this to 'off'. Do not translate into your own language.
+#: functions.php:136
 msgctxt "Raleway font: on or off"
 msgid "on"
 msgstr "aan"
@@ -81,15 +81,15 @@ msgstr "aan"
 msgid "Menu"
 msgstr "Menu"
 
-#: functions.php:77
+#: functions.php:80
 msgid "Footer 1"
 msgstr "Voettekst 1"
 
-#: functions.php:85
+#: functions.php:88
 msgid "Footer 2"
 msgstr "Voettekst 2"
 
-#: functions.php:69
+#: functions.php:72
 msgid "Sidebar"
 msgstr "Sidebar"
 

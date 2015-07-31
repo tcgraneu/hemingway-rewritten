@@ -75,14 +75,14 @@ msgstr "חיפוש"
 msgid "Skip to content"
 msgstr "דילוג לתוכן"
 
-#: functions.php:93
+#: functions.php:96
 msgid "Footer 3"
 msgstr "תחתית העמוד 3"
 
-#. translators: If there are characters in your language that are not supported
-#. by Raleway, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:132
+#. Translators: If there are characters in your language that are not supported
+#. by Raleway,
+#. * translate this to 'off'. Do not translate into your own language.
+#: functions.php:136
 msgctxt "Raleway font: on or off"
 msgid "on"
 msgstr "off"
@@ -91,15 +91,15 @@ msgstr "off"
 msgid "Menu"
 msgstr "תפריט"
 
-#: functions.php:77
+#: functions.php:80
 msgid "Footer 1"
 msgstr "תחתית העמוד 1"
 
-#: functions.php:85
+#: functions.php:88
 msgid "Footer 2"
 msgstr "תחתית העמוד 2"
 
-#: functions.php:69
+#: functions.php:72
 msgid "Sidebar"
 msgstr " סרגל צדדי"
 

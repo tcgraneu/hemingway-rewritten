@@ -74,7 +74,7 @@ msgstr "İçeriğe geç"
 msgid "Menu"
 msgstr "Menü"
 
-#: functions.php:69
+#: functions.php:72
 msgid "Sidebar"
 msgstr "Yan Menü"
 

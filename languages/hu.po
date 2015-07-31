@@ -70,7 +70,7 @@ msgstr "Keresés"
 msgid "Skip to content"
 msgstr "Tovább a tartalomra"
 
-#: functions.php:93
+#: functions.php:96
 msgid "Footer 3"
 msgstr "3. lábrész"
 
@@ -78,15 +78,15 @@ msgstr "3. lábrész"
 msgid "Menu"
 msgstr "Menü"
 
-#: functions.php:77
+#: functions.php:80
 msgid "Footer 1"
 msgstr "1. lábrész"
 
-#: functions.php:85
+#: functions.php:88
 msgid "Footer 2"
 msgstr "2. lábrész"
 
-#: functions.php:69
+#: functions.php:72
 msgid "Sidebar"
 msgstr "Oldalsáv"
 

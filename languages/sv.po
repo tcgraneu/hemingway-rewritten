@@ -65,7 +65,7 @@ msgstr "Sök"
 msgid "Skip to content"
 msgstr "Hoppa till innehåll"
 
-#: functions.php:93
+#: functions.php:96
 msgid "Footer 3"
 msgstr "Sidfot 3"
 
@@ -73,15 +73,15 @@ msgstr "Sidfot 3"
 msgid "Menu"
 msgstr "Meny"
 
-#: functions.php:77
+#: functions.php:80
 msgid "Footer 1"
 msgstr "Sidfot 1"
 
-#: functions.php:85
+#: functions.php:88
 msgid "Footer 2"
 msgstr "Sidfot 2"
 
-#: functions.php:69
+#: functions.php:72
 msgid "Sidebar"
 msgstr "Sidopanel"
 

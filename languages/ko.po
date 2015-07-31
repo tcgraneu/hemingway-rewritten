@@ -70,7 +70,7 @@ msgstr "검색"
 msgid "Skip to content"
 msgstr "컨텐츠로 건너뛰기"
 
-#: functions.php:93
+#: functions.php:96
 msgid "Footer 3"
 msgstr "푸터 3"
 
@@ -78,15 +78,15 @@ msgstr "푸터 3"
 msgid "Menu"
 msgstr "메뉴"
 
-#: functions.php:77
+#: functions.php:80
 msgid "Footer 1"
 msgstr "푸터 1"
 
-#: functions.php:85
+#: functions.php:88
 msgid "Footer 2"
 msgstr "푸터 2"
 
-#: functions.php:69
+#: functions.php:72
 msgid "Sidebar"
 msgstr "사이드바"
 

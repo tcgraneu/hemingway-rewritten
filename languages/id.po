@@ -70,27 +70,19 @@ msgstr "Cari"
 msgid "Skip to content"
 msgstr "Lanjut ke konten"
 
-#. translators: If there are characters in your language that are not supported
-#. by Raleway, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:132
+#. Translators: If there are characters in your language that are not supported
+#. by Raleway,
+#. * translate this to 'off'. Do not translate into your own language.
+#: functions.php:136
 msgctxt "Raleway font: on or off"
 msgid "on"
 msgstr "nyala"
-
-#. translators: If there are characters in your language that are not supported
-#. by Latos, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:141
-msgctxt "Latos font: on or off"
-msgid "on"
-msgstr "on"
 
 #: header.php:35
 msgid "Menu"
 msgstr "Menu"
 
-#: functions.php:69
+#: functions.php:72
 msgid "Sidebar"
 msgstr "Bilah Sisi"
 

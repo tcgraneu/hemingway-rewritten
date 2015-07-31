@@ -65,7 +65,7 @@ msgstr "Pretraga"
 msgid "Skip to content"
 msgstr "Idi na sadržaj"
 
-#: functions.php:93
+#: functions.php:96
 msgid "Footer 3"
 msgstr "Podnožje 3"
 
@@ -73,15 +73,15 @@ msgstr "Podnožje 3"
 msgid "Menu"
 msgstr "Meni"
 
-#: functions.php:77
+#: functions.php:80
 msgid "Footer 1"
 msgstr "Podnožje 1"
 
-#: functions.php:85
+#: functions.php:88
 msgid "Footer 2"
 msgstr "Podnožje 2"
 
-#: functions.php:69
+#: functions.php:72
 msgid "Sidebar"
 msgstr "Bočna traka"
 

@@ -74,7 +74,7 @@ msgstr "Перейти к содержимому"
 msgid "Menu"
 msgstr "Меню"
 
-#: functions.php:69
+#: functions.php:72
 msgid "Sidebar"
 msgstr "Боковая колонка"
 

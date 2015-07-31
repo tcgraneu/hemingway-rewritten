@@ -75,23 +75,15 @@ msgstr "Recherche"
 msgid "Skip to content"
 msgstr "Aller au contenu principal"
 
-#: functions.php:93
+#: functions.php:96
 msgid "Footer 3"
 msgstr "Pied&nbsp;de&nbsp;page&nbsp;3"
 
-#. translators: If there are characters in your language that are not supported
-#. by Raleway, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:132
+#. Translators: If there are characters in your language that are not supported
+#. by Raleway,
+#. * translate this to 'off'. Do not translate into your own language.
+#: functions.php:136
 msgctxt "Raleway font: on or off"
-msgid "on"
-msgstr "on"
-
-#. translators: If there are characters in your language that are not supported
-#. by Latos, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:141
-msgctxt "Latos font: on or off"
 msgid "on"
 msgstr "on"
 
@@ -99,15 +91,15 @@ msgstr "on"
 msgid "Menu"
 msgstr "Menu"
 
-#: functions.php:77
+#: functions.php:80
 msgid "Footer 1"
 msgstr "Pied&nbsp;de&nbsp;page&nbsp;1"
 
-#: functions.php:85
+#: functions.php:88
 msgid "Footer 2"
 msgstr "Pied de Page 2"
 
-#: functions.php:69
+#: functions.php:72
 msgid "Sidebar"
 msgstr "Sidebar"
 

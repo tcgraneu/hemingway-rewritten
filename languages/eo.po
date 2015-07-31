@@ -70,7 +70,7 @@ msgstr "Serĉi"
 msgid "Skip to content"
 msgstr "Iri rekte al enhavo"
 
-#: functions.php:93
+#: functions.php:96
 msgid "Footer 3"
 msgstr "Piedo 3"
 
@@ -78,15 +78,15 @@ msgstr "Piedo 3"
 msgid "Menu"
 msgstr "Menuo"
 
-#: functions.php:77
+#: functions.php:80
 msgid "Footer 1"
 msgstr "Piedo 1"
 
-#: functions.php:85
+#: functions.php:88
 msgid "Footer 2"
 msgstr "Piedo 2"
 
-#: functions.php:69
+#: functions.php:72
 msgid "Sidebar"
 msgstr "Flankpanelo"
 

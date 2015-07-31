@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Hemingway Rewritten package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-02-17 06:52:09+0000\n"
+"PO-Revision-Date: 2015-02-17 06:52:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -75,23 +75,15 @@ msgstr "جست‌وجو"
 msgid "Skip to content"
 msgstr "پرش به محتوا"
 
-#: functions.php:93
+#: functions.php:96
 msgid "Footer 3"
 msgstr "پسایند ۳"
 
-#. translators: If there are characters in your language that are not supported
-#. by Raleway, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:132
+#. Translators: If there are characters in your language that are not supported
+#. by Raleway,
+#. * translate this to 'off'. Do not translate into your own language.
+#: functions.php:136
 msgctxt "Raleway font: on or off"
-msgid "on"
-msgstr "روشن"
-
-#. translators: If there are characters in your language that are not supported
-#. by Latos, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:141
-msgctxt "Latos font: on or off"
 msgid "on"
 msgstr "روشن"
 
@@ -99,15 +91,15 @@ msgstr "روشن"
 msgid "Menu"
 msgstr "گزینگان"
 
-#: functions.php:77
+#: functions.php:80
 msgid "Footer 1"
 msgstr "پسایند ۱"
 
-#: functions.php:85
+#: functions.php:88
 msgid "Footer 2"
 msgstr "پسایند ۲"
 
-#: functions.php:69
+#: functions.php:72
 msgid "Sidebar"
 msgstr "ستون کناری"
 

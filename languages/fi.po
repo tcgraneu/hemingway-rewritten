@@ -70,7 +70,7 @@ msgstr "Haku"
 msgid "Skip to content"
 msgstr "Siirry sisältöön"
 
-#: functions.php:93
+#: functions.php:96
 msgid "Footer 3"
 msgstr "Alapalkki 3"
 
@@ -78,15 +78,15 @@ msgstr "Alapalkki 3"
 msgid "Menu"
 msgstr "Valikko"
 
-#: functions.php:77
+#: functions.php:80
 msgid "Footer 1"
 msgstr "Alapalkki 1"
 
-#: functions.php:85
+#: functions.php:88
 msgid "Footer 2"
 msgstr "Alapalkki 2"
 
-#: functions.php:69
+#: functions.php:72
 msgid "Sidebar"
 msgstr "Sivupalkki"
 
