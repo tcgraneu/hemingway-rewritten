@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Hemingway Rewritten package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-02-17 06:52:00+0000\n"
+"PO-Revision-Date: 2015-07-31 05:34:11+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -86,6 +86,14 @@ msgstr "پسایند ۳"
 msgctxt "Raleway font: on or off"
 msgid "on"
 msgstr "روشن"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Lato,
+#. * translate this to 'off'. Do not translate into your own language.
+#: functions.php:141
+msgctxt "Lato font: on or off"
+msgid "on"
+msgstr "off"
 
 #: header.php:35
 msgid "Menu"
