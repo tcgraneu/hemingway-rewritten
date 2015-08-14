@@ -137,12 +137,12 @@ msgid "Edit"
 msgstr "Muokkaa"
 
 #: content-media.php:26 content.php:26
-msgid "1 Comment"
-msgstr "1 kommentti"
-
-#: content-media.php:26 content.php:26
 msgid "% Comments"
 msgstr "% kommenttia"
+
+#: content-media.php:26 content.php:26
+msgid "1 Comment"
+msgstr "1 kommentti"
 
 #: content-media.php:26 content.php:26
 msgid "Leave a comment"
@@ -230,13 +230,13 @@ msgid "Year: %s"
 msgstr "Vuosi: %s"
 
 #: archive.php:33
-msgid "Month: %s"
-msgstr "Kuukausi: %s"
-
-#: archive.php:33
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr "Kuukausi: %s"
 
 #: archive.php:27
 msgid "Author: %s"
