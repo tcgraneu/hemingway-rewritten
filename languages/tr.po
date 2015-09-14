@@ -125,12 +125,12 @@ msgid "Edit"
 msgstr "Düzenle"
 
 #: content-media.php:26 content.php:26
-msgid "% Comments"
-msgstr "% Yorum"
-
-#: content-media.php:26 content.php:26
 msgid "1 Comment"
 msgstr "1 Yorum"
+
+#: content-media.php:26 content.php:26
+msgid "% Comments"
+msgstr "% Yorum"
 
 #: content-media.php:26 content.php:26
 msgid "Leave a comment"
@@ -172,13 +172,13 @@ msgstr[1] "&ldquo;%2$s&rdquo; üzerine %1$s yorum"
 msgid "Archives"
 msgstr "Arşivler"
 
-#: archive.php:63
-msgid "Chats"
-msgstr "Sohbetler"
-
 #: archive.php:60
 msgid "Audios"
 msgstr "Sesler"
+
+#: archive.php:63
+msgid "Chats"
+msgstr "Sohbetler"
 
 #: archive.php:57
 msgid "Statuses"
@@ -218,13 +218,13 @@ msgid "Year: %s"
 msgstr "Yıl: %s"
 
 #: archive.php:33
+msgid "Month: %s"
+msgstr "Ay: %s"
+
+#: archive.php:33
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
-
-#: archive.php:33
-msgid "Month: %s"
-msgstr "Ay: %s"
 
 #: archive.php:27
 msgid "Author: %s"
