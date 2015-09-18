@@ -65,18 +65,6 @@ msgstr "Որոնում"
 msgid "Skip to content"
 msgstr "Անցնել բովանդակությանը"
 
-#: functions.php:96
-msgid "Footer 3"
-msgstr "Էջատակ 3"
-
-#. Translators: If there are characters in your language that are not supported
-#. by Raleway,
-#. * translate this to 'off'. Do not translate into your own language.
-#: functions.php:136
-msgctxt "Raleway font: on or off"
-msgid "on"
-msgstr "off"
-
 #. Translators: If there are characters in your language that are not supported
 #. by Lato,
 #. * translate this to 'off'. Do not translate into your own language.
@@ -89,13 +77,25 @@ msgstr "off"
 msgid "Menu"
 msgstr "Ընտրացանկ"
 
-#: functions.php:80
-msgid "Footer 1"
-msgstr "Էջատակ 1"
+#. Translators: If there are characters in your language that are not supported
+#. by Raleway,
+#. * translate this to 'off'. Do not translate into your own language.
+#: functions.php:136
+msgctxt "Raleway font: on or off"
+msgid "on"
+msgstr "off"
+
+#: functions.php:96
+msgid "Footer 3"
+msgstr "Էջատակ 3"
 
 #: functions.php:88
 msgid "Footer 2"
 msgstr "Եջատակ 2"
+
+#: functions.php:80
+msgid "Footer 1"
+msgstr "Էջատակ 1"
 
 #: functions.php:72
 msgid "Sidebar"
@@ -229,21 +229,21 @@ msgid "Year: %s"
 msgstr "Տարին՝ %s"
 
 #: archive.php:33
-msgid "Month: %s"
-msgstr "Ամիսը՝ %s"
-
-#: archive.php:33
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
 
-#: archive.php:27
-msgid "Author: %s"
-msgstr "Հեղինակ՝ %s"
+#: archive.php:33
+msgid "Month: %s"
+msgstr "Ամիսը՝ %s"
 
 #: archive.php:30
 msgid "Day: %s"
 msgstr "Օրը՝ %s"
+
+#: archive.php:27
+msgid "Author: %s"
+msgstr "Հեղինակ՝ %s"
 
 #: 404.php:19
 msgid "It looks like nothing was found at this location. Maybe try a search?"
