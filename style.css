@@ -354,13 +354,13 @@ input[type="submit"] {
 .site-footer input[type="button"],
 .site-footer input[type="reset"],
 .site-footer input[type="submit"] {
-	background: #1abc9c;
+	background: #ad0909;
 }
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	background: #1abc9c;
+	background: #ad0909;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
@@ -375,7 +375,7 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	background: #1abc9c;
+	background: #ad0909;
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -448,7 +448,7 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: #1abc9c;
+	color: #ad0909;
 	text-decoration: none;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -457,12 +457,12 @@ a {
 	transition: all 0.2s ease-in-out;
 }
 a:visited {
-	color: #1abc9c;
+	color: #ad0909;
 }
 a:hover,
 a:focus,
 a:active {
-	color: #1abc9c;
+	color: #ad0909;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
@@ -875,8 +875,8 @@ a:active {
 	box-sizing: border-box;
 }
 .widget_search .search-submit {
-	background: #1abc9c;
-	border: 1px solid #1abc9c;
+	background: #ad0909;
+	border: 1px solid #ad0909;
 	border-radius: 0 3px 3px 0;
 	color: #fff;
 	display: block;
@@ -928,7 +928,7 @@ a:active {
 	color: #2d2d2d;
 }
 .entry-title a:hover {
-	color: #1abc9c;
+	color: #ad0909;
 }
 .entry-meta {
 	font-size: 14px;
@@ -946,7 +946,7 @@ a:active {
 	position: relative;
 }
 .featured-image .flag {
-	background: #1abc9c;
+	background: #ad0909;
 	border-radius: 3px 0 0 3px;
 	color: #fff;
 	display: block;
@@ -1045,10 +1045,10 @@ a:active {
 	border-radius: 0 2px 2px 0;
 }
 .entry-tags a:hover {
-	background-color: #1abc9c;
+	background-color: #ad0909;
 }
 .entry-tags a:hover:after {
-	border-right-color: #1abc9c;
+	border-right-color: #ad0909;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
@@ -1563,8 +1563,8 @@ li > article.comment {
 		width: 95%;
 	}
 	#header-search .search-submit {
-		background: #1abc9c;
-		border: 1px solid #1abc9c;
+		background: #ad0909;
+		border: 1px solid #ad0909;
 		border-radius: 0 4px 4px 0;
 		color: #fff;
 		font-family: 'Lato', sans-serif;

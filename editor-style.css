@@ -222,18 +222,18 @@ td {
 --------------------------------------------------------------*/
 
 a {
-	color: #1abc9c;
+	color: #ad0909;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #1abc9c;
+	color: #ad0909;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #1abc9c;
+	color: #ad0909;
 }
 
 /*--------------------------------------------------------------
