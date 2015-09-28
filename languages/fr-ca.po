@@ -69,10 +69,6 @@ msgstr "Aller au contenu principal"
 msgid "Footer 3"
 msgstr "Pied&nbsp;de&nbsp;page&nbsp;3"
 
-#: header.php:35
-msgid "Menu"
-msgstr "Menu"
-
 #. Translators: If there are characters in your language that are not supported
 #. by Raleway,
 #. * translate this to 'off'. Do not translate into your own language.
@@ -80,6 +76,10 @@ msgstr "Menu"
 msgctxt "Raleway font: on or off"
 msgid "on"
 msgstr "on"
+
+#: header.php:35
+msgid "Menu"
+msgstr "Menu"
 
 #: functions.php:80
 msgid "Footer 1"
@@ -140,12 +140,12 @@ msgid "Edit"
 msgstr "Modifier"
 
 #: content-media.php:26 content.php:26
-msgid "% Comments"
-msgstr "% commentaires"
-
-#: content-media.php:26 content.php:26
 msgid "1 Comment"
 msgstr "1 commentaire"
+
+#: content-media.php:26 content.php:26
+msgid "% Comments"
+msgstr "% commentaires"
 
 #: content-media.php:26 content.php:26
 msgid "Leave a comment"
