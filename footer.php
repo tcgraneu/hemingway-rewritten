@@ -12,7 +12,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<?php get_sidebar( 'footer' ); ?>
 		<div class="site-info">
-			&copy; <?php echo date("Y") ?> <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
+			&copy; <?php echo date("Y") ?> <?php bloginfo('name'); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
