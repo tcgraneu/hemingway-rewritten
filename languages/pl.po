@@ -28,14 +28,14 @@ msgctxt "Previous post link"
 msgid "<span class=\"meta-nav\">&larr;</span> %title"
 msgstr "<span class=\"meta-nav\">&larr;</span> &bdquo;%title&rdquo;"
 
-#: inc/template-tags.php:122
-msgid "Pingback:"
-msgstr "Pingback:"
-
 #: inc/template-tags.php:60
 msgctxt "Next post link"
 msgid "%title <span class=\"meta-nav\">&rarr;</span>"
 msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:122
+msgid "Pingback:"
+msgstr "Pingback:"
 
 #: inc/template-tags.php:56
 msgid "Post navigation"
@@ -65,21 +65,21 @@ msgstr "Szukaj"
 msgid "Skip to content"
 msgstr "Przeskocz do treści"
 
-#: header.php:35
-msgid "Menu"
-msgstr "Menu"
-
 #: functions.php:96
 msgid "Footer 3"
 msgstr "Stopka 3"
 
-#: functions.php:88
-msgid "Footer 2"
-msgstr "Stopka 2"
+#: header.php:35
+msgid "Menu"
+msgstr "Menu"
 
 #: functions.php:80
 msgid "Footer 1"
 msgstr "Stopka 1"
+
+#: functions.php:88
+msgid "Footer 2"
+msgstr "Stopka 2"
 
 #: functions.php:72
 msgid "Sidebar"
@@ -196,27 +196,27 @@ msgstr "Obrazki"
 msgid "Galleries"
 msgstr "Galerie"
 
-#: archive.php:39
-msgid "Asides"
-msgstr "Treści poboczne"
-
 #: archive.php:36
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
+
+#: archive.php:39
+msgid "Asides"
+msgstr "Treści poboczne"
 
 #: archive.php:36
 msgid "Year: %s"
 msgstr "Rok: %s"
 
 #: archive.php:33
+msgid "Month: %s"
+msgstr "Miesiąc: %s"
+
+#: archive.php:33
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
-
-#: archive.php:33
-msgid "Month: %s"
-msgstr "Miesiąc: %s"
 
 #: archive.php:27
 msgid "Author: %s"

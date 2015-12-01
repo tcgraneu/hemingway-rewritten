@@ -70,10 +70,6 @@ msgstr "Cari"
 msgid "Skip to content"
 msgstr "Lanjut ke konten"
 
-#: header.php:35
-msgid "Menu"
-msgstr "Menu"
-
 #. Translators: If there are characters in your language that are not supported
 #. by Raleway,
 #. * translate this to 'off'. Do not translate into your own language.
@@ -81,6 +77,10 @@ msgstr "Menu"
 msgctxt "Raleway font: on or off"
 msgid "on"
 msgstr "nyala"
+
+#: header.php:35
+msgid "Menu"
+msgstr "Menu"
 
 #: functions.php:72
 msgid "Sidebar"
@@ -133,12 +133,12 @@ msgid "Edit"
 msgstr "Edit"
 
 #: content-media.php:26 content.php:26
-msgid "% Comments"
-msgstr "% Komentar"
-
-#: content-media.php:26 content.php:26
 msgid "1 Comment"
 msgstr "1 Komentar"
+
+#: content-media.php:26 content.php:26
+msgid "% Comments"
+msgstr "% Komentar"
 
 #: content-media.php:26 content.php:26
 msgid "Leave a comment"
@@ -226,13 +226,13 @@ msgid "Year: %s"
 msgstr "Tahun: %s"
 
 #: archive.php:33
+msgid "Month: %s"
+msgstr "Bulan: %s"
+
+#: archive.php:33
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
-
-#: archive.php:33
-msgid "Month: %s"
-msgstr "Bulan: %s"
 
 #: archive.php:27
 msgid "Author: %s"
