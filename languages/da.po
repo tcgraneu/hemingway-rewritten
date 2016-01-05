@@ -23,19 +23,19 @@ msgstr "%1$s kl. %2$s"
 msgid "Your comment is awaiting moderation."
 msgstr "Din kommentar afventer godkendelse."
 
-#: inc/template-tags.php:59
-msgctxt "Previous post link"
-msgid "<span class=\"meta-nav\">&larr;</span> %title"
-msgstr "<span class=\"meta-nav\">&larr;</span> %title"
+#: inc/template-tags.php:122
+msgid "Pingback:"
+msgstr "Pingback:"
 
 #: inc/template-tags.php:60
 msgctxt "Next post link"
 msgid "%title <span class=\"meta-nav\">&rarr;</span>"
 msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
 
-#: inc/template-tags.php:122
-msgid "Pingback:"
-msgstr "Pingback:"
+#: inc/template-tags.php:59
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr "<span class=\"meta-nav\">&larr;</span> %title"
 
 #: inc/template-tags.php:56
 msgid "Post navigation"
@@ -163,13 +163,13 @@ msgstr[1] "%1$s tanker omkring &ldquo;%2$s&rdquo;"
 msgid "Archives"
 msgstr "Arkiver"
 
-#: archive.php:60
-msgid "Audios"
-msgstr "Lyde"
-
 #: archive.php:63
 msgid "Chats"
 msgstr "Chatter"
+
+#: archive.php:60
+msgid "Audios"
+msgstr "Lyde"
 
 #: archive.php:57
 msgid "Statuses"
@@ -209,13 +209,13 @@ msgid "Year: %s"
 msgstr "År: %s"
 
 #: archive.php:33
-msgid "Month: %s"
-msgstr "Måned: %s"
-
-#: archive.php:33
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr "Måned: %s"
 
 #: archive.php:27
 msgid "Author: %s"

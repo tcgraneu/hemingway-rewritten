@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Hemingway Rewritten package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-06-30 17:26:11+0000\n"
+"PO-Revision-Date: 2016-01-04 12:54:07+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -73,7 +73,7 @@ msgstr "Buscar"
 
 #: header.php:36
 msgid "Skip to content"
-msgstr "Saltar al contenido."
+msgstr "Saltar al contenido"
 
 #: functions.php:96
 msgid "Footer 3"
