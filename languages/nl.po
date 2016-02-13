@@ -140,12 +140,12 @@ msgid "Edit"
 msgstr "Bewerken"
 
 #: content-media.php:26 content.php:26
-msgid "% Comments"
-msgstr "% reacties"
-
-#: content-media.php:26 content.php:26
 msgid "1 Comment"
 msgstr "1 reactie"
+
+#: content-media.php:26 content.php:26
+msgid "% Comments"
+msgstr "% reacties"
 
 #: content-media.php:26 content.php:26
 msgid "Leave a comment"
