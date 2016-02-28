@@ -1,8 +1,8 @@
-# Translation of Hemingway Rewritten in Greek (Polytonic)
+# Translation of Hemingway Rewritten in Hindi
 # This file is distributed under the same license as the Hemingway Rewritten package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-02-27 21:28:21+0000\n"
+"PO-Revision-Date: 2016-02-27 12:33:18+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,18 +10,23 @@ msgstr ""
 "X-Generator: GlotPress/1.0-alpha-1100\n"
 "Project-Id-Version: Hemingway Rewritten\n"
 
+#. Template Name of the plugin/theme
+#: wp-content/themes/pub/hemingway-rewritten/nosidebar-page.php
+msgid "Full Width, No Sidebar"
+msgstr "पूर्ण चौड़ाई, साइडबार नहीं"
+
 #: search.php:16
 msgid "Search Results for: %s"
-msgstr "Ἀναζήτηση ἀποτελεσμάτων γιά: %s"
+msgstr "%s के लिए खोज परिणाम:"
 
 #. translators: 1: date, 2: time
 #: inc/template-tags.php:142
 msgid "%1$s at %2$s"
-msgstr "%1$s,  %2$s "
+msgstr "%1$s को %2$s पर"
 
 #: inc/template-tags.php:135
 msgid "Your comment is awaiting moderation."
-msgstr "Τὸ σχόλιό σας περιμένει ἔλεγχο γιὰ ἐνδεχόμενες ἀκρότητες."
+msgstr "आपकी टिप्पणी संतुलित किए जाने की प्रतीक्षा कर रही है।"
 
 #: inc/template-tags.php:59
 msgctxt "Previous post link"
@@ -35,173 +40,165 @@ msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
 
 #: inc/template-tags.php:122
 msgid "Pingback:"
-msgstr "Αὐτόματη εἰδοποίηση σύνδεσης:"
+msgstr "पिगबैक:"
 
 #: inc/template-tags.php:56
 msgid "Post navigation"
-msgstr "Περιήγηση ἄρθρων"
+msgstr "पोस्ट नेविगेशन"
 
 #: inc/template-tags.php:31
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Νεώτερα ἄρθρα <span class=\"meta-nav\">&rarr;</span>"
+msgstr "नए पोस्टस <span class=\"meta-nav\">&rarr;</span>"
 
 #: inc/template-tags.php:27
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "<span class=\"meta-nav\">&larr;</span> Παλαιότερα ἄρθρα"
+msgstr "<span class=\"meta-nav\">&larr;</span> पुराने पोस्टस"
 
 #: inc/template-tags.php:23
 msgid "Posts navigation"
-msgstr "Περιήγηση ἄρθρων"
+msgstr "पोस्टस नेविगेशन"
 
 #: inc/extras.php:68
 msgid "Page %s"
-msgstr "Σελίδα %s"
+msgstr "पृष्ठ %s"
 
 #: header.php:40
 msgid "Search"
-msgstr "Ἀναζήτηση"
+msgstr "खोजे"
 
 #: header.php:36
 msgid "Skip to content"
-msgstr "Πηγαίνετε στὸ περιεχόμενο τοῦ ἱστολογίου"
+msgstr "सामग्री पर जाएं"
 
 #: functions.php:96
 msgid "Footer 3"
-msgstr "Ὑποσέλιδο 3"
+msgstr "फूटर 3"
 
 #: header.php:35
 msgid "Menu"
-msgstr "Μενού"
+msgstr "मेनु"
 
 #: functions.php:80
 msgid "Footer 1"
-msgstr "Ὑποσέλιδο 1"
+msgstr "फूटर 1"
 
 #: functions.php:88
 msgid "Footer 2"
-msgstr "Ὑποσέλιδο 2"
+msgstr "फूटर 2"
 
 #: functions.php:72
 msgid "Sidebar"
-msgstr "Πλαϊνὴ στήλη"
+msgstr "बाजूपट्टी"
 
 #: functions.php:47
 msgid "Primary Menu"
-msgstr "Πρωτεῦον μενού"
+msgstr "प्राथमिक मेनू"
 
 #: footer.php:17
 msgid "Theme: %1$s by %2$s."
-msgstr "Θέμα: %1$s ἀπὸ τὸν/τὴν %2$s."
+msgstr "थीम: %1$s द्वारा %2$s ।"
 
 #: footer.php:15
 msgid "Proudly powered by %s"
-msgstr "Λειτουργεῖ μὲ τὴν βοήθεια τοῦ %s"
-
-#: footer.php:15
-msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
+msgstr "%s द्वारा गर्व के साथ संचालित"
 
 #: content.php:11 inc/template-tags.php:87
 msgid "Featured"
-msgstr "Ἰδιαιτέρου ἐνδιαφέροντος"
-
-#: content-none.php:28
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Μᾶλλον δὲν μποροῦμε νὰ βροῦμε αὐτὸ ποὺ ψάχνετε. Ἴσως βοηθήσει μιὰ ἀναζήτηση."
+msgstr "विशेष रुप से प्रदर्शित"
 
 #: content-none.php:23
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Λυπούμεθα, ἀλλὰ τίποτε δὲν ταιριάζει μὲ τὶς λέξεις ἀναζήτησης. Παρακαλοῦμε ξαναδοκιμάστε μὲ διαφορετικὲς λέξεις-κλειδιά."
+msgstr "क्षमा करें, लेकिन कुछ भी आपके खोज शब्दों से मेल नहीं खाते। कृपया कुछ अलग खोजशब्दों के साथ फिर से प्रयास करें।"
 
 #: content-none.php:19
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Ἕτοιμος/-η γιὰ τὸ πρῶτο σας ἄρθρο; <a href=\"%1$s\">Ξεκινῆστε ἀπὸ δῶ</a>."
+msgstr "अपनी पहली पोस्ट को प्रकाशित करने के लिए तैयार हैं? <a href=\"%1$s\">यहाँ से शुरुआत करें</a>।"
 
 #: content-none.php:13
 msgid "Nothing Found"
-msgstr "Οὑδὲν εὑρέθη!"
+msgstr "कुछ नहीं मिला"
 
 #. translators: used between list items, there is a space after the comma
 #: content-media.php:35 content-single.php:33
 msgid ", "
-msgstr ","
+msgstr ", "
 
 #: content-media.php:28 content-page.php:23 content-single.php:16
 #: content.php:28 inc/template-tags.php:122 inc/template-tags.php:151
 msgid "Edit"
-msgstr "Ἐπεξεργασία"
+msgstr "सम्पादन"
 
 #: content-media.php:26 content.php:26
 msgid "1 Comment"
-msgstr "1 Σχόλιο"
+msgstr "1 टिप्पणी"
 
 #: content-media.php:26 content.php:26
 msgid "% Comments"
-msgstr "% Σχόλια"
+msgstr "%s टिप्पणियाँ"
 
 #: content-media.php:26 content.php:26
 msgid "Leave a comment"
-msgstr "Σχολιάστε"
+msgstr "एक टिप्पणी छोड़ें"
 
 #: content-media.php:12 content-page.php:18 content-single.php:24
 #: content.php:42
 msgid "Pages:"
-msgstr "Σελίδες:"
+msgstr "पृष्ठ:"
 
 #: content-media.php:9 content.php:39
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Συνέχεια <span class=\"meta-nav\">&rarr;</span>"
+msgstr "पढना जारी रखे <span class=\"meta-nav\">&rarr;</span>"
 
 #: comments.php:63
 msgid "Comments are closed."
-msgstr "Ἡ ὑποβολὴ σχολίων ἔχει κλείσει."
+msgstr "टिप्पणियाँ बंद हैं।"
 
 #: comments.php:37 comments.php:53
 msgid "Newer Comments &rarr;"
-msgstr "Νεότερα σχόλια &rarr;"
+msgstr "नई टिप्पणियां &rarr;"
 
 #: comments.php:36 comments.php:52
 msgid "&larr; Older Comments"
-msgstr "&larr; Παλαιότερα σχόλια"
+msgstr "&larr; पुरानी टिप्पणियाँ"
 
 #: comments.php:35 comments.php:51
 msgid "Comment navigation"
-msgstr "Πλοήγηση στὰ σχόλια"
+msgstr "टिप्पणी नेविगेशन"
 
 #: comments.php:28
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Μιὰ σκέψη πάνω στὸ &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s σκέψεις πάνω στὸ &ldquo;%2$s&rdquo;"
+msgstr[0] "&ldquo;%2$s&rdquo पर एक विचार;"
+msgstr[1] "%1$s विचार &ldquo;%2$s&rdquo पर;"
 
 #: archive.php:66
 msgid "Archives"
-msgstr "Ἀρχεῖα"
+msgstr "अभिलेख"
+
+#: archive.php:60
+msgid "Audios"
+msgstr "ऑडियोस"
 
 #: archive.php:63
 msgid "Chats"
-msgstr "Συζητήσεις"
-
-#: archive.php:57
-msgid "Statuses"
-msgstr "Κατάσταση ὰναρτήσεων"
+msgstr "चैट्स"
 
 #: archive.php:54
 msgid "Links"
-msgstr "Σύνδεσμοι"
+msgstr "कड़ियाँ"
 
 #: archive.php:48
 msgid "Videos"
-msgstr "Βίντεο"
+msgstr "वीडियोस "
 
 #: archive.php:45
 msgid "Images"
-msgstr "Εἰκόνες"
+msgstr "छवियाँ"
 
 #: archive.php:42
 msgid "Galleries"
-msgstr "Συλλογὲς εἰκόνων"
+msgstr "गैलेरियां"
 
 #: archive.php:36
 msgctxt "yearly archives date format"
@@ -210,11 +207,11 @@ msgstr "Y"
 
 #: archive.php:36
 msgid "Year: %s"
-msgstr "Ἔτος: %s"
+msgstr "वर्ष: %s"
 
 #: archive.php:33
 msgid "Month: %s"
-msgstr "Μῆνας: %s"
+msgstr "महीना: %s"
 
 #: archive.php:33
 msgctxt "monthly archives date format"
@@ -223,16 +220,12 @@ msgstr "F Y"
 
 #: archive.php:27
 msgid "Author: %s"
-msgstr "Συγγραφέας: %s"
+msgstr "लेखक: %s"
 
 #: archive.php:30
 msgid "Day: %s"
-msgstr "Ἡμέρα: %s"
+msgstr "दिन: %s"
 
 #: 404.php:19
 msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "Ὡς φαίνεται, τίποτε δὲν βρέθηκε στὴν τοποθεσία αὐτήν. Νὰ δοκιμάζατε μήπως μιὰ ἀναζήτηση;"
-
-#: 404.php:15
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Ἡ σελίδα αὐτὴ δὲν βρέθηκε."
+msgstr "ऐसा लगता है कि कुछ भी इस स्थान पर नहीं पाया गया है। शायद एक खोज की कोशिश करें?"
