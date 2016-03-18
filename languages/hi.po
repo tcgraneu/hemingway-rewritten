@@ -28,19 +28,19 @@ msgstr "%1$s को %2$s पर"
 msgid "Your comment is awaiting moderation."
 msgstr "आपकी टिप्पणी संतुलित किए जाने की प्रतीक्षा कर रही है।"
 
-#: inc/template-tags.php:59
-msgctxt "Previous post link"
-msgid "<span class=\"meta-nav\">&larr;</span> %title"
-msgstr "<span class=\"meta-nav\">&larr;</span> %title"
+#: inc/template-tags.php:122
+msgid "Pingback:"
+msgstr "पिगबैक:"
 
 #: inc/template-tags.php:60
 msgctxt "Next post link"
 msgid "%title <span class=\"meta-nav\">&rarr;</span>"
 msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
 
-#: inc/template-tags.php:122
-msgid "Pingback:"
-msgstr "पिगबैक:"
+#: inc/template-tags.php:59
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr "<span class=\"meta-nav\">&larr;</span> %title"
 
 #: inc/template-tags.php:56
 msgid "Post navigation"
@@ -70,13 +70,13 @@ msgstr "खोजे"
 msgid "Skip to content"
 msgstr "सामग्री पर जाएं"
 
-#: functions.php:96
-msgid "Footer 3"
-msgstr "फूटर 3"
-
 #: header.php:35
 msgid "Menu"
 msgstr "मेनु"
+
+#: functions.php:96
+msgid "Footer 3"
+msgstr "फूटर 3"
 
 #: functions.php:80
 msgid "Footer 1"
@@ -133,12 +133,12 @@ msgid "Edit"
 msgstr "सम्पादन"
 
 #: content-media.php:26 content.php:26
-msgid "1 Comment"
-msgstr "1 टिप्पणी"
-
-#: content-media.php:26 content.php:26
 msgid "% Comments"
 msgstr "%s टिप्पणियाँ"
+
+#: content-media.php:26 content.php:26
+msgid "1 Comment"
+msgstr "1 टिप्पणी"
 
 #: content-media.php:26 content.php:26
 msgid "Leave a comment"
@@ -180,13 +180,13 @@ msgstr[1] "%1$s विचार &ldquo;%2$s&rdquo पर;"
 msgid "Archives"
 msgstr "अभिलेख"
 
-#: archive.php:60
-msgid "Audios"
-msgstr "ऑडियोस"
-
 #: archive.php:63
 msgid "Chats"
 msgstr "चैट्स"
+
+#: archive.php:60
+msgid "Audios"
+msgstr "ऑडियोस"
 
 #: archive.php:54
 msgid "Links"
@@ -214,13 +214,13 @@ msgid "Year: %s"
 msgstr "वर्ष: %s"
 
 #: archive.php:33
-msgid "Month: %s"
-msgstr "महीना: %s"
-
-#: archive.php:33
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr "महीना: %s"
 
 #: archive.php:27
 msgid "Author: %s"
