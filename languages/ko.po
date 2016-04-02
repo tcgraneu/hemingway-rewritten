@@ -225,13 +225,13 @@ msgid "Year: %s"
 msgstr "연: %s"
 
 #: archive.php:33
+msgid "Month: %s"
+msgstr "월: %s"
+
+#: archive.php:33
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
-
-#: archive.php:33
-msgid "Month: %s"
-msgstr "월: %s"
 
 #: archive.php:27
 msgid "Author: %s"
