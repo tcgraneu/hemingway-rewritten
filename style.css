@@ -906,7 +906,7 @@ a:active {
 }
 
 .widget-grid-view-image:nth-child(odd) a {
-	margin: 0 0 4px 2px;
+	margin-bottom: 4px;
 }
 
 /*--------------------------------------------------------------
