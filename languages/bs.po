@@ -214,21 +214,21 @@ msgid "Year: %s"
 msgstr "Godina: %s"
 
 #: archive.php:33
-msgid "Month: %s"
-msgstr "Mjesec: %s"
-
-#: archive.php:33
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y."
 
-#: archive.php:27
-msgid "Author: %s"
-msgstr "Autor: %s"
+#: archive.php:33
+msgid "Month: %s"
+msgstr "Mjesec: %s"
 
 #: archive.php:30
 msgid "Day: %s"
 msgstr "Dan: %s"
+
+#: archive.php:27
+msgid "Author: %s"
+msgstr "Autor: %s"
 
 #: 404.php:19
 msgid "It looks like nothing was found at this location. Maybe try a search?"
