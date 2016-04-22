@@ -1,0 +1,275 @@
+# Translation of Hemingway Rewritten in Persian
+# This file is distributed under the same license as the Hemingway Rewritten package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-07-31 05:34:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Hemingway Rewritten\n"
+
+#. Description of the plugin/theme
+#: wp-content/themes/pub/hemingway-rewritten/style.css
+msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling header effect and a minimal, elegant design. The large featured header images make this theme great for photographers, or any users who want to share their visuals in a bold way."
+msgstr "Hemingway Rewritten (بازنویسی همینگوی) یک پوستهٔ کلاسیک برای وب‌نویسی است که سرایند آن جلوهٔ نوردش موازی دارد. طراحی آن مینیمال و خوش‌دست است. تصاویر ویژهٔ سرایند بزرگ این پوسته را برای عکاسان، یا هر کاربری که می‌خواهد تصاویرش را به نمایش بگذارد مناسب می‌کند."
+
+#. Template Name of the plugin/theme
+#: wp-content/themes/pub/hemingway-rewritten/nosidebar-page.php
+msgid "Full Width, No Sidebar"
+msgstr "تمام‌پهنا، بدون نوار کناری"
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "نتایج جست‌وجو برای: %s"
+
+#. translators: 1: date, 2: time
+#: inc/template-tags.php:142
+msgid "%1$s at %2$s"
+msgstr "%1$s در %2$s"
+
+#: inc/template-tags.php:135
+msgid "Your comment is awaiting moderation."
+msgstr "دیدگاه شما چشم به راه بررسی است."
+
+#: inc/template-tags.php:59
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr "<span class=\"meta-nav\">&larr;</span> %title"
+
+#: inc/template-tags.php:60
+msgctxt "Next post link"
+msgid "%title <span class=\"meta-nav\">&rarr;</span>"
+msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:122
+msgid "Pingback:"
+msgstr "بازتاب: "
+
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "ناوبری نوشته"
+
+#: inc/template-tags.php:31
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "نوشته‌های تازه‌تر <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:27
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> نوشته‌های پیشین"
+
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "ناوبری نوشته‌ها"
+
+#: inc/extras.php:68
+msgid "Page %s"
+msgstr "صفحهٔ %s"
+
+#: header.php:40
+msgid "Search"
+msgstr "جست‌وجو"
+
+#: header.php:36
+msgid "Skip to content"
+msgstr "پرش به محتوا"
+
+#: functions.php:96
+msgid "Footer 3"
+msgstr "پسایند ۳"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Raleway,
+#. * translate this to 'off'. Do not translate into your own language.
+#: functions.php:136
+msgctxt "Raleway font: on or off"
+msgid "on"
+msgstr "روشن"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Lato,
+#. * translate this to 'off'. Do not translate into your own language.
+#: functions.php:141
+msgctxt "Lato font: on or off"
+msgid "on"
+msgstr "off"
+
+#: header.php:35
+msgid "Menu"
+msgstr "گزینگان"
+
+#: functions.php:80
+msgid "Footer 1"
+msgstr "پسایند ۱"
+
+#: functions.php:88
+msgid "Footer 2"
+msgstr "پسایند ۲"
+
+#: functions.php:72
+msgid "Sidebar"
+msgstr "ستون کناری"
+
+#: functions.php:47
+msgid "Primary Menu"
+msgstr "گزینگان اصلی"
+
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "پوسته: %1$s کاری از %2$s."
+
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "با افتخار، نیرو گرفته از %s"
+
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: content.php:11 inc/template-tags.php:87
+msgid "Featured"
+msgstr "ویژه"
+
+#: content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "به نظر می‌آید ما نمی‌توانیم آنچه به دنبالش هستید بیابیم. احتمالا جست‌وجو می‌تواند کمک کند."
+
+#: content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "متأسفیم، موردی مطابق با جستجوی شما پیدا نشد. لطفا برای جستجو از کلیدواژه‌های دیگری استفاده کنید."
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "آمادهٔ انتشار نخستین نوشتهٔ خود هستید؟ <a href=\"%1$s\">از اینجا بیآغازید</a>."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "چیزی پیدا نشد"
+
+#. translators: used between list items, there is a space after the comma
+#: content-media.php:35 content-single.php:33
+msgid ", "
+msgstr "، "
+
+#: content-media.php:28 content-page.php:23 content-single.php:16
+#: content.php:28 inc/template-tags.php:122 inc/template-tags.php:151
+msgid "Edit"
+msgstr "ویرایش"
+
+#: content-media.php:26 content.php:26
+msgid "1 Comment"
+msgstr "۱ دیدگاه"
+
+#: content-media.php:26 content.php:26
+msgid "% Comments"
+msgstr "% دیدگاه"
+
+#: content-media.php:26 content.php:26
+msgid "Leave a comment"
+msgstr "بیان دیدگاه"
+
+#: content-media.php:12 content-page.php:18 content-single.php:24
+#: content.php:42
+msgid "Pages:"
+msgstr "صفحه‌ها:"
+
+#: content-media.php:9 content.php:39
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "به خواندن ادامه دهید <span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:63
+msgid "Comments are closed."
+msgstr "دیدگاه‌ها بسته شده‌اند."
+
+#: comments.php:37 comments.php:53
+msgid "Newer Comments &rarr;"
+msgstr "دیدگاه‌های تازه‌تر &rarr;"
+
+#: comments.php:36 comments.php:52
+msgid "&larr; Older Comments"
+msgstr "&larr; دیدگاه‌های پیشین"
+
+#: comments.php:35 comments.php:51
+msgid "Comment navigation"
+msgstr "ناوبری دیدگاه"
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s نظر برای &ldquo;%2$s&rdquo;"
+
+#: archive.php:66
+msgid "Archives"
+msgstr "بایگانی"
+
+#: archive.php:60
+msgid "Audios"
+msgstr "صوت‌ها"
+
+#: archive.php:63
+msgid "Chats"
+msgstr "گفتگوها"
+
+#: archive.php:57
+msgid "Statuses"
+msgstr "وضعیت‌ها"
+
+#: archive.php:54
+msgid "Links"
+msgstr "پیوندها"
+
+#: archive.php:51
+msgid "Quotes"
+msgstr "گفتاورد"
+
+#: archive.php:48
+msgid "Videos"
+msgstr "ویدئوها"
+
+#: archive.php:45
+msgid "Images"
+msgstr "تصویرها"
+
+#: archive.php:42
+msgid "Galleries"
+msgstr "گالری‌ها"
+
+#: archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:39
+msgid "Asides"
+msgstr "کلمات قصار"
+
+#: archive.php:36
+msgid "Year: %s"
+msgstr "سال: %s"
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr "ماه: %s"
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:27
+msgid "Author: %s"
+msgstr "نویسنده: %s"
+
+#: archive.php:30
+msgid "Day: %s"
+msgstr "روز: %s"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "به نظر می‌رسد چیزی اینجا نیست. مایل هستید جستجو کنید؟"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "اوه! امکان یافتن صفحه نیست."

@@ -1,0 +1,254 @@
+# Translation of Hemingway Rewritten in Armenian
+# This file is distributed under the same license as the Hemingway Rewritten package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-08-05 08:25:16+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Hemingway Rewritten\n"
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "%s որոնման արդյունքները"
+
+#. translators: 1: date, 2: time
+#: inc/template-tags.php:142
+msgid "%1$s at %2$s"
+msgstr "%1$s, ժ. %2$s"
+
+#: inc/template-tags.php:135
+msgid "Your comment is awaiting moderation."
+msgstr "Ձեր մեկնաբանությունը սպասում է ստուգմանը։"
+
+#: inc/template-tags.php:59
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr "<span class=\"meta-nav\">&larr;</span> %title"
+
+#: inc/template-tags.php:60
+msgctxt "Next post link"
+msgid "%title <span class=\"meta-nav\">&rarr;</span>"
+msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:122
+msgid "Pingback:"
+msgstr "Ծանուցում՝"
+
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Գրառումների նավարկում"
+
+#: inc/template-tags.php:31
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Ավելի նոր գրառումներ <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:27
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Ավելի հին գրառումներ"
+
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Գրառումների նավարկում"
+
+#: inc/extras.php:68
+msgid "Page %s"
+msgstr "Էջ %s"
+
+#: header.php:40
+msgid "Search"
+msgstr "Որոնում"
+
+#: header.php:36
+msgid "Skip to content"
+msgstr "Անցնել բովանդակությանը"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Lato,
+#. * translate this to 'off'. Do not translate into your own language.
+#: functions.php:141
+msgctxt "Lato font: on or off"
+msgid "on"
+msgstr "off"
+
+#: header.php:35
+msgid "Menu"
+msgstr "Ընտրացանկ"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Raleway,
+#. * translate this to 'off'. Do not translate into your own language.
+#: functions.php:136
+msgctxt "Raleway font: on or off"
+msgid "on"
+msgstr "off"
+
+#: functions.php:96
+msgid "Footer 3"
+msgstr "Էջատակ 3"
+
+#: functions.php:88
+msgid "Footer 2"
+msgstr "Եջատակ 2"
+
+#: functions.php:80
+msgid "Footer 1"
+msgstr "Էջատակ 1"
+
+#: functions.php:72
+msgid "Sidebar"
+msgstr "Կողագոտի"
+
+#: functions.php:47
+msgid "Primary Menu"
+msgstr "Հիմնական ընտրացանկ"
+
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "Տեսաձև %1$s, հեղինակ՝ %2$s։"
+
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "Հպարտությամբ օժանդակվում է %s -ով"
+
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr "http://hy.wordpress.org/"
+
+#: content.php:11 inc/template-tags.php:87
+msgid "Featured"
+msgstr "Ընտրյալ"
+
+#: content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Կարծես թե մենք չենք գտնում ձեր փնտրածը։ Միգուցե փորձեք ա՞յլ բան որոնել։"
+
+#: content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Ցավոք, ձեր որոնման հարցումով ոչինչ չի գտնվել։ Փորձեք որոնել այլ հիմնաբառերով։"
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Պատրա՞ստ եք հրատարակել առաջին գրառումը։ <a href=\"%1$s\">Գնացի՛նք</a>։"
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Ոչինչ չի գտնվել"
+
+#. translators: used between list items, there is a space after the comma
+#: content-media.php:35 content-single.php:33
+msgid ", "
+msgstr ", "
+
+#: content-media.php:28 content-page.php:23 content-single.php:16
+#: content.php:28 inc/template-tags.php:122 inc/template-tags.php:151
+msgid "Edit"
+msgstr "Խմբագրել"
+
+#: content-media.php:26 content.php:26
+msgid "1 Comment"
+msgstr "1 մեկնաբանություն"
+
+#: content-media.php:26 content.php:26
+msgid "% Comments"
+msgstr "Մեկնաբանություններ (%)"
+
+#: content-media.php:26 content.php:26
+msgid "Leave a comment"
+msgstr "Թողնել մեկնաբանություն"
+
+#: content-media.php:12 content-page.php:18 content-single.php:24
+#: content.php:42
+msgid "Pages:"
+msgstr "Էջեր՝"
+
+#: content-media.php:9 content.php:39
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Շարունակել կարդալ <span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:63
+msgid "Comments are closed."
+msgstr "Մեկնաբանությունները փակված են։"
+
+#: comments.php:37 comments.php:53
+msgid "Newer Comments &rarr;"
+msgstr "Ավելի նոր մեկնաբանություններ &rarr;"
+
+#: comments.php:36 comments.php:52
+msgid "&larr; Older Comments"
+msgstr "&larr; Ավելի հին մեկնաբանություններ"
+
+#: comments.php:35 comments.php:51
+msgid "Comment navigation"
+msgstr "Մեկնաբանությունների նավարկումը"
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Մեկ կարծիք &laquo;%2$s&raquo;-ի վերաբերյալ"
+msgstr[1] "%1$s կարծիք &laquo;%2$s&raquo;-ի վերաբերյալ"
+
+#: archive.php:66
+msgid "Archives"
+msgstr "Պահոցներ"
+
+#: archive.php:54
+msgid "Links"
+msgstr "Հղումներ"
+
+#: archive.php:51
+msgid "Quotes"
+msgstr "Մեջբերումներ"
+
+#: archive.php:48
+msgid "Videos"
+msgstr "Տեսանյութեր"
+
+#: archive.php:45
+msgid "Images"
+msgstr "Պատկերներ"
+
+#: archive.php:42
+msgid "Galleries"
+msgstr "Պատկերասրահներ"
+
+#: archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:39
+msgid "Asides"
+msgstr "Նշումներ"
+
+#: archive.php:36
+msgid "Year: %s"
+msgstr "Տարին՝ %s"
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr "Ամիսը՝ %s"
+
+#: archive.php:30
+msgid "Day: %s"
+msgstr "Օրը՝ %s"
+
+#: archive.php:27
+msgid "Author: %s"
+msgstr "Հեղինակ՝ %s"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Այս հասցեով ոչինչ չի գտնվել։ Փորձեք օգտվել որոնման համակարգից։"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ապսո՜ս, էջը չի գտնվել։"

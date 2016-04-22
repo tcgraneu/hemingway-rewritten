@@ -1,0 +1,234 @@
+# Translation of Hemingway Rewritten in Danish
+# This file is distributed under the same license as the Hemingway Rewritten package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-09-23 14:40:37+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Hemingway Rewritten\n"
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "Søgeresultater for: %s"
+
+#. translators: 1: date, 2: time
+#: inc/template-tags.php:142
+msgid "%1$s at %2$s"
+msgstr "%1$s kl. %2$s"
+
+#: inc/template-tags.php:135
+msgid "Your comment is awaiting moderation."
+msgstr "Din kommentar afventer godkendelse."
+
+#: inc/template-tags.php:122
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: inc/template-tags.php:60
+msgctxt "Next post link"
+msgid "%title <span class=\"meta-nav\">&rarr;</span>"
+msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:59
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr "<span class=\"meta-nav\">&larr;</span> %title"
+
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Indlæg navigation"
+
+#: inc/template-tags.php:31
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nyere indlæg <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:27
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Ældre indlæg"
+
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Indlægsnavigation"
+
+#: inc/extras.php:68
+msgid "Page %s"
+msgstr "Side %s"
+
+#: header.php:40
+msgid "Search"
+msgstr "Søg"
+
+#: header.php:36
+msgid "Skip to content"
+msgstr "Hop til indhold"
+
+#: header.php:35
+msgid "Menu"
+msgstr "Menu"
+
+#: functions.php:72
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: functions.php:47
+msgid "Primary Menu"
+msgstr "Primær menu"
+
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s gange %2$s"
+
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "Drevet af %s"
+
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: content.php:11 inc/template-tags.php:87
+msgid "Featured"
+msgstr "Fremhævet"
+
+#: content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Det lader til, vi ikke kan finde det, du leder efter. Prøv eventuelt at bruge søgefeltet"
+
+#: content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Det lader til, vi ikke kan finde det, du leder efter. Prøv eventuelt at bruge andre søgeord."
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Klar til at udgive dit første indlæg? <a href=\"%1$s\">Kom i gang her</a>."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Intet fundet"
+
+#. translators: used between list items, there is a space after the comma
+#: content-media.php:35 content-single.php:33
+msgid ", "
+msgstr ", "
+
+#: content-media.php:28 content-page.php:23 content-single.php:16
+#: content.php:28 inc/template-tags.php:122 inc/template-tags.php:151
+msgid "Edit"
+msgstr "Rediger"
+
+#: content-media.php:26 content.php:26
+msgid "% Comments"
+msgstr "% kommentarer"
+
+#: content-media.php:26 content.php:26
+msgid "Leave a comment"
+msgstr "Skriv en kommentar"
+
+#: content-media.php:12 content-page.php:18 content-single.php:24
+#: content.php:42
+msgid "Pages:"
+msgstr "Sider:"
+
+#: content-media.php:9 content.php:39
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Læs resten <span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:63
+msgid "Comments are closed."
+msgstr "Der er lukket for kommentarer."
+
+#: comments.php:37 comments.php:53
+msgid "Newer Comments &rarr;"
+msgstr "Nyere kommentarer &rarr;"
+
+#: comments.php:36 comments.php:52
+msgid "&larr; Older Comments"
+msgstr "&larr; Ældre kommentarer"
+
+#: comments.php:35 comments.php:51
+msgid "Comment navigation"
+msgstr "Kommentar navigation"
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "En tanke omkring &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s tanker omkring &ldquo;%2$s&rdquo;"
+
+#: archive.php:66
+msgid "Archives"
+msgstr "Arkiver"
+
+#: archive.php:63
+msgid "Chats"
+msgstr "Chatter"
+
+#: archive.php:60
+msgid "Audios"
+msgstr "Lyde"
+
+#: archive.php:57
+msgid "Statuses"
+msgstr "Statusopdateringer"
+
+#: archive.php:54
+msgid "Links"
+msgstr "Links"
+
+#: archive.php:51
+msgid "Quotes"
+msgstr "Citater"
+
+#: archive.php:48
+msgid "Videos"
+msgstr "Videoer"
+
+#: archive.php:45
+msgid "Images"
+msgstr "Billeder"
+
+#: archive.php:42
+msgid "Galleries"
+msgstr "Gallerier"
+
+#: archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:39
+msgid "Asides"
+msgstr "Sidebemærkninger"
+
+#: archive.php:36
+msgid "Year: %s"
+msgstr "År: %s"
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr "Måned: %s"
+
+#: archive.php:27
+msgid "Author: %s"
+msgstr "Forfatter: %s"
+
+#: archive.php:30
+msgid "Day: %s"
+msgstr "Dag: %s"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Det ser ud til, at vi ikke kan finde det, du leder efter. Måske vil en søgning hjælpe."
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ups! Denne side kan ikke findes."

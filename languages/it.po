@@ -1,0 +1,263 @@
+# Translation of Hemingway Rewritten in Italian
+# This file is distributed under the same license as the Hemingway Rewritten package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-09-04 08:55:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Hemingway Rewritten\n"
+
+#. Description of the plugin/theme
+#: wp-content/themes/pub/hemingway-rewritten/style.css
+msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling header effect and a minimal, elegant design. The large featured header images make this theme great for photographers, or any users who want to share their visuals in a bold way."
+msgstr "Hemingway Rewritten è un tema classico per blog con un'intestazione a effetto parallasse e un design essenziale ed elegante. Le grandi immagini di cui è caratterizzata l'intestazione rendono questo tema ideale per fotografi o altri utenti che desiderano condividere le proprie immagini in modo interessante."
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "Risultati della ricerca per: %s"
+
+#. translators: 1: date, 2: time
+#: inc/template-tags.php:142
+msgid "%1$s at %2$s"
+msgstr "%1$s alle %2$s"
+
+#: inc/template-tags.php:135
+msgid "Your comment is awaiting moderation."
+msgstr "Il tuo commento deve ancora venire moderato."
+
+#: inc/template-tags.php:59
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr "<span class=\"meta-nav\">&larr;</span> %title"
+
+#: inc/template-tags.php:60
+msgctxt "Next post link"
+msgid "%title <span class=\"meta-nav\">&rarr;</span>"
+msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:122
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Navigazione articolo"
+
+#: inc/template-tags.php:31
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Articoli più recenti <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:27
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Articoli più vecchi"
+
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Navigazione articoli"
+
+#: inc/extras.php:68
+msgid "Page %s"
+msgstr "Pagina %s"
+
+#: header.php:40
+msgid "Search"
+msgstr "Cerca"
+
+#: header.php:36
+msgid "Skip to content"
+msgstr "Vai al contenuto"
+
+#: functions.php:96
+msgid "Footer 3"
+msgstr "Piè di pagina 3"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Raleway,
+#. * translate this to 'off'. Do not translate into your own language.
+#: functions.php:136
+msgctxt "Raleway font: on or off"
+msgid "on"
+msgstr "on"
+
+#: header.php:35
+msgid "Menu"
+msgstr "Menu"
+
+#: functions.php:80
+msgid "Footer 1"
+msgstr "Piè di pagina 1"
+
+#: functions.php:88
+msgid "Footer 2"
+msgstr "Piè di pagina 2"
+
+#: functions.php:72
+msgid "Sidebar"
+msgstr "Barra laterale"
+
+#: functions.php:47
+msgid "Primary Menu"
+msgstr "Menu principale"
+
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s di %2$s."
+
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "Funziona grazie a %s"
+
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: content.php:11 inc/template-tags.php:87
+msgid "Featured"
+msgstr "In evidenza"
+
+#: content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Non riusciamo a trovare quello che cerchi. Forse eseguire una ricerca potrebbe essere di aiuto."
+
+#: content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Spiacente, nulla corrisponde i termini della tua ricerca. Riprova con parole chiave diverse."
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Sei pronto a pubblicare il tuo primo articolo? <a href=\"%1$s\">Comincia da qui</a>."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Nessun risultato"
+
+#. translators: used between list items, there is a space after the comma
+#: content-media.php:35 content-single.php:33
+msgid ", "
+msgstr ", "
+
+#: content-media.php:28 content-page.php:23 content-single.php:16
+#: content.php:28 inc/template-tags.php:122 inc/template-tags.php:151
+msgid "Edit"
+msgstr "Modifica"
+
+#: content-media.php:26 content.php:26
+msgid "1 Comment"
+msgstr "1 Commento"
+
+#: content-media.php:26 content.php:26
+msgid "% Comments"
+msgstr "% commenti"
+
+#: content-media.php:26 content.php:26
+msgid "Leave a comment"
+msgstr "Lascia un commento"
+
+#: content-media.php:12 content-page.php:18 content-single.php:24
+#: content.php:42
+msgid "Pages:"
+msgstr "Pagine: "
+
+#: content-media.php:9 content.php:39
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continua a leggere <span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:63
+msgid "Comments are closed."
+msgstr "I commenti sono chiusi."
+
+#: comments.php:37 comments.php:53
+msgid "Newer Comments &rarr;"
+msgstr "Commenti più recenti &rarr;"
+
+#: comments.php:36 comments.php:52
+msgid "&larr; Older Comments"
+msgstr "&larr; Commenti meno recenti"
+
+#: comments.php:35 comments.php:51
+msgid "Comment navigation"
+msgstr "Navigazione commenti"
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Un pensiero su &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s pensieri su &ldquo;%2$s&rdquo;"
+
+#: archive.php:66
+msgid "Archives"
+msgstr "Archivi"
+
+#: archive.php:60
+msgid "Audios"
+msgstr "Audio"
+
+#: archive.php:63
+msgid "Chats"
+msgstr "Chat"
+
+#: archive.php:57
+msgid "Statuses"
+msgstr "Stati"
+
+#: archive.php:54
+msgid "Links"
+msgstr "Link"
+
+#: archive.php:51
+msgid "Quotes"
+msgstr "Citazioni"
+
+#: archive.php:48
+msgid "Videos"
+msgstr "Video"
+
+#: archive.php:45
+msgid "Images"
+msgstr "Immagini"
+
+#: archive.php:42
+msgid "Galleries"
+msgstr "Gallerie"
+
+#: archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:39
+msgid "Asides"
+msgstr "Incisi"
+
+#: archive.php:36
+msgid "Year: %s"
+msgstr "Anno: %s"
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr "Mese: %s"
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:27
+msgid "Author: %s"
+msgstr "Autore: %s"
+
+#: archive.php:30
+msgid "Day: %s"
+msgstr "Giorno: %s"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Sembra che non ci sia nulla. Provare una ricerca?"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! Impossibile trovare la pagina."
