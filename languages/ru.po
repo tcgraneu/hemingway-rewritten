@@ -169,13 +169,13 @@ msgstr[2] "%2$s: %1$s комментариев"
 msgid "Archives"
 msgstr "Архивы"
 
-#: archive.php:63
-msgid "Chats"
-msgstr "Чаты"
-
 #: archive.php:60
 msgid "Audios"
 msgstr "Аудиозаписи"
+
+#: archive.php:63
+msgid "Chats"
+msgstr "Чаты"
 
 #: archive.php:57
 msgid "Statuses"
@@ -223,13 +223,13 @@ msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
 
-#: archive.php:30
-msgid "Day: %s"
-msgstr "День: %s"
-
 #: archive.php:27
 msgid "Author: %s"
 msgstr "Автор: %s"
+
+#: archive.php:30
+msgid "Day: %s"
+msgstr "День: %s"
 
 #: 404.php:19
 msgid "It looks like nothing was found at this location. Maybe try a search?"
