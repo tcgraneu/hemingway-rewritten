@@ -55,7 +55,7 @@
 			container.className = container.className.replace( ' toggled', '' );
 		}
 	};
-	
+
 	// Fix child menus for touch devices.
 	function fixMenuTouchTaps( container ) {
 		var touchStartFn,

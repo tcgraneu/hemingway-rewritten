@@ -1,8 +1,8 @@
-# Translation of Hemingway Rewritten in Spanish (Spain)
+# Translation of Hemingway Rewritten in Hindi
 # This file is distributed under the same license as the Hemingway Rewritten package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-04 12:54:07+0000\n"
+"PO-Revision-Date: 2016-04-15 13:15:15+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,28 +10,23 @@ msgstr ""
 "X-Generator: GlotPress/1.0-alpha-1100\n"
 "Project-Id-Version: Hemingway Rewritten\n"
 
-#. Description of the plugin/theme
-#: wp-content/themes/pub/hemingway-rewritten/style.css
-msgid "Hemingway Rewritten is a classic blog theme with a parallax-scrolling header effect and a minimal, elegant design. The large featured header images make this theme great for photographers, or any users who want to share their visuals in a bold way."
-msgstr "Hemingway Rewritten es un tema para blogs clásicos, con un efecto de desplazamiento de paralaje en el encabezado y un diseño minimalista y elegante. Las grandes imágenes incrustadas en el encabezado hacen que este tema sea fantástico para fotógrafos, o para cualquier usuario que quiera compartir sus productos audiovisuales de forma atrevida."
-
 #. Template Name of the plugin/theme
 #: wp-content/themes/pub/hemingway-rewritten/nosidebar-page.php
 msgid "Full Width, No Sidebar"
-msgstr "Plantilla de ancho completo, sin laterales"
+msgstr "पूर्ण चौड़ाई, साइडबार नहीं"
 
 #: search.php:16
 msgid "Search Results for: %s"
-msgstr "Resultados de la búsqueda para: %s"
+msgstr "%s के लिए खोज परिणाम:"
 
 #. translators: 1: date, 2: time
 #: inc/template-tags.php:142
 msgid "%1$s at %2$s"
-msgstr "%1$s en %2$s"
+msgstr "%1$s को %2$s पर"
 
 #: inc/template-tags.php:135
 msgid "Your comment is awaiting moderation."
-msgstr "Tu comentario está pendiente de moderación."
+msgstr "आपकी टिप्पणी संतुलित किए जाने की प्रतीक्षा कर रही है।"
 
 #: inc/template-tags.php:59
 msgctxt "Previous post link"
@@ -45,75 +40,67 @@ msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
 
 #: inc/template-tags.php:122
 msgid "Pingback:"
-msgstr "Pingback:"
+msgstr "पिगबैक:"
 
 #: inc/template-tags.php:56
 msgid "Post navigation"
-msgstr "Navegador de artículos"
+msgstr "पोस्ट नेविगेशन"
 
 #: inc/template-tags.php:31
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Entradas más nuevas <span class=\"meta-nav\">&rarr;</span>"
+msgstr "नए पोस्टस <span class=\"meta-nav\">&rarr;</span>"
 
 #: inc/template-tags.php:27
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "<span class=\"meta-nav\">&larr;</span> Entradas más antiguas"
+msgstr "<span class=\"meta-nav\">&larr;</span> पुराने पोस्टस"
 
 #: inc/template-tags.php:23
 msgid "Posts navigation"
-msgstr "Ir a las entradas"
+msgstr "पोस्टस नेविगेशन"
 
 #: inc/extras.php:68
 msgid "Page %s"
-msgstr "Página %s"
+msgstr "पृष्ठ %s"
 
 #: header.php:40
 msgid "Search"
-msgstr "Buscar"
+msgstr "खोजे"
 
 #: header.php:36
 msgid "Skip to content"
-msgstr "Saltar al contenido"
+msgstr "सामग्री पर जाएं"
 
 #: functions.php:96
 msgid "Footer 3"
-msgstr "Pie de página 3"
-
-#. Translators: If there are characters in your language that are not supported
-#. by Raleway,
-#. * translate this to 'off'. Do not translate into your own language.
-#: functions.php:136
-msgctxt "Raleway font: on or off"
-msgid "on"
-msgstr "activado"
+msgstr "फूटर 3"
 
 #: header.php:35
 msgid "Menu"
-msgstr "Menú"
+msgstr "मेनु"
 
 #: functions.php:80
 msgid "Footer 1"
-msgstr "Pie de página 1"
+msgstr "फूटर 1"
 
 #: functions.php:88
 msgid "Footer 2"
-msgstr "Pie de página 2"
+msgstr "फूटर 2"
 
 #: functions.php:72
 msgid "Sidebar"
-msgstr "Barra lateral"
+msgstr "बाजूपट्टी"
 
 #: functions.php:47
 msgid "Primary Menu"
-msgstr "Menú Principal"
+msgstr "प्राथमिक मेनू"
 
 #: footer.php:17
 msgid "Theme: %1$s by %2$s."
-msgstr "Tema: %1$s por %2$s."
+msgstr "थीम: %2$s द्वारा %1$s।"
 
 #: footer.php:15
 msgid "Proudly powered by %s"
-msgstr "Funciona con %s"
+msgstr "%s द्वारा गर्व के साथ संचालित"
 
 #: footer.php:15
 msgid "http://wordpress.org/"
@@ -121,23 +108,23 @@ msgstr "http://wordpress.org/"
 
 #: content.php:11 inc/template-tags.php:87
 msgid "Featured"
-msgstr "Destacado"
+msgstr "विशेष रुप से प्रदर्शित"
 
 #: content-none.php:28
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Parece que no podemos encontrar lo que estás buscando. Tal vez la búsqueda le pueda ayudar."
+msgstr "ऐसा लगता है आप जो देख रहे हैं हमें नहीं मिल रहा है। शायद खोज मदद कर सकता है।"
 
 #: content-none.php:23
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Lo sentimos, pero nada coincidió con su búsqueda. Por favor inténtelo de nuevo con otras palabras clave."
+msgstr "क्षमा करें, लेकिन कुछ भी आपके खोज शब्दों से मेल नहीं खाते। कृपया कुछ अलग खोजशब्दों के साथ फिर से प्रयास करें।"
 
 #: content-none.php:19
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "¿Preparado para publicar tu primera entrada? <a href=\"%1$s\">Empieza aquí</a>."
+msgstr "अपनी पहली पोस्ट को प्रकाशित करने के लिए तैयार हैं? <a href=\"%1$s\">यहाँ से शुरुआत करें</a>।"
 
 #: content-none.php:13
 msgid "Nothing Found"
-msgstr "No se ha encontrado nada"
+msgstr "कुछ नहीं मिला"
 
 #. translators: used between list items, there is a space after the comma
 #: content-media.php:35 content-single.php:33
@@ -147,87 +134,87 @@ msgstr ", "
 #: content-media.php:28 content-page.php:23 content-single.php:16
 #: content.php:28 inc/template-tags.php:122 inc/template-tags.php:151
 msgid "Edit"
-msgstr "Editar"
+msgstr "सम्पादन"
 
 #: content-media.php:26 content.php:26
 msgid "1 Comment"
-msgstr "1 comentario"
+msgstr "1 टिप्पणी"
 
 #: content-media.php:26 content.php:26
 msgid "% Comments"
-msgstr "% comentarios"
+msgstr "%s टिप्पणियाँ"
 
 #: content-media.php:26 content.php:26
 msgid "Leave a comment"
-msgstr "Deja un comentario"
+msgstr "एक टिप्पणी छोड़ें"
 
 #: content-media.php:12 content-page.php:18 content-single.php:24
 #: content.php:42
 msgid "Pages:"
-msgstr "Páginas:"
+msgstr "पृष्ठ:"
 
 #: content-media.php:9 content.php:39
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Sigue leyendo <span class=\"meta-nav\">&rarr;</span>"
+msgstr "पढना जारी रखे <span class=\"meta-nav\">&rarr;</span>"
 
 #: comments.php:63
 msgid "Comments are closed."
-msgstr "Los comentarios están cerrados."
+msgstr "टिप्पणियाँ बंद हैं।"
 
 #: comments.php:37 comments.php:53
 msgid "Newer Comments &rarr;"
-msgstr "Comentarios recientes &rarr;"
+msgstr "नई टिप्पणियां &rarr;"
 
 #: comments.php:36 comments.php:52
 msgid "&larr; Older Comments"
-msgstr "&larr; Comentarios antiguos"
+msgstr "&larr; पुरानी टिप्पणियाँ"
 
 #: comments.php:35 comments.php:51
 msgid "Comment navigation"
-msgstr "Navegación de comentarios"
+msgstr "टिप्पणी नेविगेशन"
 
 #: comments.php:28
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Un comentario en &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s comentarios en &ldquo;%2$s&rdquo;"
+msgstr[0] "&ldquo;%2$s&rdquo पर एक विचार;"
+msgstr[1] "%1$s विचार &ldquo;%2$s&rdquo पर;"
 
 #: archive.php:66
 msgid "Archives"
-msgstr "Archivos"
+msgstr "अभिलेख"
 
 #: archive.php:60
 msgid "Audios"
-msgstr "Audios"
+msgstr "ऑडियोस"
 
 #: archive.php:63
 msgid "Chats"
-msgstr "Chat"
+msgstr "चैट्स"
 
 #: archive.php:57
 msgid "Statuses"
-msgstr "Estados"
+msgstr "स्थितियां"
 
 #: archive.php:54
 msgid "Links"
-msgstr "Enlaces"
+msgstr "कड़ियाँ"
 
 #: archive.php:51
 msgid "Quotes"
-msgstr "Citas"
+msgstr "उद्धरण"
 
 #: archive.php:48
 msgid "Videos"
-msgstr "Vídeos"
+msgstr "वीडियोस "
 
 #: archive.php:45
 msgid "Images"
-msgstr "Imágenes"
+msgstr "छवियाँ"
 
 #: archive.php:42
 msgid "Galleries"
-msgstr "Galerías"
+msgstr "गैलेरियां"
 
 #: archive.php:36
 msgctxt "yearly archives date format"
@@ -236,15 +223,15 @@ msgstr "Y"
 
 #: archive.php:39
 msgid "Asides"
-msgstr "Apartados"
+msgstr "एक ओर"
 
 #: archive.php:36
 msgid "Year: %s"
-msgstr "Año: %s"
+msgstr "वर्ष: %s"
 
 #: archive.php:33
 msgid "Month: %s"
-msgstr "Mes: %s"
+msgstr "महीना: %s"
 
 #: archive.php:33
 msgctxt "monthly archives date format"
@@ -253,16 +240,16 @@ msgstr "F Y"
 
 #: archive.php:27
 msgid "Author: %s"
-msgstr "Autor: %s"
+msgstr "लेखक: %s"
 
 #: archive.php:30
 msgid "Day: %s"
-msgstr "Día: %s"
+msgstr "दिन: %s"
 
 #: 404.php:19
 msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "Parece que no hay nada en este lugar. ¿Y si pruebas una búsqueda?"
+msgstr "ऐसा लगता है कि कुछ भी इस स्थान पर नहीं पाया गया है। शायद एक खोज की कोशिश करें?"
 
 #: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "¡Vaya! Esa página no se puede encontrar."
+msgstr "उफ़! वह पृष्ठ नहीं पाया जा सकता है।"
